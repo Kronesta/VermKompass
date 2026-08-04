@@ -1,0 +1,725 @@
+/* =====================================================
+   VERMKOMPASS
+   style.css
+   Version 1.0
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#17456d;
+    --secondary:#1f6aa5;
+    --background:#f4f7fb;
+    --card:#ffffff;
+    --text:#2d3748;
+    --border:#d9e2ec;
+    --shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+body{
+
+    font-family:"Inter",sans-serif;
+    background:var(--background);
+    color:var(--text);
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ======================
+SIDEBAR
+====================== */
+
+.sidebar{
+
+    width:280px;
+
+    background:var(--primary);
+
+    color:white;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+    bottom:0;
+
+    overflow-y:auto;
+
+}
+
+.logo{
+
+    padding:30px;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+.logo h2{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.logo p{
+
+    opacity:.8;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:20px;
+
+}
+
+.sidebar li{
+
+    margin-bottom:10px;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.sidebar a:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.sidebar a.active{
+
+    background:white;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/* ======================
+HAUPTBEREICH
+====================== */
+
+.main{
+
+    margin-left:280px;
+
+    width:calc(100% - 280px);
+
+}
+
+header{
+
+    background:white;
+
+    padding:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+header h1{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    color:#666;
+
+}
+
+/* ======================
+TOPBAR
+====================== */
+
+.topbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.topbar input{
+
+    width:320px;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:1px solid var(--border);
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+.topbar input:focus{
+
+    border:1px solid var(--secondary);
+
+}
+
+#darkMode{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    transition:.3s;
+
+}
+
+#darkMode:hover{
+
+    background:var(--secondary);
+
+}
+/* ======================
+DASHBOARD
+====================== */
+
+.dashboard{
+
+    padding:35px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:var(--card);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    border:1px solid var(--border);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.card h2{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    font-size:24px;
+
+}
+
+.card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+/* ======================
+SEKTIONEN
+====================== */
+
+section{
+
+    padding:0 35px 35px;
+
+}
+
+section h2{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+}
+
+/* ======================
+SCHNELLZUGRIFFE
+====================== */
+
+.quickLinks{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.quickLinks button{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    padding:14px 20px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.quickLinks button:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:scale(1.05);
+
+}
+
+/* ======================
+ARTIKEL
+====================== */
+
+.article{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:var(--shadow);
+
+    border-left:6px solid var(--secondary);
+
+}
+
+.article h3{
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+.article p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* ======================
+FOOTER
+====================== */
+
+footer{
+
+    margin-top:40px;
+
+    padding:25px;
+
+    background:white;
+
+    text-align:center;
+
+    color:#777;
+
+    box-shadow:0 -3px 10px rgba(0,0,0,.05);
+
+}
+
+/* ======================
+SCROLLBAR
+====================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--secondary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#e8edf2;
+
+}
+/* ======================
+RESPONSIVE DESIGN
+====================== */
+
+@media (max-width:1200px){
+
+    .dashboard{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:900px){
+
+    .sidebar{
+
+        width:100%;
+
+        height:auto;
+
+        position:relative;
+
+    }
+
+    .main{
+
+        margin-left:0;
+
+        width:100%;
+
+    }
+
+    header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .topbar{
+
+        width:100%;
+
+    }
+
+    .topbar input{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:700px){
+
+    .dashboard{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .quickLinks{
+
+        flex-direction:column;
+
+    }
+
+    .quickLinks button{
+
+        width:100%;
+
+    }
+
+}
+
+/* ======================
+DARK MODE
+====================== */
+
+body.dark{
+
+    --background:#121212;
+    --card:#1d1d1d;
+    --text:#eeeeee;
+    --border:#333333;
+
+}
+
+body.dark header{
+
+    background:#1d1d1d;
+
+}
+
+body.dark footer{
+
+    background:#1d1d1d;
+
+}
+
+body.dark .article{
+
+    background:#1d1d1d;
+
+}
+
+body.dark .card{
+
+    background:#1d1d1d;
+
+}
+
+body.dark .quickLinks button{
+
+    background:#1d1d1d;
+    color:white;
+
+}
+
+body.dark input{
+
+    background:#1d1d1d;
+    color:white;
+    border:1px solid #555;
+
+}
+
+/* ======================
+INFOBOXEN
+====================== */
+
+.info{
+
+    background:#e8f4ff;
+
+    border-left:6px solid #2196f3;
+
+    padding:18px;
+
+    margin:20px 0;
+
+    border-radius:10px;
+
+}
+
+.tipp{
+
+    background:#e9f9ee;
+
+    border-left:6px solid #2e7d32;
+
+    padding:18px;
+
+    margin:20px 0;
+
+    border-radius:10px;
+
+}
+
+.warnung{
+
+    background:#fff3e0;
+
+    border-left:6px solid #ef6c00;
+
+    padding:18px;
+
+    margin:20px 0;
+
+    border-radius:10px;
+
+}
+
+.fehler{
+
+    background:#ffebee;
+
+    border-left:6px solid #d32f2f;
+
+    padding:18px;
+
+    margin:20px 0;
+
+    border-radius:10px;
+
+}
+
+/* ======================
+TABELLEN
+====================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:25px 0;
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+}
+
+body.dark table{
+
+    background:#1d1d1d;
+
+}
+
+th{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+/* ======================
+BILDER
+====================== */
+
+img{
+
+    max-width:100%;
+
+    border-radius:12px;
+
+    margin:20px 0;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ======================
+ANIMATIONEN
+====================== */
+
+.card,
+.article,
+.quickLinks button{
+
+    animation:einblenden .5s ease;
+
+}
+
+@keyframes einblenden{
+
+    from{
+
+        opacity:0;
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ======================
+AUSWAHLFARBE
+====================== */
+
+::selection{
+
+    background:var(--secondary);
+
+    color:white;
+
+}
