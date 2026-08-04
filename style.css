@@ -864,3 +864,55 @@ transition:0.2s;
 transform:translateY(-2px);
 
 }
+.chapter-nav{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:8px;
+
+margin:25px 0 35px;
+
+padding:12px;
+
+background:var(--card);
+
+border-radius:14px;
+
+}
+
+
+.chapter-nav a{
+
+text-decoration:none;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+color:var(--text);
+
+font-size:14px;
+
+transition:0.2s;
+
+}
+
+
+.chapter-nav a:hover{
+
+background:rgba(0,0,0,0.05);
+
+}
+
+
+.chapter-nav a.active{
+
+background:var(--primary);
+
+color:white;
+
+font-weight:600;
+
+}
