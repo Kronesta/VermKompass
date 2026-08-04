@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VermKompass | VermCAD Fehlerbehebung</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>🧭 VermKompass</h2>
+
+<p>Vermessungs-Wiki</p>
+
+</div>
+
+
+<ul>
+
+<li><a href="index.html">🏠 Startseite</a></li>
+<li><a href="grundlagen.html">📚 Grundlagen</a></li>
+<li><a href="arbeitsablaeufe.html">📐 Arbeitsabläufe</a></li>
+<li><a href="programme.html" class="active">💻 Programme</a></li>
+<li><a href="checklisten.html">📋 Checklisten</a></li>
+<li><a href="glossar.html">📖 Glossar</a></li>
+<li><a href="favoriten.html">⭐ Favoriten</a></li>
+<li><a href="einstellungen.html">⚙ Einstellungen</a></li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="main">
+
+
+<header>
+
+
+<div>
+
+<h1>⚠ VermCAD Fehlerbehebung</h1>
+
+<p>
+Typische Probleme und Lösungsansätze in VermCAD
+</p>
+
+</div>
+
+
+<div class="topbar">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Suche nach Begriffen..."
+>
+
+
+<button id="darkMode">
+
+🌙
+
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+<section>
+
+
+<h2>📌 Allgemeines Vorgehen</h2>
+
+
+<div class="info">
+
+<h3>Fehler systematisch prüfen</h3>
+
+<p>
+
+Bei Problemen in VermCAD sollte zuerst geprüft
+werden, welche Daten, Einstellungen und
+Grundlagen verwendet wurden.
+
+Eine systematische Fehlersuche hilft dabei,
+die Ursache schneller zu finden.
+
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="article">
+
+<h3>❌ Keine Passpunkte, Transformation nicht möglich</h3>
+
+<p>
+
+<strong>Mögliche Ursache:</strong>
+
+<br><br>
+
+Für die gewünschte Transformation stehen keine
+geeigneten Passpunkte zur Verfügung.
+
+<br><br>
+
+<strong>Prüfung:</strong>
+
+<br><br>
+
+✔ Sind Passpunkte vorhanden?
+
+<br>
+
+✔ Sind die Koordinaten bekannt?
+
+<br>
+
+✔ Passt der Lagestatus?
+
+<br><br>
+
+<strong>Lösung:</strong>
+
+<br><br>
+
+Benötigte Passpunkte prüfen, ergänzen oder
+die Ausgangsdaten kontrollieren.
+
+</p>
+
+<div class="screenshot">
+
+📷 Screenshot: Fehlermeldung Transformation
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="article">
+
+<h3>❌ Punkte werden nicht angezeigt</h3>
+
+<p>
+
+<strong>Mögliche Ursachen:</strong>
+
+<br><br>
+
+- Punkte wurden nicht geladen
+
+<br>
+
+- falsche Darstellungseinstellungen
+
+<br>
+
+- falsches Projekt geöffnet
+
+<br><br>
+
+<strong>Lösung:</strong>
+
+<br><br>
+
+Projekt und Datenbestand prüfen und die
+Darstellung kontrollieren.
+
+</p>
+
+
+<div class="screenshot">
+
+📷 Screenshot: Punktdarstellung
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="article">
+
+<h3>❌ Falscher Lagestatus</h3>
+
+<p>
+
+<strong>Mögliche Ursache:</strong>
+
+<br><br>
+
+Die Daten liegen in einem anderen
+Koordinatenbezug vor als erwartet.
+
+<br><br>
+
+<strong>Lösung:</strong>
+
+<br><br>
+
+Lagestatus und verwendetes Bezugssystem
+prüfen, bevor eine Transformation oder
+weitere Bearbeitung durchgeführt wird.
+
+</p>
+
+
+<div class="screenshot">
+
+📷 Screenshot: Lagestatus
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="article">
+
+<h3>❌ Datenimport fehlerhaft</h3>
+
+<p>
+
+<strong>Mögliche Ursachen:</strong>
+
+<br><br>
+
+- falsche Datei ausgewählt
+
+<br>
+
+- Datei unvollständig
+
+<br>
+
+- Daten passen nicht zum Projekt
+
+<br><br>
+
+<strong>Lösung:</strong>
+
+<br><br>
+
+Importdatei prüfen und sicherstellen, dass
+das richtige Projekt verwendet wird.
+
+</p>
+
+
+<div class="screenshot">
+
+📷 Screenshot: Datenimport
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="tipp">
+
+<h3>💡 Tipp zur Fehlersuche</h3>
+
+<p>
+
+Bei Problemen immer zuerst die Grundlagen
+prüfen:
+
+<br><br>
+
+✔ Welches Projekt ist geöffnet?
+
+<br>
+
+✔ Welche Daten wurden verwendet?
+
+<br>
+
+✔ Welches Koordinatensystem liegt vor?
+
+<br>
+
+✔ Welche Fehlermeldung erscheint?
+
+</p>
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<p>
+
+© 2026 VermKompass
+
+<br>
+
+Version 1.0
+
+</p>
+
+</footer>
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
