@@ -138,7 +138,7 @@ treffer.forEach(function(text){
 
 let p=document.createElement("p");
 
-p.innerHTML="🔍 "+text;
+p.textContent="🔍 "+text;
 
 p.style.padding="8px";
 
