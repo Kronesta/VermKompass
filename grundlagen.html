@@ -321,8 +321,461 @@ Kataster, Bau und Planung.
 
 </section>
 
+<section>
+
+<h2>📍 Koordinatensysteme</h2>
 
 
+<div class="info">
+
+<h3>Was sind Koordinatensysteme?</h3>
+
+<p>
+
+Koordinatensysteme ermöglichen es, die Lage eines
+Punktes eindeutig auf der Erdoberfläche zu beschreiben.
+
+In der Vermessung werden Punkte durch Koordinaten
+bestimmt und können dadurch in Karten,
+Programmen und Datenbanken eindeutig dargestellt
+werden.
+
+</p>
+
+</div>
+
+
+
+<div class="article">
+
+<h3>📌 Lagebezug</h3>
+
+<p>
+
+Der Lagebezug beschreibt die horizontale Position
+eines Punktes.
+
+Ein Punkt wird dabei durch zwei Koordinaten
+beschrieben:
+
+</p>
+
+<br>
+
+<table>
+
+<tr>
+
+<th>Bezeichnung</th>
+
+<th>Bedeutung</th>
+
+</tr>
+
+
+<tr>
+
+<td>Ostwert (Easting)</td>
+
+<td>Lage in östlicher Richtung</td>
+
+</tr>
+
+
+<tr>
+
+<td>Nordwert (Northing)</td>
+
+<td>Lage in nördlicher Richtung</td>
+
+</tr>
+
+</table>
+
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>📏 Höhenbezug</h3>
+
+<p>
+
+Der Höhenbezug beschreibt die Höhe eines Punktes
+über einer festgelegten Bezugsfläche.
+
+In Deutschland werden Höhen heute im
+Deutschen Haupthöhennetz (DHHN2016) angegeben.
+
+Die Höhen beziehen sich auf NHN
+(Normalhöhennull).
+
+</p>
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>🌐 UTM-Koordinatensystem</h3>
+
+<p>
+
+UTM steht für Universal Transverse Mercator.
+
+Es ist das heute in Deutschland verwendete
+Lagekoordinatensystem und wird unter anderem
+für Vermessungen, Kataster, Karten und
+GNSS-Messungen verwendet.
+
+</p>
+
+
+<div class="tipp">
+
+<h3>💡 Merke</h3>
+
+<p>
+
+In Sachsen werden aktuelle amtliche Vermessungen
+im System ETRS89 / UTM geführt.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>📐 Gauß-Krüger-System</h3>
+
+<p>
+
+Das Gauß-Krüger-System war viele Jahre das
+amtliche Lagebezugssystem in Deutschland.
+
+Viele ältere Vermessungsunterlagen und Risse
+liegen deshalb noch in diesem System vor.
+
+</p>
+
+
+<div class="warnung">
+
+<h3>⚠ Achtung</h3>
+
+<p>
+
+Bei älteren Unterlagen muss häufig eine
+Transformation vom Gauß-Krüger-System in das
+heutige UTM-System durchgeführt werden.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>🔢 EPSG-Codes</h3>
+
+<p>
+
+EPSG-Codes kennzeichnen eindeutig ein
+Koordinatenreferenzsystem.
+
+Sie helfen Vermessungsprogrammen dabei,
+Koordinaten richtig zu interpretieren.
+
+</p>
+
+
+<table>
+
+<tr>
+
+<th>EPSG-Code</th>
+
+<th>System</th>
+
+<th>Verwendung</th>
+
+</tr>
+
+
+<tr>
+
+<td>25833</td>
+
+<td>ETRS89 / UTM Zone 33N</td>
+
+<td>Aktueller Lagebezug in Sachsen</td>
+
+</tr>
+
+
+<tr>
+
+<td>31468</td>
+
+<td>DHDN / Gauß-Krüger Zone 4</td>
+
+<td>Ältere Vermessungen</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+</section>
+<section>
+
+<h2>🛰 GNSS und SAPOS</h2>
+
+
+
+<div class="info">
+
+<h3>Was ist GNSS?</h3>
+
+<p>
+
+GNSS steht für „Global Navigation Satellite System“.
+
+Dabei handelt es sich um satellitengestützte
+Systeme zur Bestimmung von Positionen auf der Erde.
+
+In der Vermessung werden GNSS-Empfänger genutzt,
+um genaue Koordinaten von Punkten zu bestimmen.
+
+</p>
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>🌍 Satellitensysteme</h3>
+
+<p>
+
+Es gibt mehrere globale Satellitensysteme:
+
+</p>
+
+
+<br>
+
+
+<table>
+
+<tr>
+
+<th>System</th>
+
+<th>Betreiber</th>
+
+</tr>
+
+
+<tr>
+
+<td>GPS</td>
+
+<td>USA</td>
+
+</tr>
+
+
+<tr>
+
+<td>GLONASS</td>
+
+<td>Russland</td>
+
+</tr>
+
+
+<tr>
+
+<td>Galileo</td>
+
+<td>Europäische Union</td>
+
+</tr>
+
+
+<tr>
+
+<td>BeiDou</td>
+
+<td>China</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>📡 Wie funktioniert GNSS?</h3>
+
+<p>
+
+Satelliten senden ihre genaue Position und Uhrzeit
+über Funksignale an den Empfänger.
+
+Für eine Positionsbestimmung benötigt ein
+Empfänger Signale von mehreren Satelliten
+gleichzeitig.
+
+Aus den gemessenen Signallaufzeiten wird die
+Position berechnet.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>🎯 Genauigkeit von GNSS</h3>
+
+<p>
+
+Ein normales GNSS-Signal, wie es beispielsweise
+ein Smartphone nutzt, erreicht nur eine Genauigkeit
+im Meterbereich.
+
+Für Vermessungsaufgaben werden zusätzliche
+Korrekturdaten und spezielle Empfänger benötigt.
+
+</p>
+
+
+<div class="tipp">
+
+<h3>💡 Merke</h3>
+
+<p>
+
+GNSS allein ist für genaue Katastervermessungen
+nicht ausreichend.
+
+Erst durch Korrekturdaten können
+Zentimetergenauigkeiten erreicht werden.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>📍 RTK-Verfahren</h3>
+
+<p>
+
+RTK steht für Real Time Kinematic.
+
+Dabei werden Korrekturdaten verwendet, um eine
+sehr genaue Positionsbestimmung in Echtzeit
+zu ermöglichen.
+
+Typische Genauigkeiten liegen im
+Zentimeterbereich.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>🛰 SAPOS</h3>
+
+<p>
+
+SAPOS ist der Satellitenpositionierungsdienst der
+deutschen Landesvermessung.
+
+Er stellt Korrekturdaten bereit, mit denen
+GNSS-Messungen deutlich genauer werden.
+
+In der Vermessung wird SAPOS häufig genutzt,
+um präzise Koordinaten im Zentimeterbereich
+zu bestimmen.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="warnung">
+
+<h3>⚠ Einflussfaktoren auf die Genauigkeit</h3>
+
+<p>
+
+Die Genauigkeit einer GNSS-Messung kann beeinflusst
+werden durch:
+
+<br><br>
+
+✔ Anzahl sichtbarer Satelliten<br>
+✔ Satellitengeometrie<br>
+✔ atmosphärische Störungen<br>
+✔ Signalabschattung<br>
+✔ Reflexionen an Gebäuden oder Flächen
+
+</p>
+
+</div>
+
+
+
+</section>
 
 
 
