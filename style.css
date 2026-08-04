@@ -723,3 +723,22 @@ AUSWAHLFARBE
     color:white;
 
 }
+.screenshot{
+
+background:#f4f7fb;
+
+border:2px dashed var(--secondary);
+
+padding:30px;
+
+text-align:center;
+
+border-radius:12px;
+
+margin:25px 0;
+
+color:var(--primary);
+
+font-weight:600;
+
+}
