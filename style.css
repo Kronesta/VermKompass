@@ -751,15 +751,19 @@ display:flex;
 
 flex-wrap:wrap;
 
-gap:8px;
+gap:10px;
 
 margin:25px 0 35px;
 
-padding:12px;
+padding:15px;
 
-background:var(--card);
+background:white;
 
-border-radius:14px;
+border-radius:15px;
+
+box-shadow:var(--shadow);
+
+border:1px solid var(--border);
 
 }
 
@@ -776,10 +780,11 @@ color:var(--text);
 
 font-size:14px;
 
-transition:0.2s;
+transition:.3s;
+
+font-weight:500;
 
 }
-
 
 .chapter-nav a:hover{
 
@@ -795,5 +800,7 @@ background:var(--primary);
 color:white;
 
 font-weight:600;
+
+box-shadow:0 3px 8px rgba(0,0,0,.15);
 
 }
