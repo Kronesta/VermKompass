@@ -776,7 +776,210 @@ werden durch:
 
 
 </section>
+<section>
 
+<h2>🔄 Transformationen</h2>
+
+
+
+<div class="info">
+
+<h3>Was ist eine Transformation?</h3>
+
+<p>
+
+Eine Transformation beschreibt die Umrechnung von
+Koordinaten zwischen verschiedenen
+Koordinatensystemen oder Bezugssystemen.
+
+Sie wird benötigt, wenn Daten aus unterschiedlichen
+Vermessungsgrundlagen zusammengeführt werden
+sollen.
+
+</p>
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>📍 Warum werden Transformationen benötigt?</h3>
+
+<p>
+
+In der Vermessung werden häufig ältere und neue
+Daten miteinander verwendet.
+
+Beispielsweise können alte Risse noch im
+Gauß-Krüger-System vorliegen, während aktuelle
+Projekte im ETRS89 / UTM-System bearbeitet werden.
+
+Damit beide Datensätze zusammenpassen, müssen
+die Koordinaten transformiert werden.
+
+</p>
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>🔁 Beispiel: Gauß-Krüger → UTM</h3>
+
+<p>
+
+Ein typischer Anwendungsfall:
+
+<br><br>
+
+<strong>Ausgangssystem:</strong><br>
+DHDN / Gauß-Krüger
+
+<br><br>
+
+⬇️ Transformation
+
+<br><br>
+
+<strong>Zielsystem:</strong><br>
+ETRS89 / UTM Zone 33N
+
+<br><br>
+
+Danach können alte Vermessungsdaten in aktuellen
+Projekten weiterverarbeitet werden.
+
+</p>
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>🔢 Bedeutung von EPSG-Codes</h3>
+
+<p>
+
+Bei einer Transformation muss immer geprüft werden,
+welches Koordinatenreferenzsystem verwendet wird.
+
+Der EPSG-Code beschreibt eindeutig das verwendete
+System und verhindert Fehler beim Datenaustausch.
+
+</p>
+
+
+<table>
+
+<tr>
+
+<th>EPSG-Code</th>
+
+<th>Koordinatensystem</th>
+
+</tr>
+
+
+<tr>
+
+<td>25833</td>
+
+<td>ETRS89 / UTM Zone 33N</td>
+
+</tr>
+
+
+<tr>
+
+<td>31468</td>
+
+<td>DHDN / Gauß-Krüger Zone 4</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+<div class="article">
+
+<h3>💻 Transformation in VermCAD</h3>
+
+<p>
+
+In VermCAD werden Transformationen genutzt,
+um Vermessungsdaten verschiedener Grundlagen
+zusammenzuführen.
+
+Dabei müssen unter anderem das richtige
+Ausgangssystem, Zielsystem und die verwendeten
+Punkte kontrolliert werden.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="warnung">
+
+<h3>⚠ Achtung</h3>
+
+<p>
+
+Ein falsch gewählter EPSG-Code oder ein falsches
+Ausgangssystem kann dazu führen, dass Punkte an
+einer falschen Position dargestellt werden.
+
+</p>
+
+</div>
+
+
+
+
+<div class="tipp">
+
+<h3>💡 Merke</h3>
+
+<p>
+
+Alte Unterlagen:
+<br>
+➡️ häufig Gauß-Krüger
+
+<br><br>
+
+Neue amtliche Vermessungen:
+<br>
+➡️ ETRS89 / UTM
+
+<br><br>
+
+Damit beide zusammenpassen:
+<br>
+➡️ Transformation durchführen
+
+</p>
+
+</div>
+
+
+
+</section>
 
 
 <footer>
