@@ -806,3 +806,16 @@ font-weight:600;
 box-shadow:0 3px 8px rgba(0,0,0,.15);
 
 }
+mark{
+
+background:#ffe082;
+
+color:var(--text);
+
+padding:2px 4px;
+
+border-radius:4px;
+
+font-weight:600;
+
+}
