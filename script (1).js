@@ -203,3 +203,56 @@ console.log("Willkommen bei VermKompass.");
 // ----------------------------
 
 console.log("Version 1.0 geladen.");
+const searchInput = document.getElementById("searchInput");
+
+
+if(searchInput){
+
+searchInput.addEventListener("keyup", function(e){
+
+
+if(e.key === "Enter"){
+
+
+let suche = searchInput.value.toLowerCase();
+
+
+let gefunden = suchIndex.filter(function(eintrag){
+
+
+return (
+
+eintrag.titel.toLowerCase().includes(suche)
+
+||
+
+eintrag.begriffe.toLowerCase().includes(suche)
+
+);
+
+
+});
+
+
+if(gefunden.length > 0){
+
+
+window.location.href =
+gefunden[0].seite;
+
+
+}
+
+else{
+
+alert("Keine passenden Ergebnisse gefunden.");
+
+}
+
+
+}
+
+
+});
+
+}
