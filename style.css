@@ -819,3 +819,87 @@ border-radius:4px;
 font-weight:600;
 
 }
+/* ======================
+   AUFKLAPPBARE BEREICHE
+   ====================== */
+
+details{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    box-shadow:var(--shadow);
+
+    border-left:6px solid var(--secondary);
+
+}
+
+
+body.dark details{
+
+    background:#1d1d1d;
+
+}
+
+
+
+summary{
+
+    cursor:pointer;
+
+    list-style:none;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+    padding:10px;
+
+}
+
+
+
+summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+
+
+summary::after{
+
+    content:"▼";
+
+    float:right;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+
+
+details[open] summary::after{
+
+    content:"▲";
+
+}
+
+
+
+details .article{
+
+    margin-top:15px;
+
+    box-shadow:none;
+
+}
