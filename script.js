@@ -136,7 +136,7 @@ return bScore-aScore;
 box.style.top="60px";
 box.style.left="0";
 box.style.background="white";
-box.style.width="320px";
+box.style.width = searchInput.offsetWidth + "px";
 box.style.padding="10px";
 box.style.borderRadius="10px";
 box.style.boxShadow="0 10px 20px rgba(0,0,0,.15)";
