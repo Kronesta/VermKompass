@@ -162,8 +162,13 @@ box.style.zIndex="999";
 
 
 
-            p.innerHTML="🔍 " + eintrag.titel;
+           let markiert = eintrag.titel.replace(
+    new RegExp(suche, "gi"),
+    match => `<mark>${match}</mark>`
+);
 
+
+p.innerHTML="🔍 " + markiert;
 
 
             p.style.padding="8px";
