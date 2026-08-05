@@ -132,8 +132,8 @@ return bScore-aScore;
         box.id="suchErgebnisse";
 
 
-      box.style.position="absolute";
-box.style.top="55px";
+     box.style.position="absolute";
+box.style.top="60px";
 box.style.left="0";
 box.style.background="white";
 box.style.width="320px";
