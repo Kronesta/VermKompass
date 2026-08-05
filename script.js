@@ -90,15 +90,39 @@ if(searchInput && typeof suchIndex !== "undefined"){
 
 
 
-        let treffer = suchIndex.filter(eintrag =>
+       let treffer = suchIndex
+.filter(eintrag => {
+
+let titel = eintrag.titel.toLowerCase();
+let begriffe = eintrag.begriffe.toLowerCase();
 
 
-            eintrag.titel.toLowerCase().includes(suche) ||
+if(suche.length <= 2){
 
-            eintrag.begriffe.toLowerCase().includes(suche)
+return titel.includes(suche);
+
+}
 
 
-        );
+return titel.includes(suche) || begriffe.includes(suche);
+
+
+})
+.sort((a,b)=>{
+
+
+let aTitel = a.titel.toLowerCase();
+let bTitel = b.titel.toLowerCase();
+
+
+let aScore = aTitel.startsWith(suche) ? 2 : 0;
+let bScore = bTitel.startsWith(suche) ? 2 : 0;
+
+
+return bScore-aScore;
+
+
+});
 
 
 
