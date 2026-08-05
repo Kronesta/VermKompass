@@ -1,39 +1,632 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VermKompass | VermCAD Grundlagen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>🧭 VermKompass</h2>
+
+<p>Vermessungs-Wiki</p>
+
+</div>
+
+
+<ul>
+
+<li>
+<a href="index.html">
+🏠 Startseite
+</a>
+</li>
+
+
+<li>
+<a href="grundlagen.html">
+📚 Grundlagen
+</a>
+</li>
+
+
+<li>
+<a href="arbeitsablaeufe.html">
+📐 Arbeitsabläufe
+</a>
+</li>
+
+
+<li>
+<a href="programme.html" class="active">
+💻 Programme
+</a>
+</li>
+
+
+<li>
+<a href="checklisten.html">
+📋 Checklisten
+</a>
+</li>
+
+
+<li>
+<a href="glossar.html">
+📖 Glossar
+</a>
+</li>
+
+
+<li>
+<a href="favoriten.html">
+⭐ Favoriten
+</a>
+</li>
+
+
+<li>
+<a href="einstellungen.html">
+⚙ Einstellungen
+</a>
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="main">
+
+
+
+<header>
+
+
+<div>
+
+<h1>📚 VermCAD Grundlagen</h1>
+
+<p>
+Grundlagen und Programmaufbau von VermCAD
+</p>
+
+</div>
+
+
+
+<div class="topbar">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Suche nach Begriffen..."
+>
+
+
+<button id="darkMode">
+
+🌙
+
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+<section>
+
+
+
 <div class="chapter-nav">
+
 
 <a href="vermcad.html">
 📌 Übersicht
 </a>
 
-<a href="vermcad_grundlagen.html">
+
+<a href="vermcad_grundlagen.html" class="active">
 📚 Grundlagen
 </a>
+
 
 <a href="vermcad_oberflaeche.html">
 🖥 Oberfläche
 </a>
 
+
+<a href="vermcad_projektverwaltung.html">
+📂 Projekte
+</a>
+
+
 <a href="vermcad_daten.html">
 📥 Daten
 </a>
+
 
 <a href="vermcad_punkte.html">
 📍 Punkte
 </a>
 
+
 <a href="vermcad_transformation.html">
-🔄 Transformation
+🔄 Transformationen
 </a>
+
 
 <a href="vermcad_berechnung.html">
 🧮 Rechnen
 </a>
 
+
 <a href="vermcad_alkis.html">
 🗺 ALKIS
 </a>
+
 
 <a href="vermcad_optionen.html">
 ⚙ Optionen
 </a>
 
+
+<a href="vermcad_fehler.html">
+⚠ Fehler
+</a>
+
+
 </div>
+
+
+
+
+
+
+<h2>📚 Grundlagen & Programmaufbau</h2>
+
+
+
+
+
+
+<div class="info">
+
+
+<h3>VermCAD als Vermessungssoftware</h3>
+
+
+<p>
+
+VermCAD ist eine Software zur Bearbeitung,
+Berechnung und Auswertung von
+Vermessungsprojekten.
+
+Die Anwendung unterstützt verschiedene
+Arbeitsbereiche der Vermessung und ermöglicht
+die Verarbeitung von Projektdaten,
+Koordinaten und grafischen Informationen.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📌 Was ist VermCAD?
+</summary>
+
+
+
+<div class="article">
+
+
+<p>
+
+VermCAD wird zur Bearbeitung von
+Vermessungsprojekten eingesetzt.
+
+Die Software verbindet die Verwaltung von
+Vermessungsdaten mit Funktionen zur
+Berechnung, Darstellung und Auswertung.
+
+Dabei werden verschiedene Arbeitsschritte
+vom Datenimport bis zur fertigen Ausgabe
+unterstützt.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🎯 Einsatzbereiche von VermCAD
+</summary>
+
+
+
+<div class="article">
+
+
+<p>
+
+VermCAD wird in verschiedenen Bereichen
+der Vermessung eingesetzt.
+
+Dazu gehören unter anderem:
+
+<br><br>
+
+✔ Bearbeitung von Vermessungsprojekten
+
+<br>
+
+✔ Verwaltung und Kontrolle von Koordinaten
+
+<br>
+
+✔ Verarbeitung von Vermessungsdaten
+
+<br>
+
+✔ Durchführung von Berechnungen
+
+<br>
+
+✔ Erstellung von Ausgaben und Dokumentationen
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📂 Projektaufbau
+</summary>
+
+
+
+<div class="article">
+
+
+<p>
+
+Ein VermCAD-Projekt enthält alle notwendigen
+Daten für die Bearbeitung eines
+Vermessungsvorgangs.
+
+Dazu können beispielsweise gehören:
+
+<br><br>
+
+✔ Punktdaten
+
+<br>
+
+✔ Messdaten
+
+<br>
+
+✔ grafische Informationen
+
+<br>
+
+✔ Projekteinstellungen
+
+<br>
+
+✔ Ausgabedaten
+
+</p>
+
+
+<div class="screenshot">
+
+📷 Screenshot:
+Projektaufbau in VermCAD
+
+</div>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📄 MWT-Datei
+</summary>
+
+
+
+<div class="article">
+
+
+<p>
+
+Die MWT-Datei ist eine zentrale Datei
+innerhalb von VermCAD-Projekten.
+
+Sie enthält Informationen zur
+Projektumgebung und ermöglicht das
+Speichern und Wiederherstellen eines
+Arbeitsstandes.
+
+</p>
+
+
+
+<div class="screenshot">
+
+📷 Screenshot:
+MWT-Datei / Projekteinstellungen
+
+</div>
+
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🗃 Daten und Dateien
+</summary>
+
+
+
+<div class="article">
+
+
+<p>
+
+Bei der Arbeit mit VermCAD werden
+verschiedene Daten verarbeitet.
+
+Dazu gehören unter anderem:
+
+<br><br>
+
+✔ Vermessungsdaten
+
+<br>
+
+✔ Punktinformationen
+
+<br>
+
+✔ Koordinaten
+
+<br>
+
+✔ grafische Daten
+
+<br>
+
+✔ Austauschformate
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🧭 Grundlegende Arbeitsweise
+</summary>
+
+
+
+<div class="article">
+
+
+<p>
+
+Die Bearbeitung eines Vermessungsprojektes
+erfolgt typischerweise in mehreren Schritten:
+
+<br><br>
+
+1️⃣ Projekt anlegen oder öffnen
+
+<br>
+
+2️⃣ Daten übernehmen
+
+<br>
+
+3️⃣ Daten kontrollieren und bearbeiten
+
+<br>
+
+4️⃣ Berechnungen durchführen
+
+<br>
+
+5️⃣ Ergebnisse ausgeben oder dokumentieren
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<div class="tipp">
+
+
+<h3>💡 Praxistipp</h3>
+
+
+<p>
+
+Ein sauber aufgebautes Projekt und
+korrekte Einstellungen sind die Grundlage
+für eine zuverlässige Bearbeitung in VermCAD.
+
+Vor jeder Berechnung sollten Daten,
+Koordinatensysteme und Einstellungen
+kontrolliert werden.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<footer>
+
+<p>
+
+© 2026 VermKompass
+
+<br>
+
+Version 1.0
+
+</p>
+
+</footer>
+
+
+
+
+
+
+</section>
+
+
+</div>
+
+
+
+
+<script src="suchindex.js"></script>
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
