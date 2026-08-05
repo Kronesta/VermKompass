@@ -1,1 +1,616 @@
+<!DOCTYPE html>
+<html lang="de">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VermKompass | VermCAD Punkte & Koordinaten</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>🧭 VermKompass</h2>
+
+<p>Vermessungs-Wiki</p>
+
+</div>
+
+
+<ul>
+
+<li>
+<a href="index.html">
+🏠 Startseite
+</a>
+</li>
+
+
+<li>
+<a href="grundlagen.html">
+📚 Grundlagen
+</a>
+</li>
+
+
+<li>
+<a href="arbeitsablaeufe.html">
+📐 Arbeitsabläufe
+</a>
+</li>
+
+
+<li>
+<a href="programme.html" class="active">
+💻 Programme
+</a>
+</li>
+
+
+<li>
+<a href="checklisten.html">
+📋 Checklisten
+</a>
+</li>
+
+
+<li>
+<a href="glossar.html">
+📖 Glossar
+</a>
+</li>
+
+
+<li>
+<a href="favoriten.html">
+⭐ Favoriten
+</a>
+</li>
+
+
+<li>
+<a href="einstellungen.html">
+⚙ Einstellungen
+</a>
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="main">
+
+
+
+<header>
+
+
+<div>
+
+<h1>📍 VermCAD Punkte & Koordinaten</h1>
+
+<p>
+Verwaltung und Bearbeitung von Vermessungspunkten
+</p>
+
+</div>
+
+
+
+<div class="topbar">
+
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Suche nach Begriffen..."
+>
+
+
+<button id="darkMode">
+
+🌙
+
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+<section>
+
+
+
+<div class="chapter-nav">
+
+
+<a href="vermcad.html">
+📌 Übersicht
+</a>
+
+
+<a href="vermcad_grundlagen.html">
+📚 Grundlagen
+</a>
+
+
+<a href="vermcad_oberflaeche.html">
+🖥 Oberfläche
+</a>
+
+
+<a href="vermcad_projektverwaltung.html">
+📂 Projekte
+</a>
+
+
+<a href="vermcad_daten.html">
+📥 Daten
+</a>
+
+
+<a href="vermcad_punkte.html" class="active">
+📍 Punkte
+</a>
+
+
+<a href="vermcad_transformation.html">
+🔄 Transformationen
+</a>
+
+
+<a href="vermcad_berechnung.html">
+🧮 Rechnen
+</a>
+
+
+<a href="vermcad_alkis.html">
+🗺 ALKIS
+</a>
+
+
+<a href="vermcad_optionen.html">
+⚙ Optionen
+</a>
+
+
+<a href="vermcad_fehler.html">
+⚠ Fehler
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<h2>📍 Punkte & Koordinaten</h2>
+
+
+
+
+
+
+
+
+<div class="info">
+
+
+<h3>Bedeutung von Punkten in der Vermessung</h3>
+
+
+<p>
+
+Punkte bilden eine wichtige Grundlage
+innerhalb von Vermessungsprojekten.
+
+Sie beschreiben räumliche Positionen und
+werden für Berechnungen, Darstellungen
+und Kontrollen verwendet.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📌 Bedeutung von Punkten in VermCAD
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+In VermCAD werden Punkte verwendet, um
+Vermessungsdaten eindeutig zu beschreiben.
+
+Ein Punkt besteht aus verschiedenen
+Informationen, die für die weitere
+Bearbeitung benötigt werden.
+
+Dazu gehören beispielsweise:
+
+<br><br>
+
+✔ Punktnummer
+
+<br>
+
+✔ Koordinaten
+
+<br>
+
+✔ Höheninformationen
+
+<br>
+
+✔ Punktart
+
+<br>
+
+✔ weitere Eigenschaften
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📋 Punktinformationen
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Die Punktinformationen enthalten wichtige
+Angaben zu einem Vermessungspunkt.
+
+Sie ermöglichen die Kontrolle und
+Bearbeitung einzelner Punkte innerhalb
+eines Projektes.
+
+</p>
+
+
+<div class="screenshot">
+
+📷 Screenshot:
+Punktinformationen in VermCAD
+
+</div>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📐 Koordinaten und Bezugssysteme
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Koordinaten beschreiben die Lage eines
+Punktes innerhalb eines festgelegten
+Bezugssystems.
+
+Bei der Bearbeitung in VermCAD muss darauf
+geachtet werden, dass die verwendeten
+Koordinaten und Bezugssysteme korrekt sind.
+
+<br><br>
+
+Wichtige Begriffe:
+
+<br><br>
+
+✔ Lagekoordinaten
+
+<br>
+
+✔ Höhenbezug
+
+<br>
+
+✔ Koordinatensystem
+
+<br>
+
+✔ EPSG-Code
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🗂 Punktverwaltung
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Die Punktverwaltung ermöglicht die Kontrolle
+und Bearbeitung von Punkten innerhalb eines
+Projektes.
+
+Dabei können Punkte gesucht,
+kontrolliert und für weitere Arbeitsschritte
+verwendet werden.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🔍 Punktkontrolle
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Vor Berechnungen oder weiteren Bearbeitungen
+sollten Punkte kontrolliert werden.
+
+Dabei können folgende Punkte geprüft werden:
+
+<br><br>
+
+✔ richtige Punktnummer
+
+<br>
+
+✔ korrekte Koordinaten
+
+<br>
+
+✔ vollständige Informationen
+
+<br>
+
+✔ richtige Darstellung
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+⚠ Typische Fehler
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Bei der Arbeit mit Punkten können verschiedene
+Probleme auftreten:
+
+<br><br>
+
+✔ Punkt nicht vorhanden
+
+<br>
+
+✔ falsche Koordinaten
+
+<br>
+
+✔ falsches Bezugssystem
+
+<br>
+
+✔ Punkt wird nicht dargestellt
+
+<br>
+
+✔ falsche Punktzuordnung
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<div class="tipp">
+
+
+<h3>💡 Praxistipp</h3>
+
+
+<p>
+
+Bevor Berechnungen durchgeführt werden,
+sollten die verwendeten Punkte immer
+kontrolliert werden.
+
+Ein fehlerhafter Punkt kann sich auf
+alle folgenden Arbeitsschritte auswirken.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+
+© 2026 VermKompass
+
+<br>
+
+Version 1.0
+
+</p>
+
+
+</footer>
+
+
+
+</section>
+
+
+</div>
+
+
+
+
+<script src="suchindex.js"></script>
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
