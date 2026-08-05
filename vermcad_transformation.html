@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VermKompass | VermCAD Verkettungstransformation</title>
+<title>VermKompass | VermCAD Transformationen</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -32,14 +32,53 @@
 
 <ul>
 
-<li><a href="index.html">🏠 Startseite</a></li>
-<li><a href="grundlagen.html">📚 Grundlagen</a></li>
-<li><a href="arbeitsablaeufe.html">📐 Arbeitsabläufe</a></li>
-<li><a href="programme.html" class="active">💻 Programme</a></li>
-<li><a href="checklisten.html">📋 Checklisten</a></li>
-<li><a href="glossar.html">📖 Glossar</a></li>
-<li><a href="favoriten.html">⭐ Favoriten</a></li>
-<li><a href="einstellungen.html">⚙ Einstellungen</a></li>
+<li>
+<a href="index.html">
+🏠 Startseite
+</a>
+</li>
+
+<li>
+<a href="grundlagen.html">
+📚 Grundlagen
+</a>
+</li>
+
+<li>
+<a href="arbeitsablaeufe.html">
+📐 Arbeitsabläufe
+</a>
+</li>
+
+<li>
+<a href="programme.html" class="active">
+💻 Programme
+</a>
+</li>
+
+<li>
+<a href="checklisten.html">
+📋 Checklisten
+</a>
+</li>
+
+<li>
+<a href="glossar.html">
+📖 Glossar
+</a>
+</li>
+
+<li>
+<a href="favoriten.html">
+⭐ Favoriten
+</a>
+</li>
+
+<li>
+<a href="einstellungen.html">
+⚙ Einstellungen
+</a>
+</li>
 
 </ul>
 
@@ -50,20 +89,24 @@
 
 
 
+
+
 <div class="main">
 
 
 <header>
 
+
 <div>
 
-<h1>🔄 Verkettungstransformation</h1>
+<h1>🔄 VermCAD Transformationen</h1>
 
 <p>
-Transformation von Vermessungsdaten in ein passendes Bezugssystem
+Umrechnung und Anpassung von Koordinaten
 </p>
 
 </div>
+
 
 
 <div class="topbar">
@@ -81,9 +124,14 @@ placeholder="🔍 Suche nach Begriffen..."
 
 </button>
 
+
 </div>
 
+
 </header>
+
+
+
 
 
 
@@ -93,24 +141,99 @@ placeholder="🔍 Suche nach Begriffen..."
 <section>
 
 
-<h2>📌 Zweck der Funktion</h2>
+
+<div class="chapter-nav">
+
+
+<a href="vermcad.html">
+📌 Übersicht
+</a>
+
+
+<a href="vermcad_grundlagen.html">
+📚 Grundlagen
+</a>
+
+
+<a href="vermcad_oberflaeche.html">
+🖥 Oberfläche
+</a>
+
+
+<a href="vermcad_projektverwaltung.html">
+📂 Projekte
+</a>
+
+
+<a href="vermcad_daten.html">
+📥 Daten
+</a>
+
+
+<a href="vermcad_punkte.html">
+📍 Punkte
+</a>
+
+
+<a href="vermcad_transformation.html" class="active">
+🔄 Transformationen
+</a>
+
+
+<a href="vermcad_berechnung.html">
+🧮 Rechnen
+</a>
+
+
+<a href="vermcad_alkis.html">
+🗺 ALKIS
+</a>
+
+
+<a href="vermcad_optionen.html">
+⚙ Optionen
+</a>
+
+
+<a href="vermcad_fehler.html">
+⚠ Fehler
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<h2>🔄 Transformationen</h2>
+
+
+
+
+
 
 
 <div class="info">
 
-<h3>Was ist eine Verkettungstransformation?</h3>
+
+<h3>Koordinaten zwischen Bezugssystemen umrechnen</h3>
+
 
 <p>
 
-Eine Verkettungstransformation dient dazu,
-Vermessungsdaten von einem Koordinatensystem
-in ein anderes Bezugssystem zu überführen.
+Transformationen werden verwendet, um
+Koordinaten von einem Bezugssystem in ein
+anderes Bezugssystem zu überführen.
 
-Dabei werden vorhandene Transformations-
-parameter und Passpunkte verwendet, um die
-Daten an das gewünschte System anzupassen.
+Sie sind notwendig, wenn Vermessungsdaten
+aus unterschiedlichen Grundlagen gemeinsam
+bearbeitet werden sollen.
 
 </p>
+
 
 </div>
 
@@ -120,80 +243,165 @@ Daten an das gewünschte System anzupassen.
 
 
 
+
+
+<details>
+
+
+<summary>
+📌 Was ist eine Transformation?
+</summary>
+
+
 <div class="article">
 
-<h3>🧭 Grundlagen</h3>
 
 <p>
 
-Vor der Transformation müssen die Grundlagen
-geprüft werden.
+Eine Transformation beschreibt die
+Umrechnung von Koordinaten zwischen
+verschiedenen Koordinatensystemen oder
+Bezugssystemen.
 
-Dazu gehören:
+Dabei werden mathematische Beziehungen
+verwendet, um Punkte in ein anderes System
+zu überführen.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🎯 Warum werden Transformationen benötigt?
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+In der Vermessung können Daten aus
+unterschiedlichen Zeiträumen oder Quellen
+vorliegen.
+
+Beispielsweise können ältere Daten in einem
+anderen Bezugssystem vorliegen als aktuelle
+Vermessungsdaten.
+
+Damit diese Daten gemeinsam genutzt werden
+können, ist eine Transformation erforderlich.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📐 Ausgangs- und Zielsystem
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Bei jeder Transformation müssen zwei Systeme
+betrachtet werden:
 
 <br><br>
 
-✔ Ausgangskoordinatensystem
+<b>Ausgangssystem:</b>
 
 <br>
 
-✔ Zielkoordinatensystem
-
-<br>
-
-✔ Lagestatus
-
-<br>
-
-✔ vorhandene Passpunkte
-
-</p>
-
-</div>
-
-
-
-
-
-
-
-<h2>🖱 Schritt-für-Schritt Anleitung</h2>
-
-
-
-
-
-
-
-<div class="article">
-
-<h3>1️⃣ Ausgangsdaten prüfen</h3>
-
-<p>
-
-Vor Beginn der Transformation müssen die
-vorhandenen Daten kontrolliert werden.
-
-Wichtig sind:
+System, aus dem die Koordinaten stammen.
 
 <br><br>
 
-✔ richtige Punkte
+<b>Zielsystem:</b>
 
 <br>
 
-✔ bekannte Koordinaten
+System, in das die Koordinaten übertragen
+werden.
 
-<br>
+</p>
 
-✔ passender Lagestatus
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📍 Passpunkte
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Passpunkte sind identische Punkte, deren
+Koordinaten in beiden Systemen bekannt sind.
+
+Sie bilden die Grundlage für die Bestimmung
+einer Transformation.
+
+Eine sorgfältige Auswahl und Kontrolle der
+Passpunkte ist entscheidend für ein gutes
+Ergebnis.
 
 </p>
 
 
 <div class="screenshot">
 
-📷 Screenshot: Ausgangsdaten / Lagestatus
+📷 Screenshot:
+Passpunkte in VermCAD
 
 </div>
 
@@ -201,31 +409,81 @@ Wichtig sind:
 </div>
 
 
+</details>
 
 
 
 
+
+
+
+
+
+<details>
+
+
+<summary>
+🔄 Systemtransformation
+</summary>
 
 
 <div class="article">
 
-<h3>2️⃣ Transformationsfunktion öffnen</h3>
 
 <p>
 
-Die entsprechende Funktion zur
-Verkettungstransformation wird in VermCAD
-aufgerufen.
+Bei einer Systemtransformation werden
+Koordinaten von einem Bezugssystem in ein
+anderes Bezugssystem überführt.
 
-Anschließend werden die benötigten Angaben
-für die Transformation ausgewählt.
+Dabei müssen die verwendeten Systeme und
+Parameter korrekt gewählt werden.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🔗 Verkettete Transformation
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Eine verkettete Transformation beschreibt
+eine Transformation, bei der mehrere
+Transformationsschritte miteinander
+verbunden werden.
+
+Dadurch können Koordinaten über mehrere
+Bezugssysteme oder Grundlagen hinweg
+überführt werden.
 
 </p>
 
 
 <div class="screenshot">
 
-📷 Screenshot: Transformationsdialog
+📷 Screenshot:
+Verkettete Transformation in VermCAD
 
 </div>
 
@@ -233,107 +491,57 @@ für die Transformation ausgewählt.
 </div>
 
 
+</details>
 
 
 
 
+
+
+
+
+
+<details>
+
+
+<summary>
+📊 Kontrolle und Ergebnisse
+</summary>
 
 
 <div class="article">
 
-<h3>3️⃣ Passpunkte auswählen und prüfen</h3>
 
 <p>
 
-Passpunkte bilden die Grundlage für eine
-Transformation.
+Nach einer Transformation müssen die
+Ergebnisse kontrolliert werden.
 
-Vor der Berechnung müssen die verwendeten
-Punkte kontrolliert werden.
-
-</p>
-
-
-<div class="screenshot">
-
-📷 Screenshot: Passpunkte
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="article">
-
-<h3>4️⃣ Transformation durchführen</h3>
-
-<p>
-
-Nach Kontrolle aller Eingaben wird die
-Transformation berechnet.
-
-Das Ergebnis muss anschließend geprüft werden.
-
-</p>
-
-
-<div class="screenshot">
-
-📷 Screenshot: Transformation starten
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="article">
-
-<h3>5️⃣ Ergebnis kontrollieren</h3>
-
-<p>
-
-Nach erfolgreicher Transformation werden die
-erzeugten Ergebnisse geprüft.
-
-Kontrolle:
+Dabei werden unter anderem geprüft:
 
 <br><br>
 
-✔ stimmen die Koordinaten?
+✔ verwendete Passpunkte
 
 <br>
 
-✔ sind die Abweichungen plausibel?
+✔ Abweichungen
 
 <br>
 
-✔ wurde das richtige Bezugssystem verwendet?
+✔ Ergebnisqualität
+
+<br>
+
+✔ Lage der transformierten Punkte
 
 </p>
 
 
-<div class="screenshot">
-
-📷 Screenshot: Ergebnis / Kontrolle
-
 </div>
 
 
-</div>
+</details>
 
 
 
@@ -342,33 +550,51 @@ Kontrolle:
 
 
 
-<div class="warnung">
 
-<h3>⚠ Häufige Fehler</h3>
+<details>
+
+
+<summary>
+⚠ Typische Fehler
+</summary>
+
+
+<div class="article">
+
 
 <p>
 
-Typische Probleme:
+Bei Transformationen können verschiedene
+Probleme auftreten:
 
 <br><br>
 
-❌ Keine Passpunkte vorhanden
+✔ keine Passpunkte vorhanden
 
 <br>
 
-❌ Transformation nicht möglich
+✔ falsches Ausgangssystem
 
 <br>
 
-❌ falscher Lagestatus eingestellt
+✔ falsches Zielsystem
 
 <br>
 
-❌ ungeeignete Ausgangsdaten
+✔ fehlerhafte Punktzuordnung
+
+<br>
+
+✔ Punkte liegen nach Transformation falsch
 
 </p>
 
+
 </div>
+
+
+</details>
+
 
 
 
@@ -379,24 +605,32 @@ Typische Probleme:
 
 <div class="tipp">
 
-<h3>💡 Praxis-Tipp</h3>
+
+<h3>💡 Praxistipp</h3>
+
 
 <p>
 
-Vor einer Transformation immer zuerst prüfen,
-welches Koordinatensystem vorliegt und welches
-System benötigt wird.
+Vor jeder Transformation sollten zuerst die
+Grundlagen geprüft werden:
 
-Viele Fehler entstehen durch falsche
-Ausgangsdaten oder fehlende Passpunkte.
+<br><br>
+
+✔ Sind die richtigen Punkte vorhanden?
+
+<br>
+
+✔ Stimmen die Koordinatensysteme?
+
+<br>
+
+✔ Sind Ausgangs- und Zielsystem korrekt?
 
 </p>
 
+
 </div>
 
-
-
-</section>
 
 
 
@@ -420,9 +654,17 @@ Version 1.0
 
 
 
+
+</section>
+
+
 </div>
 
+
+
+
 <script src="suchindex.js"></script>
+
 <script src="script.js"></script>
 
 
