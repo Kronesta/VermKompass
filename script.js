@@ -8,7 +8,7 @@
 // ----------------------------
 // Dark Mode
 // ----------------------------
-
+alert("VermKompass Script läuft");
 const darkButton = document.getElementById("darkMode");
 
 
