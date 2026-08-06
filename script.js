@@ -101,20 +101,21 @@ if(searchInput && typeof suchIndex !== "undefined"){
 
 
 
-        let box=document.createElement("div");
+       let box=document.createElement("div");
 
 
-        box.id="suchErgebnisse";
+box.id="suchErgebnisse";
 
 
-        box.style.position="absolute";
-        box.style.background="white";
-        box.style.width="320px";
-        box.style.padding="10px";
-        box.style.borderRadius="10px";
-        box.style.boxShadow="0 10px 20px rgba(0,0,0,.15)";
-        box.style.zIndex="999";
-
+box.style.position="absolute";
+box.style.top="45px";
+box.style.left="0";
+box.style.background="white";
+box.style.width="320px";
+box.style.padding="10px";
+box.style.borderRadius="10px";
+box.style.boxShadow="0 10px 20px rgba(0,0,0,.15)";
+box.style.zIndex="999";
 
 
 
