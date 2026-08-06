@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VermKompass | VermCAD Daten & Dateiformate</title>
+<title>VermKompass | VermCAD Datenimport</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -32,58 +32,27 @@
 
 <ul>
 
-<li>
-<a href="index.html">
-🏠 Startseite
-</a>
-</li>
+<li><a href="index.html">🏠 Startseite</a></li>
 
-<li>
-<a href="grundlagen.html">
-📚 Grundlagen
-</a>
-</li>
+<li><a href="grundlagen.html">📚 Grundlagen</a></li>
 
-<li>
-<a href="arbeitsablaeufe.html">
-📐 Arbeitsabläufe
-</a>
-</li>
+<li><a href="arbeitsablaeufe.html">📐 Arbeitsabläufe</a></li>
 
-<li>
-<a href="programme.html" class="active">
-💻 Programme
-</a>
-</li>
+<li><a href="programme.html" class="active">💻 Programme</a></li>
 
-<li>
-<a href="checklisten.html">
-📋 Checklisten
-</a>
-</li>
+<li><a href="checklisten.html">📋 Checklisten</a></li>
 
-<li>
-<a href="glossar.html">
-📖 Glossar
-</a>
-</li>
+<li><a href="glossar.html">📖 Glossar</a></li>
 
-<li>
-<a href="favoriten.html">
-⭐ Favoriten
-</a>
-</li>
+<li><a href="favoriten.html">⭐ Favoriten</a></li>
 
-<li>
-<a href="einstellungen.html">
-⚙ Einstellungen
-</a>
-</li>
+<li><a href="einstellungen.html">⚙ Einstellungen</a></li>
 
 </ul>
 
 
 </div>
+
 
 
 
@@ -98,14 +67,13 @@
 
 <div>
 
-<h1>📥 VermCAD Daten & Dateiformate</h1>
+<h1>📥 VermCAD Datenimport</h1>
 
 <p>
-Verwaltung, Import und Kontrolle von Vermessungsdaten
+Übernahme, Kontrolle und Verwaltung von Vermessungsdaten
 </p>
 
 </div>
-
 
 
 <div class="topbar">
@@ -118,9 +86,7 @@ placeholder="🔍 Suche nach Begriffen..."
 
 
 <button id="darkMode">
-
 🌙
-
 </button>
 
 
@@ -128,6 +94,8 @@ placeholder="🔍 Suche nach Begriffen..."
 
 
 </header>
+
+
 
 
 
@@ -205,8 +173,9 @@ placeholder="🔍 Suche nach Begriffen..."
 
 
 
+<h2>📥 Datenimport & Datenverwaltung</h2>
 
-<h2>📥 Daten & Dateiformate</h2>
+
 
 
 
@@ -216,19 +185,17 @@ placeholder="🔍 Suche nach Begriffen..."
 <div class="info">
 
 
-<h3>Grundlage für die Bearbeitung</h3>
+<h3>Grundlage für die weitere Bearbeitung</h3>
 
 
 <p>
 
-VermCAD verarbeitet verschiedene Daten,
-die für die Darstellung, Berechnung und
-Dokumentation von Vermessungsprojekten
-benötigt werden.
+Die Qualität eines Vermessungsprojektes hängt
+stark von den verwendeten Ausgangsdaten ab.
 
-Eine kontrollierte Datenverwaltung ist eine
-wichtige Voraussetzung für eine fehlerfreie
-Bearbeitung.
+Vor der Bearbeitung müssen Daten geprüft,
+korrekt übernommen und anschließend
+kontrolliert werden.
 
 </p>
 
@@ -243,11 +210,11 @@ Bearbeitung.
 
 
 
-<details>
+<details open>
 
 
 <summary>
-📂 Datenverwaltung in VermCAD
+📌 Welche Daten werden in VermCAD verarbeitet?
 </summary>
 
 
@@ -256,23 +223,22 @@ Bearbeitung.
 
 <p>
 
-Die Datenverwaltung umfasst die Organisation,
-Kontrolle und Bearbeitung der innerhalb eines
-Projektes verwendeten Daten.
+In VermCAD können verschiedene Arten von
+Vermessungsdaten verarbeitet werden.
 
 Dazu gehören beispielsweise:
 
 <br><br>
 
-✔ Vermessungsdaten
-
-<br>
-
-✔ Punktinformationen
+✔ Punktdaten
 
 <br>
 
 ✔ Koordinaten
+
+<br>
+
+✔ Messdaten
 
 <br>
 
@@ -281,6 +247,10 @@ Dazu gehören beispielsweise:
 <br>
 
 ✔ Projektdaten
+
+<br>
+
+✔ weitere Fachdaten
 
 </p>
 
@@ -302,39 +272,122 @@ Dazu gehören beispielsweise:
 
 
 <summary>
-📥 Datenimport
+🪜 Vorbereitung vor dem Import
 </summary>
 
 
 <div class="article">
 
 
+<h3>Vor dem Import prüfen</h3>
+
+
 <p>
 
-Durch den Import werden externe Daten in ein
-VermCAD-Projekt übernommen.
-
-Vor der Übernahme sollten die Daten geprüft
-werden, damit sie korrekt verarbeitet werden
-können.
-
-Wichtige Punkte:
+Bevor Daten übernommen werden, sollten
+folgende Punkte kontrolliert werden:
 
 <br><br>
 
-✔ Herkunft der Daten prüfen
+✔ Welche Daten werden benötigt?
 
 <br>
 
-✔ Datenstruktur kontrollieren
+✔ Woher stammen die Daten?
 
 <br>
 
-✔ Koordinatensystem beachten
+✔ Welches Koordinatensystem wird verwendet?
 
 <br>
 
-✔ Vollständigkeit prüfen
+✔ Sind die Daten vollständig?
+
+<br>
+
+✔ Gibt es bereits vorhandene Daten im Projekt?
+
+</p>
+
+
+<br>
+
+
+<h3>Ziel der Prüfung</h3>
+
+
+<p>
+
+Fehlerhafte oder unvollständige Daten können
+später zu falschen Berechnungen oder falschen
+Darstellungen führen.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📂 Datenübernahme in VermCAD
+</summary>
+
+
+<div class="article">
+
+
+<h3>Grundprinzip</h3>
+
+
+<p>
+
+Beim Import werden externe Daten in ein
+bestehendes Projekt übernommen.
+
+Dabei müssen die Daten richtig zugeordnet
+und die Einstellungen kontrolliert werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Wichtige Punkte während des Imports</h3>
+
+
+<p>
+
+Kontrollieren:
+
+<br><br>
+
+✔ richtige Datei ausgewählt
+
+<br>
+
+✔ richtiges Format verwendet
+
+<br>
+
+✔ richtige Zuordnung der Daten
+
+<br>
+
+✔ richtige Projekteinstellung
 
 </p>
 
@@ -351,48 +404,58 @@ Datenimport in VermCAD
 
 
 </details>
-
-
-
-
-
-
-
-
-
 <details>
 
 
 <summary>
-🔍 Datenkontrolle
+⚙ Koordinatensystem und Einstellungen prüfen
 </summary>
 
 
 <div class="article">
 
 
+<h3>Warum ist das wichtig?</h3>
+
+
 <p>
 
-Nach der Übernahme von Daten sollte eine
-Kontrolle durchgeführt werden.
+Vor allem bei Koordinatendaten ist es wichtig,
+dass die verwendeten Einstellungen mit den
+Daten übereinstimmen.
 
-Dabei werden unter anderem geprüft:
+Ein falsches Bezugssystem kann dazu führen,
+dass Punkte an einer falschen Stelle dargestellt
+werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrolle vor der Übernahme</h3>
+
+
+<p>
+
+Prüfen:
 
 <br><br>
 
-✔ Sind alle benötigten Daten vorhanden?
+✔ Welches Koordinatensystem besitzen die Daten?
 
 <br>
 
-✔ Werden Punkte richtig dargestellt?
+✔ Passt es zum Projekt?
 
 <br>
 
-✔ Stimmen Koordinaten und Bezugssystem?
+✔ Ist der richtige Lagestatus eingestellt?
 
 <br>
 
-✔ Gibt es Fehler oder Unstimmigkeiten?
+✔ Sind Einheiten und Werte plausibel?
 
 </p>
 
@@ -410,151 +473,315 @@ Dabei werden unter anderem geprüft:
 
 
 
-<details>
+<details open>
 
 
 <summary>
-📍 Punkt- und Messdaten
+🔍 Kontrolle nach dem Import
 </summary>
 
 
 <div class="article">
 
 
+<h3>Der Import ist erst nach der Prüfung abgeschlossen</h3>
+
+
 <p>
 
-Punktdaten bilden eine wichtige Grundlage
-vieler Vermessungsarbeiten.
+Nach der Übernahme müssen die Daten kontrolliert
+werden.
 
-Sie enthalten Informationen über die Lage
-von Punkten und werden für Berechnungen,
-Darstellungen und Kontrollen verwendet.
+Nicht nur prüfen, ob der Import ohne Fehlermeldung
+durchgelaufen ist, sondern ob die Daten fachlich
+richtig übernommen wurden.
 
 </p>
 
 
-</div>
+<br>
 
 
-</details>
-
-
-
-
-
-
-
-
-
-<details>
-
-
-<summary>
-🔄 Austauschformate
-</summary>
-
-
-<div class="article">
+<h3>1. Vollständigkeit prüfen</h3>
 
 
 <p>
 
-Für den Austausch von Vermessungsdaten werden
-verschiedene Datenformate verwendet.
-
-Die Auswahl des richtigen Formats ist wichtig,
-damit Daten vollständig und korrekt übertragen
-werden können.
-
-</p>
-
-
-</div>
-
-
-</details>
-
-
-
-
-
-
-
-
-
-<details>
-
-
-<summary>
-📤 Datenexport
-</summary>
-
-
-<div class="article">
-
-
-<p>
-
-Beim Export werden bearbeitete Daten aus
-VermCAD für andere Anwendungen oder weitere
-Arbeitsschritte bereitgestellt.
-
-Vor dem Export sollten Inhalt und Struktur
-der Daten kontrolliert werden.
-
-</p>
-
-
-</div>
-
-
-</details>
-
-
-
-
-
-
-
-
-
-<details>
-
-
-<summary>
-⚠ Typische Datenfehler
-</summary>
-
-
-<div class="article">
-
-
-<p>
-
-Bei der Arbeit mit Daten können verschiedene
-Probleme auftreten:
+Kontrollieren:
 
 <br><br>
 
-✔ Daten werden nicht angezeigt
+✔ Sind alle erwarteten Punkte vorhanden?
 
 <br>
+
+✔ Fehlen Daten?
+
+<br>
+
+✔ Wurde die komplette Datei übernommen?
+
+</p>
+
+
+<br>
+
+
+<h3>2. Lage prüfen</h3>
+
+
+<p>
+
+Im Kartenfenster kontrollieren:
+
+<br><br>
+
+✔ Liegen die Punkte dort, wo sie erwartet werden?
+
+<br>
+
+✔ Passt die Lage zu vorhandenen Daten?
+
+<br>
+
+✔ Gibt es auffällige Verschiebungen?
+
+</p>
+
+
+<br>
+
+
+<h3>3. Inhalt prüfen</h3>
+
+
+<p>
+
+Zusätzlich prüfen:
+
+<br><br>
+
+✔ Stimmen Punktnummern?
+
+<br>
+
+✔ Sind Höhen vorhanden?
+
+<br>
+
+✔ Sind Attribute richtig übernommen?
+
+</p>
+
+
+<div class="screenshot">
+
+📷 Screenshot:
+Kontrolle importierter Daten in VermCAD
+
+</div>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📍 Punktkontrolle nach Datenübernahme
+</summary>
+
+
+<div class="article">
+
+
+<h3>Warum Punkte kontrollieren?</h3>
+
+
+<p>
+
+Punkte bilden die Grundlage für weitere
+Berechnungen und Auswertungen.
+
+Fehlerhafte Punktdaten können sich auf alle
+folgenden Arbeitsschritte auswirken.
+
+</p>
+
+
+<br>
+
+
+<h3>Prüfschritte</h3>
+
+
+<p>
+
+Kontrollieren:
+
+<br><br>
+
+✔ Punktnummern vergleichen
+
+<br>
+
+✔ Koordinaten prüfen
+
+<br>
+
+✔ Punktlage kontrollieren
+
+<br>
+
+✔ vorhandene Daten vergleichen
+
+<br>
+
+✔ auffällige Punkte untersuchen
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+⚠ Fehleranalyse beim Datenimport
+</summary>
+
+
+<div class="article">
+
+
+<table>
+
+
+<tr>
+
+<th>Problem</th>
+
+<th>Mögliche Ursache</th>
+
+</tr>
+
+
+<tr>
+
+<td>
+Punkte fehlen nach Import
+</td>
+
+<td>
+
+✔ falsche Datei
+
+<br>
+
+✔ Importfilter
+
+<br>
+
+✔ unvollständige Daten
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Punkte liegen falsch
+</td>
+
+<td>
 
 ✔ falsches Koordinatensystem
 
 <br>
 
-✔ unvollständige Datenübernahme
+✔ falscher Lagestatus
 
 <br>
 
-✔ fehlerhafte Punktinformationen
+✔ fehlerhafte Transformation
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Daten werden nicht dargestellt
+</td>
+
+<td>
+
+✔ falscher Ausschnitt
 
 <br>
 
-✔ falsche Projektgrundlage
+✔ Darstellung deaktiviert
 
-</p>
+<br>
+
+✔ Daten nicht übernommen
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Koordinaten wirken unplausibel
+</td>
+
+<td>
+
+✔ falsche Einheit
+
+<br>
+
+✔ falscher Bezug
+
+<br>
+
+✔ fehlerhafte Eingabedaten
+
+</td>
+
+</tr>
+
+
+</table>
 
 
 </div>
@@ -578,11 +805,15 @@ Probleme auftreten:
 
 <p>
 
-Vor jeder weiteren Bearbeitung sollten die
-importierten Daten kontrolliert werden.
+Ein erfolgreicher Import bedeutet nicht
+automatisch, dass die Daten richtig sind.
 
-Viele spätere Fehler entstehen durch falsche
-oder unvollständige Ausgangsdaten.
+Die wichtigste Kontrolle ist der Vergleich:
+
+<br><br>
+
+➡ Stimmen die importierten Daten mit der
+erwarteten Situation überein?
 
 </p>
 
@@ -608,8 +839,8 @@ Version 1.0
 
 </p>
 
-</footer>
 
+</footer>
 
 
 </section>
@@ -619,11 +850,9 @@ Version 1.0
 
 
 
-
 <script src="suchindex.js"></script>
 
 <script src="script.js"></script>
-
 
 
 </body>
