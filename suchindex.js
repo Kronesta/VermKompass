@@ -117,3 +117,135 @@ seite:"vermcad_transformation.html",
 begriffe:"Verkettung Transformation Passpunkte Lagestatus MWT Ausgangssystem Zielsystem Koordinaten"
 }
 ];
+const suchIndex = [
+
+{
+titel:"VermCAD Grundlagen",
+seite:"vermcad_grundlagen.html",
+begriffe:
+"VermCAD Grundlagen Software Vermessung Projekt Arbeitsablauf Punkt Koordinate Bezugssystem Transformation"
+},
+
+{
+titel:"VermCAD Oberfläche",
+seite:"vermcad_oberflaeche.html",
+begriffe:
+"Oberfläche Menüleiste Symbolleisten Kartenfenster Projektbereich Eigenschaften Statusleiste Fenster"
+},
+
+{
+titel:"VermCAD Projektverwaltung",
+seite:"vermcad_projektverwaltung.html",
+begriffe:
+"Projekt anlegen Projekteinstellungen Projektstruktur Speicherort Sicherung Projektverwaltung"
+},
+
+{
+titel:"VermCAD Datenimport",
+seite:"vermcad_daten.html",
+begriffe:
+"Daten Import Datenimport Datei Punktdaten Messdaten Koordinaten Format Übergabe"
+},
+
+{
+titel:"VermCAD Punkte",
+seite:"vermcad_punkte.html",
+begriffe:
+"Punkte Punkt Punktnummer Koordinaten Rechtswert Hochwert Höhe Grenzpunkt Gebäudepunkt Festpunkt Aufnahmepunkt"
+},
+
+{
+titel:"VermCAD Berechnungen",
+seite:"vermcad_berechnung.html",
+begriffe:
+"Berechnung Auswertung Polarberechnung Orthogonalaufnahme Schnitt Flächenberechnung Koordinatenberechnung"
+},
+
+{
+titel:"VermCAD Transformation",
+seite:"vermcad_transformation.html",
+begriffe:
+"Transformation Koordinatensystem Bezugssystem EPSG Lagestatus Passpunkte Restklaffen Ausgangssystem Zielsystem"
+},
+
+{
+titel:"Verkettete Transformation",
+seite:"vermcad_transformation.html",
+begriffe:
+"verkettete Transformation Zwischensystem mehrere Transformationen historische Daten lokale Systeme"
+},
+
+{
+titel:"VermCAD Export",
+seite:"vermcad_export.html",
+begriffe:
+"Export Ausgabe Datenübergabe Datei Koordinatenliste Austauschformat Dokumentation"
+},
+
+{
+titel:"VermCAD ALKIS",
+seite:"vermcad_alkis.html",
+begriffe:
+"ALKIS Liegenschaftskataster Flurstück Grenze Gebäude Nutzung Katasterdaten"
+},
+
+{
+titel:"VermCAD Optionen",
+seite:"vermcad_optionen.html",
+begriffe:
+"Optionen Einstellungen Darstellung Koordinaten Arbeitsumgebung Speicher Einstellungen"
+},
+
+{
+titel:"VermCAD Fehlerdatenbank",
+seite:"vermcad_fehler.html",
+begriffe:
+"Fehler Fehlermeldung Problem Lösung Ursache Passpunkte nicht möglich Punkte nicht sichtbar"
+},
+
+
+
+{
+titel:"Keine Passpunkte vorhanden",
+seite:"vermcad_fehler.html",
+begriffe:
+"Keine Passpunkte Transformation nicht möglich Passpunkte fehlen"
+},
+
+{
+titel:"Punkte werden nicht angezeigt",
+seite:"vermcad_fehler.html",
+begriffe:
+"Punkte sichtbar Anzeige Kartenfenster Ausschnitt Zoom Darstellung"
+},
+
+{
+titel:"Punkte liegen falsch",
+seite:"vermcad_fehler.html",
+begriffe:
+"Punkte falsch weit entfernt Koordinaten falsch Lagestatus EPSG"
+},
+
+{
+titel:"Datenimport Fehler",
+seite:"vermcad_fehler.html",
+begriffe:
+"Import Fehler Daten fehlen falsche Datei falsches Format"
+},
+
+
+{
+titel:"Grenzpunkte",
+seite:"vermcad_punkte.html",
+begriffe:
+"Grenzpunkt Grenze Flurstück Kataster Punkt"
+},
+
+{
+titel:"Koordinatensysteme",
+seite:"grundlagen.html",
+begriffe:
+"UTM Gauß-Krüger ETRS89 EPSG Koordinatensystem Lagebezug Höhenbezug"
+}
+
+];
