@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VermKompass | VermCAD Punkte</title>
+<title>VermKompass | VermCAD Punkte & Koordinaten</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -62,12 +62,13 @@
 
 <header>
 
+
 <div>
 
-<h1>📍 VermCAD Punkt- und Koordinatenbearbeitung</h1>
+<h1>📍 VermCAD Punkte & Koordinaten</h1>
 
 <p>
-Punkte verwalten, prüfen und bearbeiten
+Verwaltung, Kontrolle und Bearbeitung von Vermessungspunkten
 </p>
 
 </div>
@@ -83,13 +84,12 @@ placeholder="🔍 Suche nach Begriffen..."
 
 
 <button id="darkMode">
-
 🌙
-
 </button>
 
 
 </div>
+
 
 </header>
 
@@ -102,24 +102,52 @@ placeholder="🔍 Suche nach Begriffen..."
 <section>
 
 
-<h2>📌 Zweck der Funktion</h2>
 
+<div class="chapter-nav">
 
+<a href="vermcad.html">
+📌 Übersicht
+</a>
 
-<div class="info">
+<a href="vermcad_grundlagen.html">
+📚 Grundlagen
+</a>
 
-<h3>Punktbearbeitung in VermCAD</h3>
+<a href="vermcad_oberflaeche.html">
+🖥 Oberfläche
+</a>
 
-<p>
+<a href="vermcad_projektverwaltung.html">
+📂 Projekte
+</a>
 
-Punkte bilden eine wichtige Grundlage für
-Vermessungsprojekte.
+<a href="vermcad_daten.html">
+📥 Daten
+</a>
 
-In VermCAD können Punktinformationen
-angezeigt, kontrolliert und für weitere
-Bearbeitungsschritte verwendet werden.
+<a href="vermcad_punkte.html" class="active">
+📍 Punkte
+</a>
 
-</p>
+<a href="vermcad_transformation.html">
+🔄 Transformationen
+</a>
+
+<a href="vermcad_berechnung.html">
+🧮 Rechnen
+</a>
+
+<a href="vermcad_alkis.html">
+🗺 ALKIS
+</a>
+
+<a href="vermcad_optionen.html">
+⚙ Optionen
+</a>
+
+<a href="vermcad_fehler.html">
+⚠ Fehler
+</a>
 
 </div>
 
@@ -129,26 +157,58 @@ Bearbeitungsschritte verwendet werden.
 
 
 
-<h2>🖱 Schritt-für-Schritt Anleitung</h2>
+
+<h2>📍 Punkte & Koordinaten</h2>
 
 
 
 
+
+<div class="info">
+
+
+<h3>Punkte als Grundlage der Vermessung</h3>
+
+
+<p>
+
+Punkte bilden eine der wichtigsten Grundlagen
+in Vermessungsprojekten.
+
+Sie beschreiben eindeutige Positionen und
+werden für Berechnungen, Darstellungen und
+Kontrollen verwendet.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📌 Bedeutung von Punkten in VermCAD
+</summary>
 
 
 <div class="article">
 
-<h3>1️⃣ Punktinformationen öffnen</h3>
 
 <p>
 
-Zuerst wird der gewünschte Punkt im Projekt
-ausgewählt.
+Ein Vermessungspunkt besteht aus mehreren
+Informationen, die seine eindeutige Beschreibung
+ermöglichen.
 
-Anschließend können die vorhandenen
-Informationen kontrolliert werden.
-
-Dazu gehören beispielsweise:
+Dazu gehören:
 
 <br><br>
 
@@ -160,18 +220,137 @@ Dazu gehören beispielsweise:
 
 <br>
 
+✔ Höhe
+
+<br>
+
 ✔ Punktart
 
 <br>
 
-✔ weitere Punktinformationen
+✔ weitere Attribute
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📍 Punktarten
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+In Vermessungsprojekten können verschiedene
+Punktarten vorkommen.
+
+Beispiele:
+
+<br><br>
+
+✔ Grenzpunkte
+
+<br>
+
+✔ Gebäudepunkte
+
+<br>
+
+✔ Aufnahmepunkte
+
+<br>
+
+✔ Festpunkte
+
+<br>
+
+✔ Berechnungspunkte
+
+<br><br>
+
+Die Punktart liefert wichtige Informationen
+über die Bedeutung und Verwendung eines
+Punktes.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📋 Punktinformationen
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Die Punktinformationen enthalten alle wichtigen
+Angaben zu einem Punkt.
+
+Kontrolliert werden können beispielsweise:
+
+<br><br>
+
+✔ Punktnummer
+
+<br>
+
+✔ Lagekoordinaten
+
+<br>
+
+✔ Höheninformationen
+
+<br>
+
+✔ Punktart
+
+<br>
+
+✔ Bemerkungen
 
 </p>
 
 
 <div class="screenshot">
 
-📷 Screenshot: Punktinformationen
+📷 Screenshot:
+Punktinformationen in VermCAD
 
 </div>
 
@@ -179,81 +358,145 @@ Dazu gehören beispielsweise:
 </div>
 
 
+</details>
 
 
 
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📐 Koordinaten und Bezugssysteme
+</summary>
 
 
 <div class="article">
 
-<h3>2️⃣ Koordinaten prüfen</h3>
 
 <p>
 
-Die Koordinaten eines Punktes werden kontrolliert
-und mit den vorhandenen Grundlagen verglichen.
+Koordinaten beschreiben die Lage eines Punktes
+innerhalb eines festgelegten Bezugssystems.
 
-Dabei ist besonders auf das verwendete
-Koordinatensystem und den Bezug zu achten.
+Bei der Bearbeitung muss immer geprüft werden,
+ob das verwendete Koordinatensystem korrekt ist.
+
+Wichtige Begriffe:
+
+<br><br>
+
+✔ Ostwert / Rechtswert
+
+<br>
+
+✔ Nordwert / Hochwert
+
+<br>
+
+✔ Höhe
+
+<br>
+
+✔ EPSG-Code
+
+<br>
+
+✔ Lagestatus
 
 </p>
 
 
-<div class="screenshot">
-
-📷 Screenshot: Koordinatenanzeige
-
 </div>
 
 
-</div>
+</details>
 
 
 
 
 
+
+
+
+
+<details>
+
+
+<summary>
+🗂 Punktverwaltung
+</summary>
 
 
 <div class="article">
 
-<h3>3️⃣ Punktdaten bearbeiten</h3>
 
 <p>
 
-Falls erforderlich können Punktinformationen
-angepasst werden.
+Die Punktverwaltung ermöglicht die Organisation
+und Bearbeitung der vorhandenen Punkte.
 
-Änderungen müssen immer nachvollziehbar sein
-und fachlich geprüft werden.
+Typische Aufgaben:
+
+<br><br>
+
+✔ Punkte suchen
+
+<br>
+
+✔ Punkte kontrollieren
+
+<br>
+
+✔ Punkte ändern
+
+<br>
+
+✔ neue Punkte anlegen
+
+<br>
+
+✔ Punktinformationen vergleichen
 
 </p>
 
 
-<div class="screenshot">
-
-📷 Screenshot: Punktbearbeitung
-
 </div>
 
 
-</div>
+</details>
 
 
 
 
 
+
+
+
+
+<details>
+
+
+<summary>
+🔎 Punkte suchen und kontrollieren
+</summary>
 
 
 <div class="article">
 
-<h3>4️⃣ Kontrolle nach der Bearbeitung</h3>
 
 <p>
 
-Nach Änderungen müssen die Ergebnisse
-kontrolliert werden.
+Vor Berechnungen oder weiteren Arbeitsschritten
+sollten die verwendeten Punkte kontrolliert
+werden.
 
-Prüfung:
+Dabei prüfen:
 
 <br><br>
 
@@ -265,19 +508,198 @@ Prüfung:
 
 <br>
 
-✔ richtige Darstellung im Projekt
+✔ vollständige Daten
+
+<br>
+
+✔ richtige Lage im Projekt
 
 </p>
 
 
-<div class="screenshot">
+</div>
 
-📷 Screenshot: Kontrollansicht
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+✏️ Punkte bearbeiten
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Je nach Arbeitsaufgabe können Punkte bearbeitet
+oder ergänzt werden.
+
+Dabei ist besonders wichtig:
+
+<br><br>
+
+✔ Änderungen nachvollziehbar durchführen
+
+<br>
+
+✔ Ausgangsdaten sichern
+
+<br>
+
+✔ Auswirkungen auf weitere Berechnungen beachten
+
+</p>
+
 
 </div>
 
 
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🖥 Darstellung von Punkten
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Punkte müssen in VermCAD korrekt dargestellt
+werden, damit sie für weitere Arbeitsschritte
+genutzt werden können.
+
+Probleme bei der Darstellung können entstehen
+durch:
+
+<br><br>
+
+✔ falschen Ausschnitt
+
+<br>
+
+✔ falsche Anzeigeeinstellungen
+
+<br>
+
+✔ falsche Koordinaten
+
+<br>
+
+✔ falsches Bezugssystem
+
+</p>
+
+
 </div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+⚠ Typische Fehler
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+
+<b>Punkt wird nicht angezeigt</b>
+
+<br><br>
+
+Mögliche Ursachen:
+
+<br>
+
+✔ falscher Kartenausschnitt
+
+<br>
+
+✔ Punkt außerhalb des Bereiches
+
+<br>
+
+✔ Anzeige deaktiviert
+
+<br>
+
+✔ falsches Koordinatensystem
+
+
+<br><br><br>
+
+
+<b>Punkte liegen weit entfernt</b>
+
+<br><br>
+
+Mögliche Ursachen:
+
+<br>
+
+✔ falscher Lagestatus
+
+<br>
+
+✔ falscher EPSG-Code
+
+<br>
+
+✔ fehlerhafte Transformation
+
+<br>
+
+✔ falsche Koordinateneingabe
+
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
 
 
 
@@ -287,51 +709,24 @@ Prüfung:
 
 <div class="tipp">
 
-<h3>💡 Praxis-Tipp</h3>
+
+<h3>💡 Praxistipp</h3>
+
 
 <p>
 
-Vor Änderungen an Punkten immer prüfen,
-woher die Daten stammen und ob die Änderung
-fachlich begründet ist.
+Vor jeder Berechnung sollte geprüft werden,
+ob die verwendeten Punkte vollständig und
+plausibel sind.
+
+Ein einzelner fehlerhafter Punkt kann die
+gesamte weitere Bearbeitung beeinflussen.
 
 </p>
 
-</div>
-
-
-
-
-
-
-
-<div class="warnung">
-
-<h3>⚠ Häufige Fehler</h3>
-
-<p>
-
-Typische Probleme:
-
-<br><br>
-
-❌ falschen Punkt ausgewählt
-
-<br>
-
-❌ Koordinatensystem nicht beachtet
-
-<br>
-
-❌ Änderungen nicht gespeichert
-
-</p>
 
 </div>
 
-
-
-</section>
 
 
 
@@ -354,11 +749,15 @@ Version 1.0
 </footer>
 
 
+</section>
+
 
 </div>
 
 
+
 <script src="suchindex.js"></script>
+
 <script src="script.js"></script>
 
 
