@@ -8,7 +8,7 @@
 // ----------------------------
 // Dark Mode
 // ----------------------------
-alert("VermKompass Script läuft");
+
 const darkButton = document.getElementById("darkMode");
 
 
@@ -55,7 +55,7 @@ if(localStorage.getItem("theme")==="dark"){
 // Suche
 // ----------------------------
 
-
+alert("VermKompass Script läuft");
 const searchInput = document.getElementById("searchInput");
 
 
