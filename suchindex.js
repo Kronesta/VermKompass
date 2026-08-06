@@ -117,8 +117,7 @@ titel:"VermCAD Verkettungstransformation",
 seite:"vermcad_transformation.html",
 begriffe:"Verkettung Transformation Passpunkte Lagestatus MWT Ausgangssystem Zielsystem Koordinaten"
 }
-];
-const suchIndex = [
+
 
 {
 titel:"VermCAD Grundlagen",
