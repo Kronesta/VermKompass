@@ -134,11 +134,18 @@ box.style.zIndex="9999";
             let p=document.createElement("p");
 
 
-            p.innerHTML="🔍 "+eintrag.titel;
+            let markiert = eintrag.titel.replace(
+    new RegExp(suche, "gi"),
+    "<b>$&</b>"
+);
 
 
+p.innerHTML="🔍 " + markiert;
+           
             p.style.padding="8px";
-            p.style.cursor="pointer";
+p.style.cursor="pointer";
+p.style.borderBottom="1px solid #ddd";
+p.style.margin="0";
 
 
 
