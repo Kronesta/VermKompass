@@ -221,7 +221,8 @@ begriffe:"Grenzpunkt Grenze Flurstück Kataster Punkt"
 {
 titel:"Koordinatensysteme",
 seite:"grundlagen.html",
-begriffe:"UTM Gauß-Krüger ETRS89 EPSG Koordinatensystem Lagebezug Höhenbezug"
+begriffe:
+"UTM Gauß-Krüger ETRS89 EPSG Koordinatensystem Lagebezug Höhenbezug"
 }
 
 ];
