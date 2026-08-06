@@ -1,7 +1,7 @@
 /* ===========================================
    VermKompass
    script.js
-   Version 1.0
+   Version 1.1
 =========================================== */
 
 
@@ -12,9 +12,9 @@
 const darkButton = document.getElementById("darkMode");
 
 
-if (darkButton) {
+if(darkButton){
 
-    darkButton.addEventListener("click", () => {
+    darkButton.addEventListener("click",()=>{
 
         document.body.classList.toggle("dark");
 
@@ -36,12 +36,10 @@ if (darkButton) {
 }
 
 
-// gespeichertes Theme laden
 
 if(localStorage.getItem("theme")==="dark"){
 
     document.body.classList.add("dark");
-
 
     if(darkButton){
 
@@ -53,9 +51,8 @@ if(localStorage.getItem("theme")==="dark"){
 
 
 
-
 // ----------------------------
-// VermKompass Gesamtsuche
+// Suche
 // ----------------------------
 
 
@@ -65,13 +62,13 @@ const searchInput = document.getElementById("searchInput");
 if(searchInput && typeof suchIndex !== "undefined"){
 
 
-    searchInput.addEventListener("keyup", function(e){
+    searchInput.addEventListener("keyup",function(){
 
 
-        let suche = this.value.toLowerCase();
+        let suche=this.value.toLowerCase();
 
 
-        let alteBox = document.getElementById("suchErgebnisse");
+        let alteBox=document.getElementById("suchErgebnisse");
 
 
         if(alteBox){
@@ -79,7 +76,6 @@ if(searchInput && typeof suchIndex !== "undefined"){
             alteBox.remove();
 
         }
-
 
 
         if(suche.length < 2){
@@ -90,65 +86,41 @@ if(searchInput && typeof suchIndex !== "undefined"){
 
 
 
-       let treffer = suchIndex
-.filter(eintrag => {
-
-let titel = eintrag.titel.toLowerCase();
-let begriffe = eintrag.begriffe.toLowerCase();
+        let treffer=suchIndex.filter(eintrag=>
 
 
-if(suche.length <= 2){
+            eintrag.titel.toLowerCase().includes(suche)
 
-return titel.includes(suche);
+            ||
 
-}
-
-
-return titel.includes(suche) || begriffe.includes(suche);
+            eintrag.begriffe.toLowerCase().includes(suche)
 
 
-})
-.sort((a,b)=>{
-
-
-let aTitel = a.titel.toLowerCase();
-let bTitel = b.titel.toLowerCase();
-
-
-let aScore = aTitel.startsWith(suche) ? 2 : 0;
-let bScore = bTitel.startsWith(suche) ? 2 : 0;
-
-
-return bScore-aScore;
-
-
-});
+        );
 
 
 
-        let box = document.createElement("div");
+
+        let box=document.createElement("div");
 
 
         box.id="suchErgebnisse";
 
 
-     box.style.position="absolute";
-box.style.top="60px";
-box.style.left="0";
-box.style.background="white";
-box.style.width = searchInput.offsetWidth + "px";
-box.style.padding="10px";
-box.style.borderRadius="10px";
-box.style.boxShadow="0 10px 20px rgba(0,0,0,.15)";
-box.style.zIndex="999";  
+        box.style.position="absolute";
+        box.style.background="white";
+        box.style.width="320px";
+        box.style.padding="10px";
+        box.style.borderRadius="10px";
+        box.style.boxShadow="0 10px 20px rgba(0,0,0,.15)";
+        box.style.zIndex="999";
 
 
 
-        if(treffer.length === 0){
 
+        if(treffer.length===0){
 
-            box.innerHTML="<p>Keine Treffer gefunden.</p>";
-
+            box.innerHTML="<p>Keine Treffer gefunden</p>";
 
         }
 
@@ -157,18 +129,10 @@ box.style.zIndex="999";
         treffer.forEach(function(eintrag){
 
 
-
             let p=document.createElement("p");
 
 
-
-           let markiert = eintrag.titel.replace(
-    new RegExp(suche, "gi"),
-    match => `<mark>${match}</mark>`
-);
-
-
-p.innerHTML="🔍 " + markiert;
+            p.innerHTML="🔍 "+eintrag.titel;
 
 
             p.style.padding="8px";
@@ -178,16 +142,12 @@ p.innerHTML="🔍 " + markiert;
 
             p.onclick=function(){
 
-
-                window.location.href = eintrag.seite;
-
+                window.location.href=eintrag.seite;
 
             };
 
 
-
             box.appendChild(p);
-
 
 
         });
@@ -198,17 +158,6 @@ p.innerHTML="🔍 " + markiert;
 
 
 
-        // Enter öffnet ersten Treffer
-
-        if(e.key === "Enter" && treffer.length > 0){
-
-
-            window.location.href = treffer[0].seite;
-
-
-        }
-
-
     });
 
 
@@ -217,49 +166,4 @@ p.innerHTML="🔍 " + markiert;
 
 
 
-
-// ----------------------------
-// Schnellzugriffe
-// ----------------------------
-
-
-const buttons=document.querySelectorAll(".quickLinks button");
-
-
-buttons.forEach(button=>{
-
-
-    button.addEventListener("click",()=>{
-
-
-        if(searchInput){
-
-
-            searchInput.value=button.innerText;
-
-
-            searchInput.dispatchEvent(
-                new KeyboardEvent("keyup")
-            );
-
-
-        }
-
-
-    });
-
-
-});
-
-
-
-
-
-// ----------------------------
-// Meldungen
-// ----------------------------
-
-
-console.log("Willkommen bei VermKompass.");
-
-console.log("Version 1.0 geladen.");
+console.log("VermKompass geladen.");
