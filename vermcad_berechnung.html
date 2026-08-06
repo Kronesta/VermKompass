@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VermKompass | VermCAD Rechnen & Auswertungen</title>
+<title>VermKompass | VermCAD Berechnungen</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -32,58 +32,25 @@
 
 <ul>
 
-<li>
-<a href="index.html">
-🏠 Startseite
-</a>
-</li>
+<li><a href="index.html">🏠 Startseite</a></li>
 
-<li>
-<a href="grundlagen.html">
-📚 Grundlagen
-</a>
-</li>
+<li><a href="grundlagen.html">📚 Grundlagen</a></li>
 
-<li>
-<a href="arbeitsablaeufe.html">
-📐 Arbeitsabläufe
-</a>
-</li>
+<li><a href="arbeitsablaeufe.html">📐 Arbeitsabläufe</a></li>
 
-<li>
-<a href="programme.html" class="active">
-💻 Programme
-</a>
-</li>
+<li><a href="programme.html" class="active">💻 Programme</a></li>
 
-<li>
-<a href="checklisten.html">
-📋 Checklisten
-</a>
-</li>
+<li><a href="checklisten.html">📋 Checklisten</a></li>
 
-<li>
-<a href="glossar.html">
-📖 Glossar
-</a>
-</li>
+<li><a href="glossar.html">📖 Glossar</a></li>
 
-<li>
-<a href="favoriten.html">
-⭐ Favoriten
-</a>
-</li>
+<li><a href="favoriten.html">⭐ Favoriten</a></li>
 
-<li>
-<a href="einstellungen.html">
-⚙ Einstellungen
-</a>
-</li>
+<li><a href="einstellungen.html">⚙ Einstellungen</a></li>
 
 </ul>
 
 </div>
-
 
 
 
@@ -98,10 +65,10 @@
 
 <div>
 
-<h1>🧮 VermCAD Rechnen & Auswertungen</h1>
+<h1>🧮 VermCAD Berechnungen</h1>
 
 <p>
-Berechnung und Kontrolle von Vermessungsdaten
+Berechnung und Kontrolle von Vermessungsergebnissen
 </p>
 
 </div>
@@ -118,15 +85,15 @@ placeholder="🔍 Suche nach Begriffen..."
 
 
 <button id="darkMode">
-
 🌙
-
 </button>
+
 
 </div>
 
 
 </header>
+
 
 
 
@@ -204,9 +171,8 @@ placeholder="🔍 Suche nach Begriffen..."
 
 
 
-<h2>🧮 Rechnen & Auswertungen</h2>
 
-
+<h2>🧮 Berechnungen & Auswertungen</h2>
 
 
 
@@ -215,18 +181,21 @@ placeholder="🔍 Suche nach Begriffen..."
 <div class="info">
 
 
-<h3>Berechnung von Vermessungsdaten</h3>
+<h3>Warum sind Berechnungen wichtig?</h3>
 
 
 <p>
 
-VermCAD unterstützt verschiedene
-Berechnungen zur Verarbeitung und
-Auswertung von Vermessungsdaten.
+Berechnungen bilden einen zentralen Bestandteil
+der vermessungstechnischen Bearbeitung.
 
-Berechnungsergebnisse dienen als Grundlage
-für weitere Arbeitsschritte und müssen
-kontrolliert werden.
+Aus vorhandenen Punkten, Messungen und
+geometrischen Zusammenhängen werden neue
+Punkte oder Ergebnisse erzeugt.
+
+Eine Berechnung ist jedoch erst abgeschlossen,
+wenn das Ergebnis kontrolliert und fachlich
+bewertet wurde.
 
 </p>
 
@@ -241,77 +210,50 @@ kontrolliert werden.
 
 
 
-<details>
+<details open>
 
 
 <summary>
-📌 Berechnungen in VermCAD
+📌 Grundlagen vor einer Berechnung
 </summary>
 
 
 <div class="article">
 
 
-<p>
-
-Berechnungen werden genutzt, um aus
-vorhandenen Vermessungsdaten neue
-Informationen abzuleiten.
-
-Dabei können beispielsweise Koordinaten,
-geometrische Größen oder Beziehungen
-zwischen Punkten bestimmt werden.
-
-</p>
-
-
-</div>
-
-
-</details>
-
-
-
-
-
-
-
-
-
-<details>
-
-
-<summary>
-📐 Geometrische Berechnungen
-</summary>
-
-
-<div class="article">
+<h3>Vorbereitung</h3>
 
 
 <p>
 
-Geometrische Berechnungen ermöglichen die
-Bestimmung verschiedener Größen aus
-Vermessungsdaten.
-
-Dazu gehören beispielsweise:
+Bevor eine Berechnung durchgeführt wird,
+müssen die Ausgangsdaten geprüft werden.
 
 <br><br>
 
-✔ Strecken
+
+<b>Kontrolle der Grundlagen:</b>
+
+<br><br>
+
+✔ Sind die richtigen Punkte vorhanden?
 
 <br>
 
-✔ Winkel
+✔ Stimmen Punktnummern und Koordinaten?
 
 <br>
 
-✔ Flächen
+✔ Ist das richtige Koordinatensystem eingestellt?
 
 <br>
 
-✔ Punktlagen
+✔ Sind alle benötigten Werte vorhanden?
+
+<br><br>
+
+Eine fehlerhafte Grundlage führt meistens
+zu einem fehlerhaften Ergebnis.
 
 </p>
 
@@ -340,15 +282,580 @@ Dazu gehören beispielsweise:
 <div class="article">
 
 
+<h3>Zweck</h3>
+
+
 <p>
 
-Koordinatenberechnungen dienen dazu,
-neue Punkte oder Punktinformationen aus
-bekannten Daten abzuleiten.
+Mit Koordinatenberechnungen werden neue Punkte
+aus bekannten Punkten und geometrischen
+Zusammenhängen bestimmt.
 
-Dabei spielen vorhandene Punkte,
-Beobachtungen und geometrische Beziehungen
-eine wichtige Rolle.
+</p>
+
+
+<br>
+
+
+<h3>Benötigte Eingaben</h3>
+
+
+<p>
+
+Je nach Berechnung werden benötigt:
+
+<br><br>
+
+✔ bekannte Punkte
+
+<br>
+
+✔ Koordinaten
+
+<br>
+
+✔ Richtungen
+
+<br>
+
+✔ Strecken
+
+<br>
+
+✔ geometrische Bedingungen
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrolle</h3>
+
+
+<p>
+
+Nach der Berechnung prüfen:
+
+<br><br>
+
+✔ Liegt der neue Punkt an der erwarteten Stelle?
+
+<br>
+
+✔ Passt die Lage zu vorhandenen Punkten?
+
+<br>
+
+✔ Sind die Koordinaten plausibel?
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📐 Polarberechnung
+</summary>
+
+
+<div class="article">
+
+
+<h3>Zweck</h3>
+
+
+<p>
+
+Bei einer Polarberechnung wird ein neuer Punkt
+aus einem bekannten Standpunkt und einer
+Richtung sowie Strecke bestimmt.
+
+</p>
+
+
+<br>
+
+
+<h3>Benötigte Eingaben</h3>
+
+
+<table>
+
+<tr>
+
+<th>Eingabe</th>
+
+<th>Bedeutung</th>
+
+</tr>
+
+
+<tr>
+
+<td>Standpunkt</td>
+
+<td>Bekannter Ausgangspunkt</td>
+
+</tr>
+
+
+<tr>
+
+<td>Orientierung</td>
+
+<td>Bezug der Richtung</td>
+
+</tr>
+
+
+<tr>
+
+<td>Richtung</td>
+
+<td>Winkel zum neuen Punkt</td>
+
+</tr>
+
+
+<tr>
+
+<td>Strecke</td>
+
+<td>Entfernung zum neuen Punkt</td>
+
+</tr>
+
+
+</table>
+
+
+<br>
+
+
+<h3>Kontrolle</h3>
+
+
+<p>
+
+Prüfen:
+
+<br><br>
+
+✔ Ist der Standpunkt richtig?
+
+<br>
+
+✔ Stimmt die Orientierung?
+
+<br>
+
+✔ Ist die Strecke plausibel?
+
+<br>
+
+✔ Liegt der Punkt an der erwarteten Stelle?
+
+</p>
+
+
+</div>
+
+
+</details>
+<details>
+
+
+<summary>
+📏 Orthogonalaufnahme
+</summary>
+
+
+<div class="article">
+
+
+<h3>Zweck</h3>
+
+
+<p>
+
+Bei einer Orthogonalaufnahme werden Punkte
+über rechtwinklige Abstände zu einer
+Bezugslinie bestimmt.
+
+Diese Methode wird häufig verwendet, wenn
+Punkte relativ zu einer vorhandenen Linie
+aufgenommen oder berechnet werden sollen.
+
+</p>
+
+
+<br>
+
+
+<h3>Benötigte Eingaben</h3>
+
+
+<p>
+
+Typische Eingaben:
+
+<br><br>
+
+✔ Anfangspunkt der Bezugslinie
+
+<br>
+
+✔ Endpunkt der Bezugslinie
+
+<br>
+
+✔ Abszisse
+
+<br>
+
+✔ Ordinate
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrolle</h3>
+
+
+<p>
+
+Nach der Berechnung prüfen:
+
+<br><br>
+
+✔ Liegt der Punkt auf der richtigen Seite?
+
+<br>
+
+✔ Stimmen Abstände zur Bezugslinie?
+
+<br>
+
+✔ Passt die Lage zur grafischen Darstellung?
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🔺 Schnittberechnungen
+</summary>
+
+
+<div class="article">
+
+
+<h3>Zweck</h3>
+
+
+<p>
+
+Bei Schnittberechnungen wird die Lage eines
+Punktes durch mehrere bekannte Bedingungen
+bestimmt.
+
+Dabei werden vorhandene Punkte und
+geometrische Beziehungen genutzt.
+
+</p>
+
+
+<br>
+
+
+<h3>Mögliche Berechnungen</h3>
+
+
+<p>
+
+Beispiele:
+
+<br><br>
+
+✔ Richtungs-Schnitt
+
+<br>
+
+✔ Strecken-Schnitt
+
+<br>
+
+✔ Kombination aus Richtung und Strecke
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrolle</h3>
+
+
+<p>
+
+Prüfen:
+
+<br><br>
+
+✔ Sind die verwendeten Ausgangspunkte richtig?
+
+<br>
+
+✔ Sind Richtungen und Strecken plausibel?
+
+<br>
+
+✔ Passt der neue Punkt zur Umgebung?
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📐 Flächenberechnung
+</summary>
+
+
+<div class="article">
+
+
+<h3>Zweck</h3>
+
+
+<p>
+
+Aus vorhandenen Punktkoordinaten können
+Flächen berechnet werden.
+
+Die richtige Reihenfolge der Punkte ist dabei
+entscheidend.
+
+</p>
+
+
+<br>
+
+
+<h3>Vorbereitung</h3>
+
+
+<p>
+
+Vor der Berechnung kontrollieren:
+
+<br><br>
+
+✔ Sind alle Begrenzungspunkte vorhanden?
+
+<br>
+
+✔ Ist die Punktreihenfolge korrekt?
+
+<br>
+
+✔ Gibt es doppelte oder fehlende Punkte?
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrolle</h3>
+
+
+<p>
+
+Das Ergebnis sollte mit vorhandenen
+Informationen verglichen werden.
+
+Beispielsweise:
+
+<br><br>
+
+✔ grafische Darstellung
+
+<br>
+
+✔ bekannte Maße
+
+<br>
+
+✔ vorherige Berechnungen
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details open>
+
+
+<summary>
+🔍 Kontrolle von Berechnungsergebnissen
+</summary>
+
+
+<div class="article">
+
+
+<h3>Warum ist eine Kontrolle notwendig?</h3>
+
+
+<p>
+
+Eine Berechnung ist erst abgeschlossen,
+wenn das Ergebnis überprüft wurde.
+
+Fehler in den Ausgangsdaten oder falsche
+Einstellungen können zu falschen Ergebnissen
+führen.
+
+</p>
+
+
+<br>
+
+
+<h3>1. Ausgangsdaten kontrollieren</h3>
+
+
+<p>
+
+Vor der Bewertung des Ergebnisses prüfen:
+
+<br><br>
+
+✔ wurden die richtigen Punkte verwendet?
+
+<br>
+
+✔ stimmen Punktnummern?
+
+<br>
+
+✔ stimmen Koordinaten?
+
+<br>
+
+✔ wurde das richtige Bezugssystem verwendet?
+
+</p>
+
+
+<br>
+
+
+<h3>2. Ergebnis prüfen</h3>
+
+
+<p>
+
+Das berechnete Ergebnis kontrollieren:
+
+<br><br>
+
+✔ liegt der neue Punkt an der erwarteten Stelle?
+
+<br>
+
+✔ passt die Lage zu vorhandenen Punkten?
+
+<br>
+
+✔ sind die Koordinaten plausibel?
+
+<br>
+
+✔ stimmt die Darstellung im Kartenfenster?
+
+</p>
+
+
+<br>
+
+
+<h3>3. Fachliche Plausibilitätsprüfung</h3>
+
+
+<p>
+
+Zusätzlich sollte geprüft werden:
+
+<br><br>
+
+✔ passt das Ergebnis zur örtlichen Situation?
+
+<br>
+
+✔ stimmen bekannte Maße überein?
+
+<br>
+
+✔ gibt es ungewöhnlich große Abweichungen?
 
 </p>
 
@@ -356,7 +863,7 @@ eine wichtige Rolle.
 <div class="screenshot">
 
 📷 Screenshot:
-Berechnungsfunktionen in VermCAD
+Kontrolle eines Berechnungsergebnisses in VermCAD
 
 </div>
 
@@ -378,125 +885,90 @@ Berechnungsfunktionen in VermCAD
 
 
 <summary>
-📊 Auswertung von Vermessungsdaten
+⚠ Typische Fehler und Ursachen
 </summary>
 
 
 <div class="article">
 
 
-<p>
+<table>
 
-Nach einer Berechnung werden die Ergebnisse
-ausgewertet und auf Plausibilität geprüft.
+<tr>
 
-Dabei werden unter anderem kontrolliert:
+<th>Problem</th>
 
-<br><br>
+<th>Mögliche Ursache</th>
 
-✔ Ergebniswerte
+</tr>
 
-<br>
 
-✔ Punktlagen
+<tr>
 
-<br>
+<td>
+Berechnung nicht möglich
+</td>
 
-✔ Abweichungen
+<td>
+Fehlende Punkte oder Eingabewerte
+</td>
 
-<br>
+</tr>
 
-✔ Vollständigkeit
 
-</p>
+<tr>
 
+<td>
+Punkt liegt falsch
+</td>
 
-</div>
+<td>
+Falscher Ausgangspunkt oder falsche Orientierung
+</td>
 
+</tr>
 
-</details>
 
+<tr>
 
+<td>
+Punkt weit entfernt
+</td>
 
+<td>
+Falsches Koordinatensystem oder falscher Bezug
+</td>
 
+</tr>
 
 
+<tr>
 
+<td>
+Ergebnis passt nicht zur Darstellung
+</td>
 
+<td>
+Fehlerhafte Eingaben oder falsche Grundlagen
+</td>
 
-<details>
+</tr>
 
 
-<summary>
-🔍 Kontrolle der Ergebnisse
-</summary>
+<tr>
 
+<td>
+Große Abweichungen
+</td>
 
-<div class="article">
+<td>
+Falsche Punkte oder ungenaue Ausgangsdaten
+</td>
 
+</tr>
 
-<p>
 
-Berechnungsergebnisse sollten immer
-kontrolliert werden.
-
-Eine Kontrolle hilft dabei,
-Fehler frühzeitig zu erkennen und die
-Qualität der Ergebnisse sicherzustellen.
-
-</p>
-
-
-</div>
-
-
-</details>
-
-
-
-
-
-
-
-
-
-<details>
-
-
-<summary>
-⚠ Typische Fehler
-</summary>
-
-
-<div class="article">
-
-
-<p>
-
-Bei Berechnungen können verschiedene
-Probleme auftreten:
-
-<br><br>
-
-✔ fehlende Punkte
-
-<br>
-
-✔ falsche Eingabedaten
-
-<br>
-
-✔ falsche Einstellungen
-
-<br>
-
-✔ unplausible Ergebnisse
-
-<br>
-
-✔ fehlerhafte Grundlagen
-
-</p>
+</table>
 
 
 </div>
@@ -520,16 +992,18 @@ Probleme auftreten:
 
 <p>
 
-Eine Berechnung ist nur so zuverlässig wie
-die verwendeten Ausgangsdaten.
+Nicht nur die Berechnung selbst ist wichtig,
+sondern auch die Kontrolle danach.
 
-Vor jeder Berechnung sollten deshalb Punkte,
-Koordinaten und Einstellungen geprüft werden.
+Ein gutes Vermessungsergebnis entsteht durch
+richtige Eingaben, saubere Berechnung und
+anschließende Prüfung.
 
 </p>
 
 
 </div>
+
 
 
 
@@ -552,12 +1026,10 @@ Version 1.0
 </footer>
 
 
-
 </section>
 
 
 </div>
-
 
 
 
