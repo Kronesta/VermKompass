@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VermKompass | VermCAD Fehlerbehebung</title>
+<title>VermKompass | VermCAD Fehler & Lösungen</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -33,18 +33,27 @@
 <ul>
 
 <li><a href="index.html">🏠 Startseite</a></li>
+
 <li><a href="grundlagen.html">📚 Grundlagen</a></li>
+
 <li><a href="arbeitsablaeufe.html">📐 Arbeitsabläufe</a></li>
-<li><a href="programme.html" class="active">💻 Programme</a></li>
+
+<li><a href="programmen.html" class="active">💻 Programme</a></li>
+
 <li><a href="checklisten.html">📋 Checklisten</a></li>
+
 <li><a href="glossar.html">📖 Glossar</a></li>
+
 <li><a href="favoriten.html">⭐ Favoriten</a></li>
+
 <li><a href="einstellungen.html">⚙ Einstellungen</a></li>
 
 </ul>
 
 
 </div>
+
+
 
 
 
@@ -58,10 +67,10 @@
 
 <div>
 
-<h1>⚠ VermCAD Fehlerbehebung</h1>
+<h1>⚠ VermCAD Fehler & Lösungen</h1>
 
 <p>
-Typische Probleme und Lösungsansätze in VermCAD
+Typische Probleme, Ursachen und Lösungswege
 </p>
 
 </div>
@@ -69,10 +78,11 @@ Typische Probleme und Lösungsansätze in VermCAD
 
 <div class="topbar">
 
+
 <input
 type="text"
 id="searchInput"
-placeholder="🔍 Suche nach Begriffen..."
+placeholder="🔍 Suche nach Fehlern..."
 >
 
 
@@ -93,26 +103,109 @@ placeholder="🔍 Suche nach Begriffen..."
 
 
 
+
+
+
 <section>
 
 
-<h2>📌 Allgemeines Vorgehen</h2>
+
+<div class="chapter-nav">
+
+
+<a href="vermcad.html">
+📌 Übersicht
+</a>
+
+
+<a href="vermcad_grundlagen.html">
+📚 Grundlagen
+</a>
+
+
+<a href="vermcad_oberflaeche.html">
+🖥 Oberfläche
+</a>
+
+
+<a href="vermcad_projektverwaltung.html">
+📂 Projekte
+</a>
+
+
+<a href="vermcad_daten.html">
+📥 Daten
+</a>
+
+
+<a href="vermcad_punkte.html">
+📍 Punkte
+</a>
+
+
+<a href="vermcad_transformation.html">
+🔄 Transformationen
+</a>
+
+
+<a href="vermcad_berechnung.html">
+🧮 Rechnen
+</a>
+
+
+<a href="vermcad_export.html">
+📤 Export
+</a>
+
+
+<a href="vermcad_alkis.html">
+🗺 ALKIS
+</a>
+
+
+<a href="vermcad_optionen.html">
+⚙ Optionen
+</a>
+
+
+<a href="vermcad_fehler.html" class="active">
+⚠ Fehler
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<h2>⚠ Fehlerdatenbank</h2>
+
+
+
+
+
 
 
 <div class="info">
 
-<h3>Fehler systematisch prüfen</h3>
+
+<h3>Probleme schneller lösen</h3>
+
 
 <p>
 
-Bei Problemen in VermCAD sollte zuerst geprüft
-werden, welche Daten, Einstellungen und
-Grundlagen verwendet wurden.
+Bei der täglichen Arbeit mit VermCAD können
+verschiedene Fehler auftreten.
 
-Eine systematische Fehlersuche hilft dabei,
-die Ursache schneller zu finden.
+Diese Übersicht sammelt typische Probleme,
+mögliche Ursachen und Lösungswege.
 
 </p>
+
 
 </div>
 
@@ -120,187 +213,750 @@ die Ursache schneller zu finden.
 
 
 
+
+
+
+
+<details open>
+
+
+<summary>
+❌ Keine Passpunkte, Transformation nicht möglich
+</summary>
 
 
 <div class="article">
 
-<h3>❌ Keine Passpunkte, Transformation nicht möglich</h3>
+
+<h3>Problem</h3>
+
 
 <p>
 
-<strong>Mögliche Ursache:</strong>
-
-<br><br>
-
-Für die gewünschte Transformation stehen keine
-geeigneten Passpunkte zur Verfügung.
-
-<br><br>
-
-<strong>Prüfung:</strong>
-
-<br><br>
-
-✔ Sind Passpunkte vorhanden?
-
-<br>
-
-✔ Sind die Koordinaten bekannt?
-
-<br>
-
-✔ Passt der Lagestatus?
-
-<br><br>
-
-<strong>Lösung:</strong>
-
-<br><br>
-
-Benötigte Passpunkte prüfen, ergänzen oder
-die Ausgangsdaten kontrollieren.
+Die Transformation kann nicht durchgeführt
+werden, weil keine geeigneten Passpunkte
+vorhanden sind.
 
 </p>
 
-<div class="screenshot">
 
-📷 Screenshot: Fehlermeldung Transformation
+<br>
+
+
+<h3>Mögliche Ursachen</h3>
+
+
+<p>
+
+✔ keine identischen Punkte vorhanden
+
+<br>
+
+✔ falsche Punkte ausgewählt
+
+<br>
+
+✔ Punktnummern stimmen nicht überein
+
+<br>
+
+✔ Koordinaten fehlen
+
+</p>
+
+
+<br>
+
+
+<h3>Prüfung</h3>
+
+
+<p>
+
+Kontrollieren:
+
+<br><br>
+
+1️⃣ Sind identische Punkte vorhanden?
+
+<br>
+
+2️⃣ Stimmen die Punktnummern?
+
+<br>
+
+3️⃣ Sind beide Koordinatensysteme bekannt?
+
+<br>
+
+4️⃣ Sind die Koordinaten vollständig?
+
+</p>
+
+
+<br>
+
+
+<h3>Lösung</h3>
+
+
+<p>
+
+Geeignete Passpunkte auswählen und die
+Transformation erneut durchführen.
+
+</p>
+
 
 </div>
 
-</div>
+
+</details>
 
 
 
 
 
+
+
+
+
+<details>
+
+
+<summary>
+📍 Punkte werden nicht angezeigt
+</summary>
 
 
 <div class="article">
 
-<h3>❌ Punkte werden nicht angezeigt</h3>
+
+<h3>Problem</h3>
+
 
 <p>
 
-<strong>Mögliche Ursachen:</strong>
-
-<br><br>
-
-- Punkte wurden nicht geladen
-
-<br>
-
-- falsche Darstellungseinstellungen
-
-<br>
-
-- falsches Projekt geöffnet
-
-<br><br>
-
-<strong>Lösung:</strong>
-
-<br><br>
-
-Projekt und Datenbestand prüfen und die
-Darstellung kontrollieren.
+Punkte sind vorhanden, werden aber im
+Kartenfenster nicht dargestellt.
 
 </p>
 
 
-<div class="screenshot">
+<br>
 
-📷 Screenshot: Punktdarstellung
+
+<h3>Mögliche Ursachen</h3>
+
+
+<p>
+
+✔ falscher Kartenausschnitt
+
+<br>
+
+✔ falscher Maßstab
+
+<br>
+
+✔ Darstellung deaktiviert
+
+<br>
+
+✔ Daten nicht geladen
+
+</p>
+
+
+<br>
+
+
+<h3>Prüfung</h3>
+
+
+<p>
+
+Schritte:
+
+<br><br>
+
+1️⃣ Ausschnitt kontrollieren
+
+<br>
+
+2️⃣ Darstellung prüfen
+
+<br>
+
+3️⃣ Datenbestand kontrollieren
+
+<br>
+
+4️⃣ Punktinformationen prüfen
+
+</p>
+
 
 </div>
 
-</div>
+
+</details>
 
 
 
 
 
+
+
+
+
+<details>
+
+
+<summary>
+📍 Punkte liegen weit entfernt
+</summary>
 
 
 <div class="article">
 
-<h3>❌ Falscher Lagestatus</h3>
+
+<h3>Problem</h3>
+
 
 <p>
 
-<strong>Mögliche Ursache:</strong>
-
-<br><br>
-
-Die Daten liegen in einem anderen
-Koordinatenbezug vor als erwartet.
-
-<br><br>
-
-<strong>Lösung:</strong>
-
-<br><br>
-
-Lagestatus und verwendetes Bezugssystem
-prüfen, bevor eine Transformation oder
-weitere Bearbeitung durchgeführt wird.
+Punkte werden an einer falschen Stelle oder
+weit außerhalb des Arbeitsbereiches angezeigt.
 
 </p>
 
 
-<div class="screenshot">
+<br>
 
-📷 Screenshot: Lagestatus
+
+<h3>Mögliche Ursachen</h3>
+
+
+<p>
+
+✔ falsches Koordinatensystem
+
+<br>
+
+✔ falscher Lagestatus
+
+<br>
+
+✔ falsche Transformation
+
+<br>
+
+✔ fehlerhafte Koordinateneingabe
+
+</p>
+
+
+<br>
+
+
+<h3>Prüfung</h3>
+
+
+<p>
+
+Kontrollieren:
+
+<br><br>
+
+✔ EPSG / Bezugssystem
+
+<br>
+
+✔ Lagestatus
+
+<br>
+
+✔ Koordinatenwerte
+
+<br>
+
+✔ Transformationsgrundlage
+
+</p>
+
 
 </div>
 
-</div>
+
+</details>
+<details>
 
 
-
-
-
+<summary>
+📥 Datenimport funktioniert nicht richtig
+</summary>
 
 
 <div class="article">
 
-<h3>❌ Datenimport fehlerhaft</h3>
+
+<h3>Problem</h3>
+
 
 <p>
 
-<strong>Mögliche Ursachen:</strong>
-
-<br><br>
-
-- falsche Datei ausgewählt
-
-<br>
-
-- Datei unvollständig
-
-<br>
-
-- Daten passen nicht zum Projekt
-
-<br><br>
-
-<strong>Lösung:</strong>
-
-<br><br>
-
-Importdatei prüfen und sicherstellen, dass
-das richtige Projekt verwendet wird.
+Nach dem Import fehlen Daten oder die
+Darstellung entspricht nicht den Erwartungen.
 
 </p>
 
 
-<div class="screenshot">
+<br>
 
-📷 Screenshot: Datenimport
+
+<h3>Mögliche Ursachen</h3>
+
+
+<p>
+
+✔ falsche Datei ausgewählt
+
+<br>
+
+✔ falsches Datenformat
+
+<br>
+
+✔ unvollständige Daten
+
+<br>
+
+✔ falsches Koordinatensystem
+
+</p>
+
+
+<br>
+
+
+<h3>Prüfung</h3>
+
+
+<p>
+
+Kontrollieren:
+
+<br><br>
+
+1️⃣ Ist die richtige Datei verwendet worden?
+
+<br>
+
+2️⃣ Stimmen die Daten mit dem erwarteten Inhalt überein?
+
+<br>
+
+3️⃣ Passt das Bezugssystem?
+
+<br>
+
+4️⃣ Sind alle benötigten Informationen vorhanden?
+
+</p>
+
+
+<br>
+
+
+<h3>Lösung</h3>
+
+
+<p>
+
+Importeinstellungen prüfen und Daten erneut
+übernehmen.
+
+Anschließend immer eine Kontrolle im
+Kartenfenster durchführen.
+
+</p>
+
 
 </div>
 
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🧮 Berechnung liefert falsche Ergebnisse
+</summary>
+
+
+<div class="article">
+
+
+<h3>Problem</h3>
+
+
+<p>
+
+Eine Berechnung wurde durchgeführt, aber das
+Ergebnis ist unplausibel.
+
+</p>
+
+
+<br>
+
+
+<h3>Mögliche Ursachen</h3>
+
+
+<p>
+
+✔ falsche Ausgangspunkte
+
+<br>
+
+✔ falsche Eingabewerte
+
+<br>
+
+✔ falsche Orientierung
+
+<br>
+
+✔ fehlerhafte Grundlagen
+
+</p>
+
+
+<br>
+
+
+<h3>Prüfung</h3>
+
+
+<p>
+
+Schrittweise prüfen:
+
+<br><br>
+
+1️⃣ Sind die verwendeten Punkte richtig?
+
+<br>
+
+2️⃣ Stimmen die Koordinaten?
+
+<br>
+
+3️⃣ Sind Richtungen und Strecken korrekt?
+
+<br>
+
+4️⃣ Ist das Ergebnis räumlich plausibel?
+
+</p>
+
+
+<br>
+
+
+<h3>Lösung</h3>
+
+
+<p>
+
+Ausgangsdaten korrigieren und Berechnung
+erneut durchführen.
+
+</p>
+
+
 </div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📤 Export enthält falsche oder fehlende Daten
+</summary>
+
+
+<div class="article">
+
+
+<h3>Problem</h3>
+
+
+<p>
+
+Die exportierte Datei enthält nicht die
+erwarteten Informationen.
+
+</p>
+
+
+<br>
+
+
+<h3>Mögliche Ursachen</h3>
+
+
+<p>
+
+✔ falsche Auswahl
+
+<br>
+
+✔ falsches Ausgabeformat
+
+<br>
+
+✔ nicht aktuelle Daten
+
+<br>
+
+✔ Exportoptionen falsch eingestellt
+
+</p>
+
+
+<br>
+
+
+<h3>Prüfung</h3>
+
+
+<p>
+
+Kontrollieren:
+
+<br><br>
+
+✔ Welche Daten wurden ausgewählt?
+
+<br>
+
+✔ Welches Format wurde verwendet?
+
+<br>
+
+✔ Stimmen die exportierten Werte mit VermCAD überein?
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details open>
+
+
+<summary>
+🕵️ Allgemeine Fehlersuche
+</summary>
+
+
+<div class="article">
+
+
+<h3>Systematische Vorgehensweise</h3>
+
+
+<p>
+
+Bei unbekannten Fehlern sollte nicht sofort
+eine Änderung vorgenommen werden.
+
+Besser ist eine schrittweise Kontrolle.
+
+</p>
+
+
+<br>
+
+
+<h3>1. Fehler eingrenzen</h3>
+
+
+<p>
+
+Fragen:
+
+<br><br>
+
+✔ Was funktioniert nicht?
+
+<br>
+
+✔ Seit wann tritt der Fehler auf?
+
+<br>
+
+✔ Welche Änderung wurde vorher durchgeführt?
+
+</p>
+
+
+<br>
+
+
+<h3>2. Grundlagen prüfen</h3>
+
+
+<p>
+
+Kontrollieren:
+
+<br><br>
+
+✔ Projekt
+
+<br>
+
+✔ Daten
+
+<br>
+
+✔ Koordinatensystem
+
+<br>
+
+✔ Einstellungen
+
+</p>
+
+
+<br>
+
+
+<h3>3. Ergebnis kontrollieren</h3>
+
+
+<p>
+
+Nach einer Änderung prüfen:
+
+<br><br>
+
+✔ Ist der Fehler behoben?
+
+<br>
+
+✔ Sind die Daten weiterhin korrekt?
+
+<br>
+
+✔ Gibt es neue Probleme?
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📚 Eigene Fehlerdokumentation erstellen
+</summary>
+
+
+<div class="article">
+
+
+<h3>Warum dokumentieren?</h3>
+
+
+<p>
+
+Gerade bei wiederkehrenden Problemen hilft
+eine eigene Sammlung von Lösungen.
+
+</p>
+
+
+<br>
+
+
+<h3>Dokumentieren:</h3>
+
+
+<p>
+
+✔ Fehlermeldung
+
+<br>
+
+✔ Ursache
+
+<br>
+
+✔ Lösung
+
+<br>
+
+✔ Besonderheiten
+
+<br>
+
+✔ Datum / Projekt
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
 
 
 
@@ -310,67 +966,20 @@ das richtige Projekt verwendet wird.
 
 <div class="tipp">
 
-<h3>💡 Tipp zur Fehlersuche</h3>
+
+<h3>💡 Praxistipp</h3>
+
 
 <p>
 
-Bei Problemen immer zuerst die Grundlagen
-prüfen:
+Bei Fehlern nicht nur die Meldung betrachten,
+sondern den gesamten Arbeitsablauf prüfen.
 
-<br><br>
-
-✔ Welches Projekt ist geöffnet?
-
-<br>
-
-✔ Welche Daten wurden verwendet?
-
-<br>
-
-✔ Welches Koordinatensystem liegt vor?
-
-<br>
-
-✔ Welche Fehlermeldung erscheint?
+Die Ursache liegt häufig nicht beim letzten
+Arbeitsschritt, sondern bereits bei den
+verwendeten Grundlagen.
 
 </p>
 
-</div>
-
-
-
-
-
-</section>
-
-
-
-
-
-
-<footer>
-
-<p>
-
-© 2026 VermKompass
-
-<br>
-
-Version 1.0
-
-</p>
-
-</footer>
-
-
 
 </div>
-
-
-<script src="suchindex.js"></script>
-<script src="script.js"></script>
-
-
-</body>
-
-</html>
