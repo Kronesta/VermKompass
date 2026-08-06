@@ -1,39 +1,797 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VermKompass | VermCAD Optionen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>🧭 VermKompass</h2>
+
+<p>Vermessungs-Wiki</p>
+
+</div>
+
+
+<ul>
+
+<li><a href="index.html">🏠 Startseite</a></li>
+
+<li><a href="grundlagen.html">📚 Grundlagen</a></li>
+
+<li><a href="arbeitsablaeufe.html">📐 Arbeitsabläufe</a></li>
+
+<li><a href="programme.html" class="active">💻 Programme</a></li>
+
+<li><a href="checklisten.html">📋 Checklisten</a></li>
+
+<li><a href="glossar.html">📖 Glossar</a></li>
+
+<li><a href="favoriten.html">⭐ Favoriten</a></li>
+
+<li><a href="einstellungen.html">⚙ Einstellungen</a></li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<div class="main">
+
+
+<header>
+
+
+<div>
+
+<h1>⚙ VermCAD Optionen & Einstellungen</h1>
+
+<p>
+Wichtige Grundeinstellungen für die Bearbeitung
+</p>
+
+</div>
+
+
+
+<div class="topbar">
+
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Suche nach Begriffen..."
+>
+
+
+<button id="darkMode">
+
+🌙
+
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+
 <div class="chapter-nav">
+
 
 <a href="vermcad.html">
 📌 Übersicht
 </a>
 
+
 <a href="vermcad_grundlagen.html">
 📚 Grundlagen
 </a>
+
 
 <a href="vermcad_oberflaeche.html">
 🖥 Oberfläche
 </a>
 
+
+<a href="vermcad_projektverwaltung.html">
+📂 Projekte
+</a>
+
+
 <a href="vermcad_daten.html">
 📥 Daten
 </a>
+
 
 <a href="vermcad_punkte.html">
 📍 Punkte
 </a>
 
+
 <a href="vermcad_transformation.html">
-🔄 Transformation
+🔄 Transformationen
 </a>
+
 
 <a href="vermcad_berechnung.html">
 🧮 Rechnen
 </a>
 
+
+<a href="vermcad_export.html">
+📤 Export
+</a>
+
+
 <a href="vermcad_alkis.html">
 🗺 ALKIS
 </a>
 
-<a href="vermcad_optionen.html">
+
+<a href="vermcad_optionen.html" class="active">
 ⚙ Optionen
 </a>
+
+
+<a href="vermcad_fehler.html">
+⚠ Fehler
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<h2>⚙ Optionen & Einstellungen</h2>
+
+
+
+
+
+
+
+<div class="info">
+
+
+<h3>Grundlage für eine sichere Bearbeitung</h3>
+
+
+<p>
+
+Die richtigen Einstellungen sind entscheidend
+für eine fehlerfreie Bearbeitung.
+
+Falsche Optionen können dazu führen, dass
+Daten falsch dargestellt, berechnet oder
+ausgegeben werden.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<details open>
+
+
+<summary>
+📌 Bedeutung der Einstellungen
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+Einstellungen bestimmen, wie VermCAD Daten
+verarbeitet und dargestellt werden.
+
+Sie beeinflussen unter anderem:
+
+<br><br>
+
+✔ Darstellung
+
+<br>
+
+✔ Koordinaten
+
+<br>
+
+✔ Berechnungen
+
+<br>
+
+✔ Ausgabe
+
+<br>
+
+✔ Arbeitsumgebung
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🌍 Koordinaten- und Bezugssystemeinstellungen
+</summary>
+
+
+<div class="article">
+
+
+<h3>Warum wichtig?</h3>
+
+
+<p>
+
+Koordinaten können nur richtig verarbeitet
+werden, wenn das verwendete Bezugssystem
+bekannt und korrekt eingestellt ist.
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrolle</h3>
+
+
+<p>
+
+Prüfen:
+
+<br><br>
+
+✔ Koordinatensystem
+
+<br>
+
+✔ Lagebezug
+
+<br>
+
+✔ Höhenbezug
+
+<br>
+
+✔ Einheiten
+
+</p>
+
+
+<br>
+
+
+<h3>Typische Fehler</h3>
+
+
+<p>
+
+Falsche Einstellungen können verursachen:
+
+<br><br>
+
+✔ Punkte liegen weit entfernt
+
+<br>
+
+✔ Transformationen funktionieren nicht
+
+<br>
+
+✔ Daten passen nicht zusammen
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🖥 Darstellungseinstellungen
+</summary>
+
+
+<div class="article">
+
+
+<h3>Aufgabe</h3>
+
+
+<p>
+
+Die Darstellungseinstellungen bestimmen,
+wie Daten im Kartenfenster angezeigt werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrollieren</h3>
+
+
+<p>
+
+✔ Sind benötigte Daten sichtbar?
+
+<br>
+
+✔ Sind Layer aktiviert?
+
+<br>
+
+✔ Ist der richtige Maßstab eingestellt?
+
+<br>
+
+✔ Ist der Kartenausschnitt passend?
+
+</p>
+
+
+<div class="screenshot">
+
+📷 Screenshot:
+Darstellungseinstellungen in VermCAD
+
+</div>
+
+
+</div>
+
+
+</details>
+<details>
+
+
+<summary>
+🛠 Arbeitsumgebung anpassen
+</summary>
+
+
+<div class="article">
+
+
+<h3>Warum anpassen?</h3>
+
+
+<p>
+
+Eine passende Arbeitsumgebung erleichtert die
+tägliche Bearbeitung und sorgt für einen
+übersichtlichen Arbeitsplatz.
+
+</p>
+
+
+<br>
+
+
+<h3>Mögliche Anpassungen</h3>
+
+
+<p>
+
+✔ benötigte Fenster einblenden
+
+<br>
+
+✔ unnötige Bereiche schließen
+
+<br>
+
+✔ häufig verwendete Werkzeuge erreichbar machen
+
+<br>
+
+✔ Darstellung übersichtlich gestalten
+
+</p>
+
+
+<br>
+
+
+<h3>Ziel</h3>
+
+
+<p>
+
+Die Oberfläche sollte so eingerichtet sein,
+dass häufige Arbeitsabläufe schnell und
+sicher durchgeführt werden können.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+💾 Speicher- und Projektoptionen
+</summary>
+
+
+<div class="article">
+
+
+<h3>Wichtige Punkte</h3>
+
+
+<p>
+
+Projektbezogene Einstellungen und Speicherorte
+sollten nachvollziehbar eingerichtet sein.
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrolle</h3>
+
+
+<p>
+
+Prüfen:
+
+<br><br>
+
+✔ richtiger Projektpfad
+
+<br>
+
+✔ aktueller Bearbeitungsstand
+
+<br>
+
+✔ Daten am richtigen Speicherort
+
+<br>
+
+✔ Sicherungen vorhanden
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details open>
+
+
+<summary>
+🔍 Einstellungen vor wichtigen Arbeitsschritten prüfen
+</summary>
+
+
+<div class="article">
+
+
+<h3>Vor Berechnungen</h3>
+
+
+<p>
+
+Vor Berechnungen sollten folgende Punkte
+kontrolliert werden:
+
+<br><br>
+
+✔ richtige Punkte geladen
+
+<br>
+
+✔ Koordinatensystem korrekt
+
+<br>
+
+✔ Einstellungen passend zur Aufgabe
+
+</p>
+
+
+<br>
+
+
+<h3>Vor Transformationen</h3>
+
+
+<p>
+
+Prüfen:
+
+<br><br>
+
+✔ Ausgangssystem
+
+<br>
+
+✔ Zielsystem
+
+<br>
+
+✔ Passpunkte
+
+<br>
+
+✔ Bezugseinstellungen
+
+</p>
+
+
+<br>
+
+
+<h3>Vor Exporten</h3>
+
+
+<p>
+
+Kontrollieren:
+
+<br><br>
+
+✔ gewünschte Daten ausgewählt
+
+<br>
+
+✔ richtiges Ausgabeformat
+
+<br>
+
+✔ Ergebnisse geprüft
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+⚠ Fehler durch falsche Einstellungen
+</summary>
+
+
+<div class="article">
+
+
+<table>
+
+
+<tr>
+
+<th>Problem</th>
+
+<th>Mögliche Ursache</th>
+
+</tr>
+
+
+<tr>
+
+<td>
+Punkte werden falsch dargestellt
+</td>
+
+<td>
+
+✔ falsches Koordinatensystem
+
+<br>
+
+✔ falscher Bezug
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Berechnung liefert falsche Ergebnisse
+</td>
+
+<td>
+
+✔ falsche Grundeinstellungen
+
+<br>
+
+✔ falsche Ausgangsdaten
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Daten fehlen im Kartenfenster
+</td>
+
+<td>
+
+✔ Darstellung deaktiviert
+
+<br>
+
+✔ falsche Anzeigeoption
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Export enthält falsche Daten
+</td>
+
+<td>
+
+✔ falsche Auswahl
+
+<br>
+
+✔ falsche Einstellungen
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<div class="tipp">
+
+
+<h3>💡 Praxistipp</h3>
+
+
+<p>
+
+Nicht jede Einstellung muss täglich geändert
+werden.
+
+Wichtig ist aber, die Auswirkungen der
+Einstellungen zu verstehen und vor wichtigen
+Arbeitsschritten die Grundlagen zu kontrollieren.
+
+</p>
+
 
 </div>
