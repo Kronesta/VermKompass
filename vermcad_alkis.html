@@ -1,39 +1,811 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VermKompass | VermCAD ALKIS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>🧭 VermKompass</h2>
+
+<p>Vermessungs-Wiki</p>
+
+</div>
+
+
+<ul>
+
+<li><a href="index.html">🏠 Startseite</a></li>
+
+<li><a href="grundlagen.html">📚 Grundlagen</a></li>
+
+<li><a href="arbeitsablaeufe.html">📐 Arbeitsabläufe</a></li>
+
+<li><a href="programme.html" class="active">💻 Programme</a></li>
+
+<li><a href="checklisten.html">📋 Checklisten</a></li>
+
+<li><a href="glossar.html">📖 Glossar</a></li>
+
+<li><a href="favoriten.html">⭐ Favoriten</a></li>
+
+<li><a href="einstellungen.html">⚙ Einstellungen</a></li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="main">
+
+
+<header>
+
+
+<div>
+
+<h1>🗺 VermCAD ALKIS</h1>
+
+<p>
+Verarbeitung von Liegenschaftskatasterdaten
+</p>
+
+</div>
+
+
+<div class="topbar">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Suche nach Begriffen..."
+>
+
+
+<button id="darkMode">
+
+🌙
+
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+
 <div class="chapter-nav">
+
 
 <a href="vermcad.html">
 📌 Übersicht
 </a>
 
+
 <a href="vermcad_grundlagen.html">
 📚 Grundlagen
 </a>
+
 
 <a href="vermcad_oberflaeche.html">
 🖥 Oberfläche
 </a>
 
+
+<a href="vermcad_projektverwaltung.html">
+📂 Projekte
+</a>
+
+
 <a href="vermcad_daten.html">
 📥 Daten
 </a>
+
 
 <a href="vermcad_punkte.html">
 📍 Punkte
 </a>
 
+
 <a href="vermcad_transformation.html">
-🔄 Transformation
+🔄 Transformationen
 </a>
+
 
 <a href="vermcad_berechnung.html">
 🧮 Rechnen
 </a>
 
-<a href="vermcad_alkis.html">
+
+<a href="vermcad_export.html">
+📤 Export
+</a>
+
+
+<a href="vermcad_alkis.html" class="active">
 🗺 ALKIS
 </a>
+
 
 <a href="vermcad_optionen.html">
 ⚙ Optionen
 </a>
+
+
+<a href="vermcad_fehler.html">
+⚠ Fehler
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<h2>🗺 ALKIS in VermCAD</h2>
+
+
+
+
+
+
+
+<div class="info">
+
+
+<h3>Amtliche Geobasisdaten verwenden</h3>
+
+
+<p>
+
+ALKIS-Daten bilden eine wichtige Grundlage
+für viele vermessungstechnische Arbeiten.
+
+Sie enthalten Informationen des
+Liegenschaftskatasters und können in VermCAD
+für Bearbeitung, Kontrolle und Auswertung
+genutzt werden.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<details open>
+
+
+<summary>
+📌 Was ist ALKIS?
+</summary>
+
+
+<div class="article">
+
+
+<h3>Grundidee</h3>
+
+
+<p>
+
+ALKIS steht für:
+
+<br><br>
+
+<b>Amtliches Liegenschaftskataster-Informationssystem</b>
+
+<br><br>
+
+Es beschreibt die digitalen Daten des
+Liegenschaftskatasters.
+
+</p>
+
+
+<br>
+
+
+<h3>Typische Inhalte</h3>
+
+
+<p>
+
+✔ Flurstücke
+
+<br>
+
+✔ Gebäude
+
+<br>
+
+✔ Grenzen
+
+<br>
+
+✔ Tatsächliche Nutzungen
+
+<br>
+
+✔ Punkte und Informationen des Katasters
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+📥 ALKIS-Daten übernehmen
+</summary>
+
+
+<div class="article">
+
+
+<h3>Vorbereitung</h3>
+
+
+<p>
+
+Vor der Übernahme müssen die Grundlagen
+geprüft werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrolle</h3>
+
+
+<p>
+
+✔ richtige Datenquelle
+
+<br>
+
+✔ passendes Projekt
+
+<br>
+
+✔ richtiges Koordinatensystem
+
+<br>
+
+✔ aktueller Datenstand
+
+</p>
+
+
+<br>
+
+
+<h3>Ziel</h3>
+
+
+<p>
+
+Die Daten sollen vollständig und korrekt in
+das Projekt übernommen werden.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🔍 Kontrolle der übernommenen ALKIS-Daten
+</summary>
+
+
+<div class="article">
+
+
+<h3>Nach der Übernahme prüfen</h3>
+
+
+<p>
+
+Der Import sollte anschließend fachlich
+kontrolliert werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Prüfen:</h3>
+
+
+<p>
+
+✔ Sind Flurstücke vorhanden?
+
+<br>
+
+✔ Stimmen Grenzen?
+
+<br>
+
+✔ Sind Gebäude dargestellt?
+
+<br>
+
+✔ Sind Attribute vorhanden?
+
+<br>
+
+✔ Liegen die Daten an der richtigen Stelle?
+
+</p>
+
+
+<div class="screenshot">
+
+📷 Screenshot:
+ALKIS-Darstellung in VermCAD
+
+</div>
+
+
+</div>
+
+
+</details>
+<details>
+
+
+<summary>
+📍 ALKIS und Vermessungsbearbeitung
+</summary>
+
+
+<div class="article">
+
+
+<h3>Verwendung im Arbeitsablauf</h3>
+
+
+<p>
+
+ALKIS-Daten dienen häufig als Grundlage
+für weitere vermessungstechnische Arbeiten.
+
+Sie können beispielsweise zur Kontrolle,
+Darstellung und Vorbereitung von Aufgaben
+verwendet werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Typische Anwendungen</h3>
+
+
+<p>
+
+✔ Kontrolle von Flurstücksgrenzen
+
+<br>
+
+✔ Vergleich mit örtlichen Messungen
+
+<br>
+
+✔ Darstellung von Gebäuden
+
+<br>
+
+✔ Vorbereitung von Vermessungsaufgaben
+
+<br>
+
+✔ Unterstützung bei Auswertungen
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🔎 Kontrolle von Grenzen und Objekten
+</summary>
+
+
+<div class="article">
+
+
+<h3>Warum kontrollieren?</h3>
+
+
+<p>
+
+ALKIS-Daten sind eine wichtige Grundlage.
+Trotzdem müssen die übernommenen Daten
+immer geprüft und mit der Aufgabe verglichen
+werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Prüfschritte</h3>
+
+
+<p>
+
+Kontrollieren:
+
+<br><br>
+
+✔ richtige Flurstücke geladen
+
+<br>
+
+✔ Grenzen vollständig dargestellt
+
+<br>
+
+✔ Gebäude vorhanden
+
+<br>
+
+✔ Attribute korrekt übernommen
+
+<br>
+
+✔ Darstellung passt zum Arbeitsgebiet
+
+</p>
+
+
+<br>
+
+
+<h3>Vergleich mit Vermessungsdaten</h3>
+
+
+<p>
+
+Bei einer Vermessungsaufgabe werden
+ALKIS-Daten häufig mit eigenen Messungen
+verglichen.
+
+Dabei prüfen:
+
+<br><br>
+
+✔ Lageunterschiede
+
+<br>
+
+✔ Punktinformationen
+
+<br>
+
+✔ Abweichungen zwischen Bestand und Messung
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+⚠ Typische Fehler bei ALKIS-Daten
+</summary>
+
+
+<div class="article">
+
+
+<table>
+
+
+<tr>
+
+<th>Problem</th>
+
+<th>Mögliche Ursache</th>
+
+</tr>
+
+
+<tr>
+
+<td>
+ALKIS-Daten werden nicht angezeigt
+</td>
+
+<td>
+
+✔ Daten nicht geladen
+
+<br>
+
+✔ falscher Ausschnitt
+
+<br>
+
+✔ Darstellung deaktiviert
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Objekte liegen falsch
+</td>
+
+<td>
+
+✔ falsches Koordinatensystem
+
+<br>
+
+✔ falscher Lagebezug
+
+<br>
+
+✔ fehlerhafte Transformation
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Informationen fehlen
+</td>
+
+<td>
+
+✔ unvollständiger Datenbestand
+
+<br>
+
+✔ falsche Datenübernahme
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Grenzen passen nicht zur Messung
+</td>
+
+<td>
+
+✔ Unterschiede zwischen Kataster und örtlicher Situation
+
+<br>
+
+✔ Prüfung der Grundlagen notwendig
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
+
+<summary>
+🗂 Zusammenhang mit anderen VermCAD-Bereichen
+</summary>
+
+
+<div class="article">
+
+
+<p>
+
+ALKIS steht nicht allein, sondern ist mit
+vielen anderen Bereichen verbunden.
+
+<br><br>
+
+
+📥 Datenimport
+
+<br>
+→ Übernahme der ALKIS-Daten
+
+
+<br><br>
+
+📍 Punkte
+
+<br>
+→ Kontrolle und Verwendung von Punkten
+
+
+<br><br>
+
+🧮 Berechnungen
+
+<br>
+→ Nutzung von Grundlagen für Auswertungen
+
+
+<br><br>
+
+🔄 Transformationen
+
+<br>
+→ Anpassung verschiedener Bezugssysteme
+
+
+<br><br>
+
+📤 Export
+
+<br>
+→ Weitergabe bearbeiteter Ergebnisse
+
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<div class="tipp">
+
+
+<h3>💡 Praxistipp</h3>
+
+
+<p>
+
+ALKIS-Daten sind eine wichtige Arbeitsgrundlage,
+ersetzen aber nicht die fachliche Kontrolle.
+
+Vor jeder weiteren Bearbeitung sollte geprüft
+werden, ob die Daten zur aktuellen Aufgabe
+passen.
+
+</p>
+
 
 </div>
