@@ -111,12 +111,12 @@ begriffe:"GEOgraf Grafik Zeichnung Plan Darstellung Vermessung"
 titel:"Glossar",
 seite:"glossar.html",
 begriffe:"Fachbegriffe Definition Erklärung Vermessung ALKIS SAPOS GNSS"
-}
+};
 {
 titel:"VermCAD Verkettungstransformation",
 seite:"vermcad_transformation.html",
 begriffe:"Verkettung Transformation Passpunkte Lagestatus MWT Ausgangssystem Zielsystem Koordinaten"
-}
+};
 
 
 {
