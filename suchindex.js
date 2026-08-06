@@ -1,3 +1,4 @@
+alert("Suchindex läuft");
 const suchIndex = [
 
 {
