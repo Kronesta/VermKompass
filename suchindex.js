@@ -1,4 +1,5 @@
 alert("Suchindex läuft");
+
 const suchIndex = [
 
 {
@@ -22,9 +23,8 @@ begriffe:"GNSS GPS Galileo GLONASS BeiDou Satellit Vermessung RTK NRTK SAPOS HEP
 {
 titel:"Transformationen",
 seite:"grundlagen.html",
-begriffe:"Transformation Verkettung Koordinatentransformation Bezugssystem Ausgangssystem Zielsystem EPSG UTM Gauß-Krüger"
+begriffe:"Transformation Verkettete Transformation Koordinatentransformation Bezugssystem Ausgangssystem Zielsystem EPSG UTM Gauß-Krüger"
 },
-
 
 {
 titel:"VermCAD",
@@ -55,7 +55,6 @@ titel:"Vermessungsdokumentation",
 seite:"vermessungsdokumentation.html",
 begriffe:"Dokumentation Vermessung Nachweis Bericht Unterlagen Riss Messung Auswertung"
 },
-
 
 {
 titel:"DMS-Karibu Grundlagen",
@@ -93,7 +92,6 @@ seite:"dmskaribu_geosieb.html",
 begriffe:"Geosieb Karte Flurstück Lage Darstellung Geometrie"
 },
 
-
 {
 titel:"CARLO",
 seite:"carlo.html",
@@ -106,146 +104,124 @@ seite:"geograf.html",
 begriffe:"GEOgraf Grafik Zeichnung Plan Darstellung Vermessung"
 },
 
-
 {
 titel:"Glossar",
 seite:"glossar.html",
 begriffe:"Fachbegriffe Definition Erklärung Vermessung ALKIS SAPOS GNSS"
-};
-{
-titel:"VermCAD Verkettungstransformation",
-seite:"vermcad_transformation.html",
-begriffe:"Verkettung Transformation Passpunkte Lagestatus MWT Ausgangssystem Zielsystem Koordinaten"
-};
+},
 
+{
+titel:"VermCAD Verkettete Transformation",
+seite:"vermcad_transformation.html",
+begriffe:"Verkettete Transformation Passpunkte Lagestatus MWT Ausgangssystem Zielsystem Koordinaten Zwischensystem"
+},
 
 {
 titel:"VermCAD Grundlagen",
 seite:"vermcad_grundlagen.html",
-begriffe:
-"VermCAD Grundlagen Software Vermessung Projekt Arbeitsablauf Punkt Koordinate Bezugssystem Transformation"
+begriffe:"VermCAD Grundlagen Software Vermessung Projekt Arbeitsablauf Punkt Koordinate Bezugssystem Transformation"
 },
 
 {
 titel:"VermCAD Oberfläche",
 seite:"vermcad_oberflaeche.html",
-begriffe:
-"Oberfläche Menüleiste Symbolleisten Kartenfenster Projektbereich Eigenschaften Statusleiste Fenster"
+begriffe:"Oberfläche Menüleiste Symbolleisten Kartenfenster Projektbereich Eigenschaften Statusleiste Fenster"
 },
 
 {
 titel:"VermCAD Projektverwaltung",
 seite:"vermcad_projektverwaltung.html",
-begriffe:
-"Projekt anlegen Projekteinstellungen Projektstruktur Speicherort Sicherung Projektverwaltung"
+begriffe:"Projekt anlegen Projekteinstellungen Projektstruktur Speicherort Sicherung Projektverwaltung"
 },
 
 {
 titel:"VermCAD Datenimport",
 seite:"vermcad_daten.html",
-begriffe:
-"Daten Import Datenimport Datei Punktdaten Messdaten Koordinaten Format Übergabe"
+begriffe:"Daten Import Datenimport Datei Punktdaten Messdaten Koordinaten Format Übergabe"
 },
 
 {
 titel:"VermCAD Punkte",
 seite:"vermcad_punkte.html",
-begriffe:
-"Punkte Punkt Punktnummer Koordinaten Rechtswert Hochwert Höhe Grenzpunkt Gebäudepunkt Festpunkt Aufnahmepunkt"
+begriffe:"Punkte Punkt Punktnummer Koordinaten Rechtswert Hochwert Höhe Grenzpunkt Gebäudepunkt Festpunkt Aufnahmepunkt"
 },
 
 {
 titel:"VermCAD Berechnungen",
 seite:"vermcad_berechnung.html",
-begriffe:
-"Berechnung Auswertung Polarberechnung Orthogonalaufnahme Schnitt Flächenberechnung Koordinatenberechnung"
+begriffe:"Berechnung Auswertung Polarberechnung Orthogonalaufnahme Schnitt Flächenberechnung Koordinatenberechnung"
 },
 
 {
 titel:"VermCAD Transformation",
 seite:"vermcad_transformation.html",
-begriffe:
-"Transformation Koordinatensystem Bezugssystem EPSG Lagestatus Passpunkte Restklaffen Ausgangssystem Zielsystem"
+begriffe:"Transformation Koordinatensystem Bezugssystem EPSG Lagestatus Passpunkte Restklaffen Ausgangssystem Zielsystem"
 },
 
 {
 titel:"Verkettete Transformation",
 seite:"vermcad_transformation.html",
-begriffe:
-"verkettete Transformation Zwischensystem mehrere Transformationen historische Daten lokale Systeme"
+begriffe:"Verkettete Transformation Zwischensystem mehrere Transformationen historische Daten lokale Systeme"
 },
 
 {
 titel:"VermCAD Export",
 seite:"vermcad_export.html",
-begriffe:
-"Export Ausgabe Datenübergabe Datei Koordinatenliste Austauschformat Dokumentation"
+begriffe:"Export Ausgabe Datenübergabe Datei Koordinatenliste Austauschformat Dokumentation"
 },
 
 {
 titel:"VermCAD ALKIS",
 seite:"vermcad_alkis.html",
-begriffe:
-"ALKIS Liegenschaftskataster Flurstück Grenze Gebäude Nutzung Katasterdaten"
+begriffe:"ALKIS Liegenschaftskataster Flurstück Grenze Gebäude Nutzung Katasterdaten"
 },
 
 {
 titel:"VermCAD Optionen",
 seite:"vermcad_optionen.html",
-begriffe:
-"Optionen Einstellungen Darstellung Koordinaten Arbeitsumgebung Speicher Einstellungen"
+begriffe:"Optionen Einstellungen Darstellung Koordinaten Arbeitsumgebung Speicher Einstellungen"
 },
 
 {
 titel:"VermCAD Fehlerdatenbank",
 seite:"vermcad_fehler.html",
-begriffe:
-"Fehler Fehlermeldung Problem Lösung Ursache Passpunkte nicht möglich Punkte nicht sichtbar"
+begriffe:"Fehler Fehlermeldung Problem Lösung Ursache Passpunkte nicht möglich Punkte nicht sichtbar"
 },
-
-
 
 {
 titel:"Keine Passpunkte vorhanden",
 seite:"vermcad_fehler.html",
-begriffe:
-"Keine Passpunkte Transformation nicht möglich Passpunkte fehlen"
+begriffe:"Keine Passpunkte Transformation nicht möglich Passpunkte fehlen"
 },
 
 {
 titel:"Punkte werden nicht angezeigt",
 seite:"vermcad_fehler.html",
-begriffe:
-"Punkte sichtbar Anzeige Kartenfenster Ausschnitt Zoom Darstellung"
+begriffe:"Punkte sichtbar Anzeige Kartenfenster Ausschnitt Zoom Darstellung"
 },
 
 {
 titel:"Punkte liegen falsch",
 seite:"vermcad_fehler.html",
-begriffe:
-"Punkte falsch weit entfernt Koordinaten falsch Lagestatus EPSG"
+begriffe:"Punkte falsch weit entfernt Koordinaten falsch Lagestatus EPSG"
 },
 
 {
 titel:"Datenimport Fehler",
 seite:"vermcad_fehler.html",
-begriffe:
-"Import Fehler Daten fehlen falsche Datei falsches Format"
+begriffe:"Import Fehler Daten fehlen falsche Datei falsches Format"
 },
-
 
 {
 titel:"Grenzpunkte",
 seite:"vermcad_punkte.html",
-begriffe:
-"Grenzpunkt Grenze Flurstück Kataster Punkt"
+begriffe:"Grenzpunkt Grenze Flurstück Kataster Punkt"
 },
 
 {
 titel:"Koordinatensysteme",
 seite:"grundlagen.html",
-begriffe:
-"UTM Gauß-Krüger ETRS89 EPSG Koordinatensystem Lagebezug Höhenbezug"
+begriffe:"UTM Gauß-Krüger ETRS89 EPSG Koordinatensystem Lagebezug Höhenbezug"
 }
 
 ];
