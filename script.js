@@ -117,7 +117,7 @@ box.style.padding="10px";
 box.style.borderRadius="10px";
 box.style.boxShadow="0 10px 20px rgba(0,0,0,.15)";
 box.style.zIndex="9999";
-
+box.style.position="absolute";
 
 
         if(treffer.length===0){
