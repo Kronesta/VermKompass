@@ -104,20 +104,18 @@ let box=document.createElement("div");
 
 box.id="suchErgebnisse";
 
-box.style.position="fixed";
+let feldPosition = searchInput.getBoundingClientRect();
 
-let position = searchInput.getBoundingClientRect();
-
-box.style.top = (position.bottom + 5) + "px";
-box.style.left = position.left + "px";
+box.style.position="absolute";
+box.style.top = (feldPosition.bottom + window.scrollY + 5) + "px";
+box.style.left = (feldPosition.left + window.scrollX) + "px";
 
 box.style.background="white";
-box.style.width="320px";
+box.style.width = feldPosition.width + "px";
 box.style.padding="10px";
 box.style.borderRadius="10px";
 box.style.boxShadow="0 10px 20px rgba(0,0,0,.15)";
 box.style.zIndex="9999";
-box.style.position="absolute";
 
 
         if(treffer.length===0){
