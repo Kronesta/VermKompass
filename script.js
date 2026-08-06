@@ -161,8 +161,7 @@ p.style.margin="0";
 
 
 
-        searchInput.parentElement.appendChild(box);
-
+        document.body.appendChild(box);
 
 
     });
