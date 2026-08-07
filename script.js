@@ -57,8 +57,8 @@ if(localStorage.getItem("theme")==="dark"){
 
 const searchInput = document.getElementById("searchInput");
 
-
-if(searchInput && typeof suchIndex !== "undefined"){
+console.log("Suchfeld:", searchInput);
+if(searchInput){
 
 
     searchInput.addEventListener("keyup",function(){
