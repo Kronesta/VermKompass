@@ -162,13 +162,13 @@ if (searchInput) {
             let p = document.createElement("p");
 
 
-            let titel = eintrag.titel.replace(
+          let titel = eintrag.titel.replace(
 
-                new RegExp(suche, "gi"),
+    new RegExp(suche, "gi"),
 
-                "<b>$&</b>"
+    "<mark>$&</mark>"
 
-            );
+);
 
 
 
