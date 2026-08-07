@@ -1106,3 +1106,140 @@ details .article{
     box-shadow:none;
 
 }
+/* ======================
+MOBILE ANPASSUNG
+====================== */
+
+@media screen and (max-width: 768px){
+
+
+/* Sidebar wird oben angezeigt */
+
+.sidebar{
+
+    position:relative;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+.sidebar ul{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    padding:0;
+
+}
+
+
+.sidebar li{
+
+    margin:5px;
+
+}
+
+
+
+/* Hauptbereich */
+
+.main{
+
+    margin-left:0;
+
+    padding:15px;
+
+}
+
+
+
+/* Kopfbereich */
+
+header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+}
+
+
+
+/* Suchleiste */
+
+.topbar{
+
+    width:100%;
+
+}
+
+
+.topbar input{
+
+    width:100%;
+
+}
+
+
+
+/* Artikel */
+
+.article,
+.info,
+.tipp{
+
+    padding:15px;
+
+}
+
+
+
+/* Tabellen */
+
+table{
+
+    display:block;
+
+    overflow-x:auto;
+
+    width:100%;
+
+}
+
+
+
+/* Überschriften */
+
+h1{
+
+    font-size:28px;
+
+}
+
+
+h2{
+
+    font-size:22px;
+
+}
+
+
+
+/* Buttons */
+
+button{
+
+    max-width:100%;
+
+}
+
+
+}
