@@ -107,8 +107,8 @@ box.id="suchErgebnisse";
 let feldPosition = searchInput.getBoundingClientRect();
 
 box.style.position="absolute";
-box.style.top = (feldPosition.bottom + window.scrollY + 5) + "px";
-box.style.left = (feldPosition.left + window.scrollX) + "px";
+box.style.top = (feldPosition.bottom + window\.scrollY + 5) + "px";
+box.style.left = (feldPosition.left + window\.scrollX) + "px";
 
 box.style.background="white";
 box.style.width = feldPosition.width + "px";
