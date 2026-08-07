@@ -55,11 +55,10 @@ if(localStorage.getItem("theme")==="dark"){
 // Suche
 // ----------------------------
 
-
 const searchInput = document.getElementById("searchInput");
 
 
-if(searchInput){
+if(searchInput && typeof suchIndex !== "undefined"){
 
 
     searchInput.addEventListener("keyup",function(){
