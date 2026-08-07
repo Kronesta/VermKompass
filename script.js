@@ -291,3 +291,21 @@ if(favoritenListe){
     }
 
 }
+// ============================
+// Sidebar laden
+// ============================
+
+let sidebarContainer = document.getElementById("sidebar");
+
+
+if(sidebarContainer){
+
+    fetch("sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+
+        sidebarContainer.innerHTML = data;
+
+    });
+
+}
