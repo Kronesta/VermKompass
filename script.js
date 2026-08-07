@@ -204,3 +204,90 @@ if (searchInput) {
 
 
 }
+// ============================
+// Favoriten
+// ============================
+
+
+function favoritHinzufuegen(titel, seite) {
+
+
+    let favoriten = JSON.parse(
+        localStorage.getItem("favoriten")
+    ) || [];
+
+
+    let vorhanden = favoriten.find(
+        eintrag => eintrag.seite === seite
+    );
+
+
+    if(!vorhanden){
+
+        favoriten.push({
+
+            titel:titel,
+
+            seite:seite
+
+        });
+
+
+        localStorage.setItem(
+            "favoriten",
+            JSON.stringify(favoriten)
+        );
+
+    }
+
+}
+
+
+
+// Favoriten auf der Favoriten-Seite anzeigen
+
+
+let favoritenListe = document.getElementById("favoritenListe");
+
+
+if(favoritenListe){
+
+
+    let favoriten = JSON.parse(
+        localStorage.getItem("favoriten")
+    ) || [];
+
+
+
+    if(favoriten.length > 0){
+
+
+        favoritenListe.innerHTML =
+        "<h3>⭐ Meine Favoriten</h3>";
+
+
+
+        favoriten.forEach(function(eintrag){
+
+
+            let p = document.createElement("p");
+
+
+            p.innerHTML =
+            "⭐ <a href='" 
+            + eintrag.seite 
+            + "'>"
+            + eintrag.titel
+            + "</a>";
+
+
+
+            favoritenListe.appendChild(p);
+
+
+        });
+
+
+    }
+
+}
