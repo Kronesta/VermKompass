@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VermKompass | Einstellungen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>🧭 VermKompass</h2>
+
+<p>Vermessungs-Wiki</p>
+
+</div>
+
+
+
+<ul>
+
+<li><a href="index.html">🏠 Startseite</a></li>
+
+<li><a href="grundlagen.html">📚 Grundlagen</a></li>
+
+<li><a href="arbeitsablaeufe.html">📐 Arbeitsabläufe</a></li>
+
+<li><a href="programme.html">💻 Programme</a></li>
+
+<li><a href="checklisten.html">📋 Checklisten</a></li>
+
+<li><a href="glossar.html">📖 Glossar</a></li>
+
+<li><a href="favoriten.html">⭐ Favoriten</a></li>
+
+<li><a href="einstellungen.html" class="active">⚙ Einstellungen</a></li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="main">
+
+
+<header>
+
+
+<div>
+
+<h1>⚙ Einstellungen</h1>
+
+<p>
+Einstellungen und Rückmeldungen zu VermKompass
+</p>
+
+</div>
+
+
+
+<div class="topbar">
+
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Suche nach Begriffen..."
+>
+
+
+<button id="darkMode">
+🌙
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+<section>
+
+
+
+
+
+<div class="info">
+
+
+<h3>🧭 Über VermKompass</h3>
+
+
+<p>
+
+VermKompass ist ein digitales Nachschlagewerk
+für die Ausbildung und den Arbeitsalltag in der
+Vermessung.
+
+Die Seite sammelt Grundlagen, Arbeitsabläufe,
+Programme und praktische Hilfen.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="article">
+
+
+<h3>🌙 Darstellung</h3>
+
+
+<p>
+
+Über die Schaltfläche oben rechts kann zwischen
+heller und dunkler Ansicht gewechselt werden.
+
+Die Einstellung wird automatisch gespeichert.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="article">
+
+
+<h3>🔍 Suche</h3>
+
+
+<p>
+
+Über die Suchfunktion können Begriffe schnell
+im gesamten VermKompass gefunden werden.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="article">
+
+
+<h3>💬 Feedback & Verbesserungsvorschläge</h3>
+
+
+<p>
+
+Fehler gefunden? 
+Fehlt eine Erklärung?
+Hast du eine Idee zur Verbesserung?
+
+Dann kannst du hier eine Rückmeldung senden.
+
+</p>
+
+
+
+
+<form action="https://formspree.io/f/mgawvpqw" method="POST">
+
+
+
+<label>
+
+Name (optional)
+
+</label>
+
+
+<br>
+
+
+<input 
+type="text"
+name="name"
+placeholder="Name"
+>
+
+
+<br><br>
+
+
+
+<label>
+
+E-Mail (optional)
+
+</label>
+
+
+<br>
+
+
+<input
+type="email"
+name="email"
+placeholder="E-Mail"
+>
+
+
+<br><br>
+
+
+
+<label>
+
+Art der Rückmeldung
+
+</label>
+
+
+<br>
+
+
+<select name="art">
+
+
+<option>
+Fehler gefunden
+</option>
+
+
+<option>
+Verbesserungsvorschlag
+</option>
+
+
+<option>
+Neuer Inhalt
+</option>
+
+
+<option>
+Sonstiges
+</option>
+
+
+</select>
+
+
+<br><br>
+
+
+
+
+<label>
+
+Nachricht
+
+</label>
+
+
+<br>
+
+
+<textarea
+name="message"
+rows="6"
+placeholder="Deine Nachricht..."
+></textarea>
+
+
+<br><br>
+
+
+
+<button type="submit">
+
+📨 Feedback senden
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="article">
+
+
+<h3>ℹ Version</h3>
+
+
+<p>
+
+VermKompass
+
+<br>
+
+Version 1.0
+
+<br>
+
+Stand: 2026
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="tipp">
+
+
+<h3>💡 Hinweis</h3>
+
+
+<p>
+
+VermKompass wird laufend erweitert.
+Feedback hilft dabei, Inhalte zu verbessern
+und Fehler schneller zu finden.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 VermKompass
+</p>
+
+</footer>
+
+
+
+
+
+
+
+<script src="suchindex.js"></script>
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
