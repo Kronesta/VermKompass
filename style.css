@@ -515,40 +515,136 @@ RESPONSIVE DESIGN
 }
 
 /* ======================
-DARK MODE
+DARK MODE 2.0
 ====================== */
+
 
 body.dark {
 
-    background:#121826;
+    background:#0f172a;
 
-    color:#e5e7eb;
+    color:#e2e8f0;
 
 }
+
+
+/* Sidebar */
+
+body.dark .sidebar {
+
+    background:#111827;
+
+    border-right:1px solid #334155;
+
+}
+
+
+body.dark .logo h2 {
+
+    color:#f8fafc;
+
+}
+
+
+body.dark .logo p {
+
+    color:#94a3b8;
+
+}
+
+
+body.dark .sidebar a {
+
+    color:#cbd5e1;
+
+}
+
+
+body.dark .sidebar a:hover,
+body.dark .sidebar a.active {
+
+    background:#1e40af;
+
+    color:white;
+
+}
+
 
 
 /* Hauptbereich */
 
 body.dark .main {
 
-    background:#121826;
+    background:#0f172a;
 
 }
 
 
-/* Karten / Artikel */
 
-body.dark .article,
-body.dark .info,
-body.dark .tipp {
+/* Kopfbereich */
+
+body.dark header {
+
+    background:#0f172a;
+
+}
+
+
+body.dark header p {
+
+    color:#94a3b8;
+
+}
+
+
+
+/* Karten */
+
+body.dark .article {
 
     background:#1e293b;
 
-    color:#e5e7eb;
+    color:#e2e8f0;
 
-    border-color:#334155;
+    border:1px solid #334155;
 
 }
+
+
+body.dark .article:hover {
+
+    border-color:#3b82f6;
+
+}
+
+
+
+/* Info Box */
+
+body.dark .info {
+
+    background:#172554;
+
+    color:#e0f2fe;
+
+    border-left:5px solid #3b82f6;
+
+}
+
+
+
+/* Tipp Box */
+
+body.dark .tipp {
+
+    background:#14532d;
+
+    color:#dcfce7;
+
+    border-left:5px solid #22c55e;
+
+}
+
 
 
 /* Überschriften */
@@ -557,12 +653,13 @@ body.dark h1,
 body.dark h2,
 body.dark h3 {
 
-    color:#f1f5f9;
+    color:#f8fafc;
 
 }
 
 
-/* Normale Texte */
+
+/* Texte */
 
 body.dark p {
 
@@ -571,13 +668,31 @@ body.dark p {
 }
 
 
+
+/* Details */
+
+body.dark details {
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+}
+
+
+body.dark summary {
+
+    color:#f8fafc;
+
+}
+
+
+
 /* Tabellen */
 
 body.dark table {
 
     background:#1e293b;
-
-    color:#e5e7eb;
 
 }
 
@@ -586,10 +701,14 @@ body.dark th {
 
     background:#334155;
 
+    color:white;
+
 }
 
 
 body.dark td {
+
+    color:#e2e8f0;
 
     border-color:#475569;
 
@@ -597,7 +716,7 @@ body.dark td {
 
 
 
-/* Eingabefelder */
+/* Eingaben */
 
 body.dark input,
 body.dark textarea,
@@ -605,61 +724,49 @@ body.dark select {
 
     background:#1e293b;
 
-    color:#e5e7eb;
+    color:white;
 
-    border-color:#475569;
+    border:1px solid #475569;
 
 }
 
 
 
-/* Suchfeld */
+/* Suchergebnisse */
 
 body.dark #suchErgebnisse {
 
     background:#1e293b !important;
 
-    color:#e5e7eb;
+    color:#f8fafc;
+
+    border:1px solid #475569;
+
+}
+
+
+body.dark #suchErgebnisse p:hover {
+
+    background:#334155;
 
 }
 
 
 
-/* Links */
-
-body.dark a {
-
-    color:#60a5fa;
-
-}
-
-
-
-/* Details / Aufklappbereiche */
-
-body.dark details {
-
-    background:#1e293b;
-
-    color:#e5e7eb;
-
-}
-
-
-body.dark summary {
-
-    color:#f1f5f9;
-
-}
-
-
-/* Druckbutton */
+/* Buttons */
 
 body.dark button {
 
     background:#2563eb;
 
     color:white;
+
+}
+
+
+body.dark button:hover {
+
+    background:#1d4ed8;
 
 }
 /* ======================
