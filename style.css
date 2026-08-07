@@ -1110,7 +1110,30 @@ details .article{
 MOBILE ANPASSUNG
 ====================== */
 
-@media screen and (max-width: 768px){
+.sidebar ul{
+
+    display:block;
+
+}
+
+
+.sidebar li{
+
+    width:100%;
+
+    text-align:left;
+
+}
+
+
+.sidebar a{
+
+    display:block;
+
+    width:100%;
+
+}
+{
 
 
 /* Sidebar wird oben angezeigt */
