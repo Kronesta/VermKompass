@@ -518,54 +518,150 @@ RESPONSIVE DESIGN
 DARK MODE
 ====================== */
 
-body.dark{
+body.dark {
 
-    --background:#121212;
-    --card:#1d1d1d;
-    --text:#eeeeee;
-    --border:#333333;
+    background:#121826;
 
-}
-
-body.dark header{
-
-    background:#1d1d1d;
+    color:#e5e7eb;
 
 }
 
-body.dark footer{
 
-    background:#1d1d1d;
+/* Hauptbereich */
 
-}
+body.dark .main {
 
-body.dark .article{
-
-    background:#1d1d1d;
+    background:#121826;
 
 }
 
-body.dark .card{
 
-    background:#1d1d1d;
+/* Karten / Artikel */
+
+body.dark .article,
+body.dark .info,
+body.dark .tipp {
+
+    background:#1e293b;
+
+    color:#e5e7eb;
+
+    border-color:#334155;
 
 }
 
-body.dark .quickLinks button{
 
-    background:#1d1d1d;
+/* Überschriften */
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+
+    color:#f1f5f9;
+
+}
+
+
+/* Normale Texte */
+
+body.dark p {
+
+    color:#cbd5e1;
+
+}
+
+
+/* Tabellen */
+
+body.dark table {
+
+    background:#1e293b;
+
+    color:#e5e7eb;
+
+}
+
+
+body.dark th {
+
+    background:#334155;
+
+}
+
+
+body.dark td {
+
+    border-color:#475569;
+
+}
+
+
+
+/* Eingabefelder */
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+
+    background:#1e293b;
+
+    color:#e5e7eb;
+
+    border-color:#475569;
+
+}
+
+
+
+/* Suchfeld */
+
+body.dark #suchErgebnisse {
+
+    background:#1e293b !important;
+
+    color:#e5e7eb;
+
+}
+
+
+
+/* Links */
+
+body.dark a {
+
+    color:#60a5fa;
+
+}
+
+
+
+/* Details / Aufklappbereiche */
+
+body.dark details {
+
+    background:#1e293b;
+
+    color:#e5e7eb;
+
+}
+
+
+body.dark summary {
+
+    color:#f1f5f9;
+
+}
+
+
+/* Druckbutton */
+
+body.dark button {
+
+    background:#2563eb;
+
     color:white;
 
 }
-
-body.dark input{
-
-    background:#1d1d1d;
-    color:white;
-    border:1px solid #555;
-
-}
-
 /* ======================
 INFOBOXEN
 ====================== */
