@@ -1318,3 +1318,43 @@ button{
     }
 
 }
+/* ======================
+   MOBILE CHAPTER NAV
+====================== */
+
+@media screen and (max-width: 768px) {
+
+    .chapter-nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 6px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .chapter-nav a {
+
+        display: block;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 10px 12px;
+
+        text-align: left;
+
+        white-space: normal;
+
+        border-radius: 8px;
+
+    }
+
+}
