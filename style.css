@@ -1330,9 +1330,15 @@ button{
 
         flex-direction: row;
 
+        align-items: center;
+
         gap: 6px;
 
         width: 100%;
+
+        max-width: 100%;
+
+        box-sizing: border-box;
 
         overflow-x: auto;
 
@@ -1340,13 +1346,20 @@ button{
 
         white-space: nowrap;
 
-        padding: 4px 2px 8px;
+        padding: 3px 2px 8px;
 
         margin-bottom: 15px;
 
         -webkit-overflow-scrolling: touch;
 
-        scrollbar-width: thin;
+        scrollbar-width: none;
+
+    }
+
+
+    .chapter-nav::-webkit-scrollbar {
+
+        display: none;
 
     }
 
@@ -1355,13 +1368,21 @@ button{
 
         flex: 0 0 auto;
 
-        padding: 8px 11px;
+        display: inline-block;
+
+        width: auto;
+
+        padding: 7px 10px;
 
         font-size: 13px;
 
+        line-height: 1.2;
+
         white-space: nowrap;
 
-        border-radius: 8px;
+        border-radius: 7px;
+
+        box-sizing: border-box;
 
     }
 
