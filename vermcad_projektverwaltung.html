@@ -17,8 +17,6 @@
 <div class="main">
 
 <header>
-    <div></div>
-
     <div class="topbar">
         <input type="text" id="searchInput" placeholder="🔍 Suche nach Begriffen...">
         <button id="darkMode">🌙</button>
@@ -27,7 +25,10 @@
 
 <section>
 
-<!-- HERO -->
+<!-- =====================================================
+     HERO
+===================================================== -->
+
 <div class="project-hero">
 
     <div class="project-hero-content">
@@ -39,13 +40,17 @@
         </div>
 
         <div class="project-hero-copy">
-            <span class="project-kicker">VERMKOMPASS · VERMESSUNG</span>
+
+            <span class="project-kicker">
+                VERMKOMPASS · VERMESSUNG
+            </span>
 
             <h2>Projektverwaltung</h2>
 
             <p>
                 Projektanlage, Datenübernahme und praktische Arbeitsabläufe.
             </p>
+
         </div>
 
         <div class="project-coordinates">
@@ -55,13 +60,19 @@
         </div>
 
     </div>
+
 </div>
 
 
-<!-- ARBEITSABLAUF -->
+<!-- =====================================================
+     WORKFLOW
+===================================================== -->
+
 <div class="workflow-heading">
 
-    <span class="section-kicker">ARBEITSABLAUF</span>
+    <span class="section-kicker">
+        ARBEITSABLAUF
+    </span>
 
     <h2>Was möchtest du tun?</h2>
 
@@ -74,510 +85,1027 @@
 
 <div class="workflow-grid">
 
-<a href="#projekt-erstellen" class="workflow-card">
-    <span class="workflow-number">01</span>
-    <span class="workflow-icon">📂</span>
-    <strong>Projekt erstellen</strong>
-    <small>Neues Projekt anlegen und Rissnummer ermitteln.</small>
-    <span class="workflow-arrow">→</span>
-</a>
+    <a href="#projekt-erstellen" class="workflow-card">
 
-<a href="#daten-importieren" class="workflow-card">
-    <span class="workflow-number">02</span>
-    <span class="workflow-icon">↓</span>
-    <strong>Daten importieren</strong>
-    <small>Daten aus den benötigten Quellen übernehmen.</small>
-    <span class="workflow-arrow">→</span>
-</a>
+        <span class="workflow-number">01</span>
 
-<a href="#risse-dms" class="workflow-card">
-    <span class="workflow-number">03</span>
-    <span class="workflow-icon">📄</span>
-    <strong>Risse aus DMS</strong>
-    <small>Benötigte Risse suchen und einbinden.</small>
-    <span class="workflow-arrow">→</span>
-</a>
+        <span class="workflow-icon">📂</span>
 
-<a href="#kvz-erstellen" class="workflow-card">
-    <span class="workflow-number">04</span>
-    <span class="workflow-icon">☷</span>
-    <strong>KVZ erstellen</strong>
-    <small>Koordinatenverzeichnis erstellen und prüfen.</small>
-    <span class="workflow-arrow">→</span>
-</a>
+        <strong>Projekt erstellen</strong>
 
-<a href="#kvz-druck" class="workflow-card">
-    <span class="workflow-number">05</span>
-    <span class="workflow-icon">▣</span>
-    <strong>KVZ drucken</strong>
-    <small>Validierung, Seitenzahl und Druck vorbereiten.</small>
-    <span class="workflow-arrow">→</span>
-</a>
+        <small>
+            Neues Projekt anlegen und Rissnummer ermitteln.
+        </small>
 
-<a href="#abschluss" class="workflow-card">
-    <span class="workflow-number">06</span>
-    <span class="workflow-icon">✓</span>
-    <strong>Abschlusskontrolle</strong>
-    <small>Alle wichtigen Punkte vor dem Abschluss prüfen.</small>
-    <span class="workflow-arrow">→</span>
-</a>
+        <span class="workflow-arrow">→</span>
+
+    </a>
+
+
+    <a href="#daten-importieren" class="workflow-card">
+
+        <span class="workflow-number">02</span>
+
+        <span class="workflow-icon">↓</span>
+
+        <strong>Daten importieren</strong>
+
+        <small>
+            Daten aus den benötigten Quellen übernehmen.
+        </small>
+
+        <span class="workflow-arrow">→</span>
+
+    </a>
+
+
+    <a href="#risse-dms" class="workflow-card">
+
+        <span class="workflow-number">03</span>
+
+        <span class="workflow-icon">📄</span>
+
+        <strong>Risse aus DMS</strong>
+
+        <small>
+            Benötigte Risse suchen und einbinden.
+        </small>
+
+        <span class="workflow-arrow">→</span>
+
+    </a>
+
+
+    <a href="#kvz-erstellen" class="workflow-card">
+
+        <span class="workflow-number">04</span>
+
+        <span class="workflow-icon">☷</span>
+
+        <strong>KVZ erstellen</strong>
+
+        <small>
+            Koordinatenverzeichnis erstellen und prüfen.
+        </small>
+
+        <span class="workflow-arrow">→</span>
+
+    </a>
+
+
+    <a href="#kvz-druck" class="workflow-card">
+
+        <span class="workflow-number">05</span>
+
+        <span class="workflow-icon">▣</span>
+
+        <strong>KVZ drucken</strong>
+
+        <small>
+            Validierung, Seitenzahl und Druck vorbereiten.
+        </small>
+
+        <span class="workflow-arrow">→</span>
+
+    </a>
+
+
+    <a href="#abschluss" class="workflow-card">
+
+        <span class="workflow-number">06</span>
+
+        <span class="workflow-icon">✓</span>
+
+        <strong>Abschlusskontrolle</strong>
+
+        <small>
+            Alle wichtigen Punkte vor dem Abschluss prüfen.
+        </small>
+
+        <span class="workflow-arrow">→</span>
+
+    </a>
 
 </div>
 
 
-<!-- INFOBEREICHE -->
+<!-- =====================================================
+     INFO
+===================================================== -->
+
 <div class="project-info-grid">
 
-<div class="project-info-panel">
+    <div class="project-info-panel">
 
-    <div class="panel-title">
-        <span>✓</span>
+        <div class="panel-title">
 
-        <div>
-            <span class="section-kicker">WICHTIG</span>
-            <h3>Wichtige Hinweise</h3>
+            <span>✓</span>
+
+            <div>
+                <span class="section-kicker">
+                    WICHTIG
+                </span>
+
+                <h3>
+                    Wichtige Hinweise
+                </h3>
+            </div>
+
         </div>
+
+        <ul>
+            <li>Richtige Rissnummer verwenden</li>
+            <li>Daten vollständig importieren</li>
+            <li>Zwischenstände speichern</li>
+            <li>Druckeinstellungen kontrollieren</li>
+        </ul>
+
     </div>
 
-    <ul>
-        <li>Richtige Rissnummer verwenden</li>
-        <li>Daten vollständig importieren</li>
-        <li>Zwischenstände speichern</li>
-        <li>Druckeinstellungen kontrollieren</li>
-    </ul>
 
-</div>
+    <div class="project-info-panel">
 
+        <div class="panel-title">
 
-<div class="project-info-panel">
+            <span>⌁</span>
 
-    <div class="panel-title">
-        <span>⌁</span>
+            <div>
+                <span class="section-kicker">
+                    SCHNELLZUGRIFF
+                </span>
 
-        <div>
-            <span class="section-kicker">SCHNELLZUGRIFF</span>
-            <h3>Häufig gebraucht</h3>
+                <h3>
+                    Häufig gebraucht
+                </h3>
+            </div>
+
         </div>
-    </div>
 
-    <div class="quick-action-grid">
-        <a href="#projekt-erstellen">Rissnummer ermitteln</a>
-        <a href="#kvz-druck">NAS-Validierung</a>
-        <a href="#kvz-druck">Einseitiger Druck</a>
-        <a href="#risse-dms">Fortführungsriss</a>
+        <div class="quick-action-grid">
+
+            <a href="#projekt-erstellen">
+                Rissnummer ermitteln
+            </a>
+
+            <a href="#kvz-druck">
+                NAS-Validierung
+            </a>
+
+            <a href="#kvz-druck">
+                Einseitiger Druck
+            </a>
+
+            <a href="#risse-dms">
+                Fortführungsriss
+            </a>
+
+        </div>
+
     </div>
 
 </div>
 
-</div>
 
+<!-- =====================================================
+     VERM CAD NAVIGATION
+===================================================== -->
 
-<!-- VERM CAD NAVIGATION -->
 <div class="chapter-nav">
 
-<a href="vermcad.html">📌 Übersicht</a>
-<a href="vermcad_grundlagen.html">📚 Grundlagen</a>
-<a href="vermcad_oberflaeche.html">🖥 Oberfläche</a>
-<a href="vermcad_projektverwaltung.html" class="active">📂 Projekte</a>
-<a href="vermcad_daten.html">📥 Daten</a>
-<a href="vermcad_punkte.html">📍 Punkte</a>
-<a href="vermcad_transformation.html">🔄 Transformationen</a>
-<a href="vermcad_berechnung.html">🧮 Rechnen</a>
-<a href="vermcad_export.html">📤 Export</a>
-<a href="vermcad_alkis.html">🗺 ALKIS</a>
-<a href="vermcad_optionen.html">⚙ Optionen</a>
-<a href="vermcad_fehler.html">⚠ Fehler</a>
+    <a href="vermcad.html">
+        📌 Übersicht
+    </a>
+
+    <a href="vermcad_grundlagen.html">
+        📚 Grundlagen
+    </a>
+
+    <a href="vermcad_oberflaeche.html">
+        🖥 Oberfläche
+    </a>
+
+    <a href="vermcad_projektverwaltung.html" class="active">
+        📂 Projekte
+    </a>
+
+    <a href="vermcad_daten.html">
+        📥 Daten
+    </a>
+
+    <a href="vermcad_punkte.html">
+        📍 Punkte
+    </a>
+
+    <a href="vermcad_transformation.html">
+        🔄 Transformationen
+    </a>
+
+    <a href="vermcad_berechnung.html">
+        🧮 Rechnen
+    </a>
+
+    <a href="vermcad_export.html">
+        📤 Export
+    </a>
+
+    <a href="vermcad_alkis.html">
+        🗺 ALKIS
+    </a>
+
+    <a href="vermcad_optionen.html">
+        ⚙ Optionen
+    </a>
+
+    <a href="vermcad_fehler.html">
+        ⚠ Fehler
+    </a>
 
 </div>
 
 
-<!-- PROJEKT ERSTELLEN -->
-<details open id="projekt-erstellen">
+<!-- =====================================================
+     DETAILBEREICH
+===================================================== -->
 
-<summary>📂 Projekt erstellen</summary>
+<div class="content-section">
 
-<div class="article">
+    <div class="content-section-header">
 
-<h3>Projekt anlegen</h3>
+        <span class="section-kicker">
+            DETAILLIERTER ARBEITSABLAUF
+        </span>
 
-<p>
-Zu Beginn wird das benötigte Projekt in VermCAD erstellt.
-</p>
+        <h2>
+            Projektbearbeitung Schritt für Schritt
+        </h2>
 
-<p>
-Anschließend werden die erforderlichen Projektdaten eingetragen.
-</p>
+        <p>
+            Praktische Arbeitsschritte aus der VermCAD-Bearbeitung.
+        </p>
 
-<h3>Rissnummer ermitteln</h3>
+    </div>
 
-<p>
-Die Rissnummer findet man in Carlo.
-</p>
 
-<h3>Vorgehensweise</h3>
+    <div class="step-list">
 
-<p>
-1️⃣ Carlo öffnen
-<br><br>
-2️⃣ „Anträge“ auswählen
-<br><br>
-3️⃣ das entsprechende Projekt suchen
-<br><br>
-4️⃣ „Anhänge“ öffnen
-<br><br>
-5️⃣ unter „Interne Leistung“ die Datei
-<strong>ReservierungFR.pdf</strong> öffnen
-<br><br>
-6️⃣ dort die Rissnummer entnehmen
-</p>
 
-<div class="tipp">
+        <!-- =================================================
+             01 PROJEKT ERSTELLEN
+        ================================================== -->
 
-<h3>💡 Tipp</h3>
+        <article class="step-card" id="projekt-erstellen">
 
-<p>
-Die Rissnummer sollte direkt beim Erstellen des Projektes
-kontrolliert und richtig übernommen werden.
-</p>
+            <div class="step-marker">
+                <span>01</span>
+            </div>
+
+            <div class="step-content">
+
+                <div class="step-title">
+
+                    <span>📂</span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            SCHRITT 01
+                        </span>
+
+                        <h3>
+                            Projekt erstellen
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Zu Beginn wird das benötigte Projekt in VermCAD erstellt.
+                    Anschließend werden die erforderlichen Projektdaten eingetragen.
+                </p>
+
+
+                <h4>
+                    Rissnummer ermitteln
+                </h4>
+
+                <p>
+                    Die Rissnummer findet man in Carlo.
+                </p>
+
+
+                <div class="procedure">
+
+                    <div>
+                        <b>01</b>
+                        <span>
+                            Carlo öffnen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>02</b>
+                        <span>
+                            „Anträge“ auswählen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>03</b>
+                        <span>
+                            Das entsprechende Projekt suchen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>04</b>
+                        <span>
+                            „Anhänge“ öffnen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>05</b>
+                        <span>
+                            Unter „Interne Leistung“
+                            <strong>ReservierungFR.pdf</strong>
+                            öffnen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>06</b>
+                        <span>
+                            Dort die Rissnummer entnehmen
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="modern-tip">
+
+                    <span>✓</span>
+
+                    <div>
+
+                        <strong>
+                            Wichtig
+                        </strong>
+
+                        <p>
+                            Die Rissnummer sollte direkt beim Erstellen
+                            des Projektes kontrolliert und richtig übernommen werden.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             02 DATEN IMPORTIEREN
+        ================================================== -->
+
+        <article class="step-card" id="daten-importieren">
+
+            <div class="step-marker">
+                <span>02</span>
+            </div>
+
+            <div class="step-content">
+
+                <div class="step-title">
+
+                    <span>📥</span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            SCHRITT 02
+                        </span>
+
+                        <h3>
+                            Daten importieren
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Nach dem Erstellen des Projektes werden die
+                    benötigten Daten importiert.
+                </p>
+
+
+                <div class="command-flow">
+
+                    <div>
+                        <span>01</span>
+                        <strong>Transfer</strong>
+                    </div>
+
+                    <b>→</b>
+
+                    <div>
+                        <span>02</span>
+                        <strong>Datei Import</strong>
+                    </div>
+
+                    <b>→</b>
+
+                    <div>
+                        <span>03</span>
+                        <strong>NAS-ALKIS</strong>
+                    </div>
+
+                </div>
+
+
+                <p class="step-note">
+                    Nach dem Import kann mit der weiteren Bearbeitung begonnen werden.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             03 DMS
+        ================================================== -->
+
+        <article class="step-card" id="risse-dms">
+
+            <div class="step-marker">
+                <span>03</span>
+            </div>
+
+            <div class="step-content">
+
+                <div class="step-title">
+
+                    <span>📄</span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            SCHRITT 03
+                        </span>
+
+                        <h3>
+                            Risse aus dem DMS heraussuchen
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Nach dem Import der Daten können die benötigten
+                    Risse aus dem DMS herausgesucht und eingegeben werden.
+                </p>
+
+
+                <div class="modern-tip">
+
+                    <span>✓</span>
+
+                    <div>
+
+                        <strong>
+                            Kontrolle
+                        </strong>
+
+                        <p>
+                            Vor der weiteren Bearbeitung sollte kontrolliert
+                            werden, ob der richtige Riss verwendet wurde.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             04 PROJEKTSTAND
+        ================================================== -->
+
+        <article class="step-card">
+
+            <div class="step-marker">
+                <span>04</span>
+            </div>
+
+            <div class="step-content">
+
+                <div class="step-title">
+
+                    <span>💾</span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            ZWISCHENSCHRITT
+                        </span>
+
+                        <h3>
+                            Projektstand sichern
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Vor wichtigen oder schwer rückgängig zu machenden
+                    Arbeitsschritten sollte ein Zwischenstand des Projektes
+                    gespeichert werden.
+                </p>
+
+
+                <h4>
+                    Besonders wichtig bei Verschmelzungen
+                </h4>
+
+                <p>
+                    Bei Verschmelzungen ist ein vorheriger Zwischenstand
+                    besonders sinnvoll, da diese nur schwer und aufwendig
+                    rückgängig gemacht werden können.
+                </p>
+
+
+                <div class="check-grid">
+
+                    <div>
+                        ✓ Zwischenstand speichern
+                    </div>
+
+                    <div>
+                        ✓ Bearbeitung durchführen
+                    </div>
+
+                    <div>
+                        ✓ Ergebnis kontrollieren
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             05 KONTROLLE
+        ================================================== -->
+
+        <article class="step-card">
+
+            <div class="step-marker">
+                <span>05</span>
+            </div>
+
+            <div class="step-content">
+
+                <div class="step-title">
+
+                    <span>🔍</span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            KONTROLLE
+                        </span>
+
+                        <h3>
+                            Projektkontrolle
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Bevor mit der eigentlichen Bearbeitung begonnen wird,
+                    sollte das Projekt kontrolliert werden.
+                </p>
+
+
+                <div class="check-grid">
+
+                    <div>
+                        ✓ Richtiges Projekt geöffnet
+                    </div>
+
+                    <div>
+                        ✓ Richtige Rissnummer eingetragen
+                    </div>
+
+                    <div>
+                        ✓ Benötigte Daten vorhanden
+                    </div>
+
+                    <div>
+                        ✓ Benötigte Unterlagen vorhanden
+                    </div>
+
+                    <div>
+                        ✓ Daten vollständig importiert
+                    </div>
+
+                </div>
+
+
+                <p class="step-note">
+                    Eine kurze Kontrolle am Anfang kann verhindern,
+                    dass Fehler erst bei späteren Arbeitsschritten auffallen.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             06 KVZ ERSTELLEN
+        ================================================== -->
+
+        <article class="step-card" id="kvz-erstellen">
+
+            <div class="step-marker">
+                <span>06</span>
+            </div>
+
+            <div class="step-content">
+
+                <div class="step-title">
+
+                    <span>📋</span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            SCHRITT 06
+                        </span>
+
+                        <h3>
+                            KVZ erstellen
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Das KVZ wird über die Koordinaten- und
+                    Punktlistenfunktionen erstellt.
+                </p>
+
+
+                <div class="procedure">
+
+                    <div>
+                        <b>01</b>
+                        <span>
+                            <strong>Daten</strong> öffnen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>02</b>
+                        <span>
+                            <strong>Koordinaten</strong> auswählen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>03</b>
+                        <span>
+                            <strong>Verzeichnis</strong> auswählen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>04</b>
+                        <span>
+                            <strong>Makro</strong> öffnen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>05</b>
+                        <span>
+                            <strong>Punktliste</strong> auswählen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>06</b>
+                        <span>
+                            Alle benötigten Punkte kontrollieren
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             07 KVZ DRUCK
+        ================================================== -->
+
+        <article class="step-card" id="kvz-druck">
+
+            <div class="step-marker">
+                <span>07</span>
+            </div>
+
+            <div class="step-content">
+
+                <div class="step-title">
+
+                    <span>🖨</span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            AUSGABE
+                        </span>
+
+                        <h3>
+                            KVZ für den Druck vorbereiten
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <h4>
+                    NAS-Validierung
+                </h4>
+
+
+                <div class="procedure">
+
+                    <div>
+                        <b>01</b>
+                        <span>
+                            <strong>NAS-Validierung_KM</strong>
+                            einstellen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>02</b>
+                        <span>
+                            Auf <strong>„Prüfen“</strong> gehen
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>03</b>
+                        <span>
+                            Kontrollieren, dass die Prüfung
+                            <strong>grün</strong> ist
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>04</b>
+                        <span>
+                            Anschließend auf
+                            <strong>„Drucken“</strong> gehen
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <h4>
+                    Seitenzahl beachten
+                </h4>
+
+                <p>
+                    Bei der Druckvorbereitung muss die Angabe unter der
+                    anzugebenden Seitenzahl kontrolliert werden.
+                </p>
+
+
+                <h4>
+                    Reihenfolge der Vermessungsdokumentation
+                </h4>
+
+                <p>
+                    Das KVZ ist in einer Vermessungsdokumentation immer
+                    das letzte Dokument.
+                </p>
+
+                <p>
+                    Davor können beispielsweise Dokumente einer möglichen
+                    Grenzverhandlung oder andere Unterlagen kommen.
+                </p>
+
+                <p>
+                    Am Anfang steht der
+                    <strong>Darstellende Teil (DT)</strong>.
+                </p>
+
+
+                <h4>
+                    Fortführungsriss
+                </h4>
+
+                <p>
+                    Im Kopf des KVZ muss der
+                    <strong>Fortführungsriss</strong>
+                    eingetragen werden.
+                </p>
+
+
+                <div class="modern-warning">
+
+                    <span>⚠</span>
+
+                    <div>
+
+                        <strong>
+                            Einseitiger Druck
+                        </strong>
+
+                        <p>
+                            Ein KVZ wird immer
+                            <strong>einseitig</strong>
+                            gedruckt.
+                        </p>
+
+                        <p>
+                            Je nach Druckeinstellung muss dies
+                            manuell eingestellt werden.
+                        </p>
+
+                        <p>
+                            Anschließend unbedingt kontrollieren,
+                            dass das KVZ tatsächlich einseitig gedruckt wird.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             08 ABSCHLUSS
+        ================================================== -->
+
+        <article class="step-card final-step" id="abschluss">
+
+            <div class="step-marker">
+                <span>08</span>
+            </div>
+
+            <div class="step-content">
+
+                <div class="step-title">
+
+                    <span>✓</span>
+
+                    <div>
+
+                        <span class="section-kicker">
+                            ABSCHLUSS
+                        </span>
+
+                        <h3>
+                            Abschlusskontrolle
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Vor dem Abschluss werden alle wichtigen Angaben
+                    noch einmal kontrolliert.
+                </p>
+
+
+                <div class="final-checklist">
+
+                    <div>
+                        ✓ Richtige Rissnummer
+                    </div>
+
+                    <div>
+                        ✓ Benötigte Daten vorhanden
+                    </div>
+
+                    <div>
+                        ✓ Benötigte Risse eingetragen
+                    </div>
+
+                    <div>
+                        ✓ Alle benötigten Punkte im KVZ
+                    </div>
+
+                    <div>
+                        ✓ NAS-Validierung durchgeführt
+                    </div>
+
+                    <div>
+                        ✓ Prüfung ist grün
+                    </div>
+
+                    <div>
+                        ✓ Fortführungsriss im Kopf eingetragen
+                    </div>
+
+                    <div>
+                        ✓ Seitenzahl kontrolliert
+                    </div>
+
+                    <div>
+                        ✓ Einseitiger Druck eingestellt
+                    </div>
+
+                    <div>
+                        ✓ Druck kontrolliert
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
 
 </div>
 
-</div>
 
-</details>
+<!-- =====================================================
+     PRAXISTIPP
+===================================================== -->
 
+<div class="modern-end-tip">
 
-<!-- DATEN -->
-<details id="daten-importieren">
+    <span>✓</span>
 
-<summary>📥 Daten importieren</summary>
+    <div>
 
-<div class="article">
+        <strong>
+            Praxistipp
+        </strong>
 
-<h3>Import der Daten</h3>
+        <p>
+            Bei der Projektverwaltung lohnt es sich,
+            wichtige Zwischenstände zu speichern und vor der Ausgabe
+            noch einmal alle Angaben zu kontrollieren.
+        </p>
 
-<p>
-Nach dem Erstellen des Projektes werden die benötigten Daten importiert.
-</p>
-
-<h3>Danach</h3>
-
-<p>
-Nach dem Import kann mit der weiteren Bearbeitung begonnen werden.
-</p>
-
-<div class="screenshot">
-📷 Screenshot wird später ergänzt
-</div>
-
-</div>
-
-</details>
-
-
-<!-- DMS -->
-<details id="risse-dms">
-
-<summary>📄 Risse aus dem DMS heraussuchen</summary>
-
-<div class="article">
-
-<h3>Risse aus dem DMS</h3>
-
-<p>
-Nach dem Import der Daten können die benötigten Risse aus dem DMS
-herausgesucht und eingegeben werden.
-</p>
-
-<h3>Kontrolle</h3>
-
-<p>
-Vor der weiteren Bearbeitung sollte kontrolliert werden,
-ob der richtige Riss verwendet wurde.
-</p>
-
-<div class="screenshot">
-📷 Screenshot wird später ergänzt
-</div>
-
-</div>
-
-</details>
-
-
-<!-- PROJEKTSTAND -->
-<details>
-
-<summary>💾 Projektstand sichern</summary>
-
-<div class="article">
-
-<h3>Zwischenstand speichern</h3>
-
-<p>
-Vor wichtigen oder schwer rückgängig zu machenden Arbeitsschritten
-sollte ein Zwischenstand des Projektes gespeichert werden.
-</p>
-
-<h3>Besonders wichtig bei Verschmelzungen</h3>
-
-<p>
-Bei Verschmelzungen ist ein vorheriger Zwischenstand besonders sinnvoll,
-da diese nur schwer und aufwendig rückgängig gemacht werden können.
-</p>
-
-<div class="tipp">
-
-<h3>💡 Tipp</h3>
-
-<p>
-Vor größeren Änderungen:
-<br><br>
-✔ Zwischenstand speichern
-<br>
-✔ Bearbeitung durchführen
-<br>
-✔ Ergebnis kontrollieren
-</p>
-
-</div>
-
-</div>
-
-</details>
-
-
-<!-- KONTROLLE -->
-<details>
-
-<summary>🔍 Projektkontrolle</summary>
-
-<div class="article">
-
-<h3>Vor der Bearbeitung prüfen</h3>
-
-<p>
-Bevor mit der eigentlichen Bearbeitung begonnen wird,
-sollte das Projekt kontrolliert werden.
-</p>
-
-<h3>Kontrollpunkte</h3>
-
-<p>
-✔ richtiges Projekt geöffnet
-<br>
-✔ richtige Rissnummer eingetragen
-<br>
-✔ benötigte Daten vorhanden
-<br>
-✔ benötigte Unterlagen vorhanden
-<br>
-✔ Daten vollständig importiert
-</p>
-
-<h3>Ziel der Kontrolle</h3>
-
-<p>
-Eine kurze Kontrolle am Anfang kann verhindern,
-dass Fehler erst bei späteren Arbeitsschritten auffallen.
-</p>
-
-</div>
-
-</details>
-
-
-<!-- KVZ -->
-<details id="kvz-erstellen">
-
-<summary>📋 KVZ erstellen</summary>
-
-<div class="article">
-
-<h3>Koordinatenverzeichnis erstellen</h3>
-
-<p>
-Das KVZ wird über die Koordinaten- und Punktlistenfunktionen erstellt.
-</p>
-
-<h3>Vorgehensweise</h3>
-
-<p>
-1️⃣ <strong>Daten</strong> öffnen
-<br><br>
-2️⃣ <strong>Koordinaten</strong> auswählen
-<br><br>
-3️⃣ <strong>Verzeichnis</strong> auswählen
-<br><br>
-4️⃣ anschließend das <strong>Makro</strong> öffnen
-<br><br>
-5️⃣ <strong>Punktliste</strong> auswählen
-<br><br>
-6️⃣ kontrollieren, dass alle benötigten Punkte enthalten sind
-</p>
-
-<h3>Kontrolle</h3>
-
-<p>
-Vor dem Drucken muss sichergestellt werden,
-dass alle benötigten Punkte im KVZ enthalten sind.
-</p>
-
-<div class="screenshot">
-📷 Screenshot wird später ergänzt
-</div>
-
-</div>
-
-</details>
-
-
-<!-- KVZ DRUCK -->
-<details id="kvz-druck">
-
-<summary>🖨 KVZ für den Druck vorbereiten</summary>
-
-<div class="article">
-
-<h3>NAS-Validierung</h3>
-
-<p>
-Vor dem Drucken muss die entsprechende Validierung eingestellt
-und durchgeführt werden.
-</p>
-
-<h3>Vorgehensweise</h3>
-
-<p>
-1️⃣ <strong>NAS-Validierung_KM</strong> einstellen
-<br><br>
-2️⃣ auf <strong>„Prüfen“</strong> gehen
-<br><br>
-3️⃣ kontrollieren, dass die Prüfung <strong>grün</strong> ist
-<br><br>
-4️⃣ anschließend auf <strong>„Drucken“</strong> gehen
-</p>
-
-<h3>Seitenzahl beachten</h3>
-
-<p>
-Bei der Druckvorbereitung muss die Angabe unter der
-anzugebenen Seitenzahl kontrolliert werden.
-</p>
-
-<h3>Reihenfolge der Vermessungsdokumentation</h3>
-
-<p>
-Das KVZ ist in einer Vermessungsdokumentation immer das letzte Dokument.
-</p>
-
-<p>
-Davor können beispielsweise Dokumente einer möglichen
-Grenzverhandlung oder andere Unterlagen kommen.
-</p>
-
-<p>
-Am Anfang steht der <strong>Darstellende Teil (DT)</strong>.
-</p>
-
-<h3>Fortführungsriss</h3>
-
-<p>
-Im Kopf des KVZ muss der <strong>Fortführungsriss</strong>
-eingetragen werden.
-</p>
-
-<h3>Einseitiger Druck</h3>
-
-<p>
-Ein KVZ wird immer <strong>einseitig</strong> gedruckt.
-Das bedeutet: nicht Vorder- und Rückseite bedrucken.
-</p>
-
-<div class="warnung">
-
-<h3>⚠ Wichtig</h3>
-
-<p>
-Je nach Druckeinstellung muss der einseitige Druck noch
-manuell eingestellt werden.
-<br><br>
-Anschließend unbedingt kontrollieren,
-dass das KVZ tatsächlich einseitig gedruckt wird.
-</p>
-
-</div>
-
-<div class="screenshot">
-📷 Screenshot wird später ergänzt
-</div>
-
-</div>
-
-</details>
-
-
-<!-- ABSCHLUSS -->
-<details id="abschluss">
-
-<summary>✅ Abschlusskontrolle</summary>
-
-<div class="article">
-
-<h3>Vor dem Abschluss kontrollieren</h3>
-
-<p>
-☑ richtige Rissnummer
-<br>
-☑ benötigte Daten vorhanden
-<br>
-☑ benötigte Risse eingetragen
-<br>
-☑ alle benötigten Punkte im KVZ
-<br>
-☑ NAS-Validierung durchgeführt
-<br>
-☑ Prüfung ist grün
-<br>
-☑ Fortführungsriss im Kopf eingetragen
-<br>
-☑ Seitenzahl kontrolliert
-<br>
-☑ einseitiger Druck eingestellt
-<br>
-☑ Druck kontrolliert
-</p>
-
-</div>
-
-</details>
-
-
-<div class="tipp">
-
-<h3>💡 Praxistipp</h3>
-
-<p>
-Bei der Projektverwaltung lohnt es sich,
-wichtige Zwischenstände zu speichern und vor der Ausgabe
-noch einmal alle Angaben zu kontrollieren.
-</p>
+    </div>
 
 </div>
 
 
 <footer>
 
-<p>
-© 2026 VermKompass
-<br>
-Version 1.0
-</p>
+    <p>
+        © 2026 VermKompass
+        <br>
+        Version 1.0
+    </p>
 
 </footer>
 
 </section>
+
 </div>
+
 
 <script src="suchindex.js"></script>
 <script src="script.js"></script>
