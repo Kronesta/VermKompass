@@ -4,11 +4,11 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VermKompass | VermCAD Projektverwaltung</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>VermCAD Projektverwaltung – VermKompass</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -18,839 +18,694 @@
 <body>
 
 
-<div id="sidebar"></div>
-
-
-<div class="main">
-
-
 <header>
-
-<div>
 
 <h1>📂 VermCAD Projektverwaltung</h1>
 
 <p>
-Anlegen, organisieren und kontrollieren von Vermessungsprojekten
+Praktische Arbeitsschritte zur Projektverwaltung in VermCAD
 </p>
-
-</div>
-
-
-<div class="topbar">
-
-
-<input
-type="text"
-id="searchInput"
-placeholder="🔍 Suche nach Begriffen..."
->
-
-
-<button id="darkMode">
-🌙
-</button>
-
-
-</div>
 
 </header>
 
 
 
-<section>
+<div class="layout">
 
 
-<div class="chapter-nav">
+<nav class="sidebar">
 
+<h2>VermCAD</h2>
 
-<a href="vermcad.html">
-📌 Übersicht
-</a>
-
+<a href="vermcad.html">🏠 Übersicht</a>
 
 <a href="vermcad_grundlagen.html">
-📚 Grundlagen
+📘 Grundlagen
 </a>
-
 
 <a href="vermcad_oberflaeche.html">
-🖥 Oberfläche
+🖥️ Oberfläche
 </a>
 
-
-<a href="vermcad_projektverwaltung.html" class="active">
-📂 Projekte
+<a href="vermcad_projektverwaltung.html"
+class="active">
+📂 Projektverwaltung
 </a>
-
 
 <a href="vermcad_daten.html">
 📥 Daten
 </a>
 
-
 <a href="vermcad_punkte.html">
 📍 Punkte
 </a>
 
-
 <a href="vermcad_transformation.html">
-🔄 Transformationen
+🔄 Transformation
 </a>
-
 
 <a href="vermcad_berechnung.html">
-🧮 Rechnen
+🧮 Berechnung
 </a>
-
 
 <a href="vermcad_export.html">
 📤 Export
 </a>
 
-
 <a href="vermcad_alkis.html">
-🗺 ALKIS
+🗺️ ALKIS
 </a>
-
 
 <a href="vermcad_optionen.html">
-⚙ Optionen
+⚙️ Optionen
 </a>
-
 
 <a href="vermcad_fehler.html">
-⚠ Fehler
+⚠️ Fehler
 </a>
 
+</nav>
+
+
+
+<main class="main">
+
+
+<div class="chapter-nav">
+
+<a href="vermcad_oberflaeche.html">
+← Oberfläche
+</a>
+
+<a href="vermcad_daten.html">
+Daten →
+</a>
 
 </div>
-
-
-
-
-
-<h2>📂 Projektverwaltung</h2>
-
-
 
 
 
 <div class="info">
 
-
-<h3>Grundlage jeder Bearbeitung</h3>
-
+<h2>📂 VermCAD Projektverwaltung</h2>
 
 <p>
-
-Ein VermCAD-Projekt bildet die Grundlage für
-die Bearbeitung von Vermessungsdaten.
-
-Alle Daten, Einstellungen und Ergebnisse
-gehören zu einem Projekt und müssen
-geordnet verwaltet werden.
-
-Eine saubere Projektstruktur verhindert
-spätere Fehler bei Bearbeitung und Ausgabe.
-
+Hier werden die wichtigsten praktischen Arbeitsschritte
+rund um die Erstellung und Vorbereitung eines
+VermCAD-Projektes beschrieben.
 </p>
 
+<p>
+Die Inhalte orientieren sich an den Arbeitsschritten
+aus der Ausbildung und sollen als praktische
+Nachschlagehilfe dienen.
+</p>
 
 </div>
 
 
 
-
-
-
+<!-- ========================================= -->
+<!-- PROJEKT ERSTELLEN -->
+<!-- ========================================= -->
 
 <details open>
 
-
 <summary>
-📌 Was ist ein VermCAD-Projekt?
+📂 Projekt erstellen
 </summary>
-
 
 <div class="article">
 
 
+<h3>Projekt anlegen</h3>
+
+<p>
+Zu Beginn wird ein neues Projekt in VermCAD erstellt.
+Anschließend werden die benötigten Projektdaten
+eingetragen.
+</p>
+
+
+<h3>Rissnummer finden</h3>
+
+<p>
+Die benötigte Rissnummer kann über Carlo ermittelt
+werden.
+</p>
+
 <p>
 
-Ein Projekt enthält alle Informationen, die
-für die Bearbeitung einer Vermessungsaufgabe
-benötigt werden.
+<strong>Vorgehensweise:</strong>
 
 <br><br>
 
-Dazu gehören beispielsweise:
-
-<br><br>
-
-✔ Vermessungsdaten
-
+1. Carlo öffnen
 <br>
-
-✔ Punktinformationen
-
+2. „Anträge“ auswählen
 <br>
-
-✔ Einstellungen
-
+3. das entsprechende Projekt suchen
 <br>
-
-✔ Berechnungsergebnisse
-
+4. „Anhänge“ öffnen
 <br>
-
-✔ Ausgabedaten
+5. unter „Interne Leistung“ die Datei
+   <strong>ReservierungFR.pdf</strong> öffnen
+<br>
+6. dort die Rissnummer entnehmen
 
 </p>
 
 
+<div class="tipp">
+
+<strong>💡 Tipp:</strong>
+
+<br><br>
+
+Die Rissnummer sollte direkt beim Anlegen
+des Projektes kontrolliert und richtig
+übernommen werden.
+
 </div>
 
+
+</div>
 
 </details>
 
 
 
-
-
-
+<!-- ========================================= -->
+<!-- DATEN IMPORTIEREN -->
+<!-- ========================================= -->
 
 <details>
 
-
 <summary>
-🪜 Projekt neu anlegen
+📥 Daten importieren
 </summary>
-
 
 <div class="article">
 
 
-<h3>Vorbereitung</h3>
-
-
-<p>
-
-Vor dem Anlegen eines Projektes sollten die
-Rahmenbedingungen bekannt sein.
-
-<br><br>
-
-Prüfen:
-
-<br><br>
-
-✔ Welche Vermessungsaufgabe wird bearbeitet?
-
-<br>
-
-✔ Welche Daten werden benötigt?
-
-<br>
-
-✔ Welche Grundlagen stehen zur Verfügung?
-
-<br>
-
-✔ Welches Koordinatensystem wird verwendet?
-
-</p>
-
-
-<br>
-
-
-<h3>Projektstruktur planen</h3>
-
+<h3>Import der Daten</h3>
 
 <p>
-
-Eine sinnvolle Struktur erleichtert später
-die Bearbeitung und Kontrolle.
-
-<br><br>
-
-Wichtige Punkte:
-
-<br><br>
-
-✔ eindeutiger Projektname
-
-<br>
-
-✔ nachvollziehbare Ablage
-
-<br>
-
-✔ klare Trennung von Daten und Ergebnissen
-
-</p>
-
-
-</div>
-
-
-</details>
-
-
-
-
-
-
-
-<details>
-
-
-<summary>
-⚙ Projekteinstellungen
-</summary>
-
-
-<div class="article">
-
-
-<h3>Wichtige Einstellungen prüfen</h3>
-
-
-<p>
-
-Nach dem Anlegen eines Projektes müssen die
-Grundlagen kontrolliert werden.
-
-<br><br>
-
-Dazu gehören:
-
-<br><br>
-
-✔ Koordinatensystem
-
-<br>
-
-✔ Lagebezug
-
-<br>
-
-✔ Höhenbezug
-
-<br>
-
-✔ Einheiten
-
-<br>
-
-✔ weitere projektspezifische Einstellungen
-
-</p>
-
-
-<br>
-
-
-<h3>Warum ist das wichtig?</h3>
-
-
-<p>
-
-Falsche Grundeinstellungen können dazu führen,
-dass Daten falsch dargestellt oder falsch
-berechnet werden.
-
-</p>
-
-
-</div>
-
-
-</details>
-
-  <details>
-
-<summary>
-📁 Projektstruktur und Datenorganisation
-</summary>
-
-
-<div class="article">
-
-
-<h3>Ordnung im Projekt</h3>
-
-
-<p>
-
-Eine klare Organisation der Daten erleichtert
-die spätere Bearbeitung.
-
-<br><br>
-
-Beispiele:
-
-<br><br>
-
-✔ Eingangsdaten getrennt halten
-
-<br>
-
-✔ Bearbeitungsergebnisse nachvollziehbar speichern
-
-<br>
-
-✔ fertige Ausgaben eindeutig benennen
-
+Nach der Erstellung des Projektes werden die
+benötigten Daten importiert.
 </p>
 
 
 <div class="screenshot">
 
 <img
-src="bilder/projektstand_sichern.png"
-alt="Projektstand sichern in VermCAD"
+src="bilder/projekt_import.png"
+alt="Datenimport in VermCAD"
 >
 
 <p>
-Projektstand und Projektorganisation in VermCAD.
+Datenimport in VermCAD.
 </p>
 
 </div>
 
 
+<div class="info">
+
+<strong>Hinweis:</strong>
+
+<br><br>
+
+Die konkreten Importwege und Einstellungen
+werden in der entsprechenden Anleitung
+zum Datenimport beschrieben.
+
 </div>
 
+
+</div>
 
 </details>
 
 
 
-
-
-
+<!-- ========================================= -->
+<!-- RISSE AUS DEM DMS -->
+<!-- ========================================= -->
 
 <details>
 
 <summary>
-💾 Projektstand sichern und speichern
+📄 Risse aus dem DMS übernehmen
 </summary>
-
 
 <div class="article">
 
 
-<h3>Projektstand sichern</h3>
+<h3>Benötigte Risse heraussuchen</h3>
+
+<p>
+Nach dem Import der Daten kann damit begonnen
+werden, die benötigten Risse aus dem DMS
+herauszusuchen und einzugeben.
+</p>
 
 
 <div class="screenshot">
 
 <img
-src="bilder/sicherungsdialog.png"
-alt="VermCAD Sicherungsdialog"
+src="bilder/dms_riss.png"
+alt="Riss aus dem DMS"
 >
 
 <p>
-Sicherungsdialog zum Speichern eines Projektstandes.
+Benötigten Riss im DMS heraussuchen.
 </p>
 
 </div>
 
 
-<p>
+<div class="tipp">
 
+<strong>💡 Tipp:</strong>
+
+<br><br>
+
+Vor der weiteren Bearbeitung sollte kontrolliert
+werden, ob der richtige Riss verwendet wurde.
+
+</div>
+
+
+</div>
+
+</details>
+
+
+
+<!-- ========================================= -->
+<!-- PROJEKTSTAND SICHERN -->
+<!-- ========================================= -->
+
+<details>
+
+<summary>
+💾 Projektstand sichern
+</summary>
+
+<div class="article">
+
+
+<h3>Zwischenstand speichern</h3>
+
+<p>
 Vor wichtigen Bearbeitungsschritten sollte ein
-aktueller Projektstand gesichert werden.
-
-Dadurch können Änderungen nachvollzogen und
-Bearbeitungsstände wiederhergestellt werden.
-
+aktueller Projektstand gespeichert werden.
 </p>
-
-
-<br>
-
-
-<h3>Beachten</h3>
 
 
 <p>
 
 ✔ aktuellen Bearbeitungsstand prüfen
-
 <br>
-
 ✔ Projektstand speichern
-
 <br>
-
-✔ Sicherung eindeutig benennen
-
+✔ wichtige Zwischenstände sichern
 <br>
-
 ✔ gespeicherten Stand kontrollieren
 
 </p>
 
 
-<br>
+<div class="warnung">
 
-
-<h3>Regelmäßiges Speichern</h3>
-
-
-<p>
-
-Während der Bearbeitung entstehen viele
-Änderungen an Daten und Einstellungen.
-
-Regelmäßiges Speichern verhindert Datenverlust
-und sorgt dafür, dass der aktuelle Arbeitsstand
-erhalten bleibt.
+<strong>⚠ Wichtig:</strong>
 
 <br><br>
 
-✔ Projekt regelmäßig speichern
-
-<br>
-
-✔ Änderungen nachvollziehbar halten
-
-<br>
-
-✔ wichtige Zwischenstände sichern
-
-<br>
-
-✔ fertige Ergebnisse eindeutig ablegen
-
-</p>
-
+Bei Arbeitsschritten, die nur schwer rückgängig
+gemacht werden können, sollte vorher unbedingt
+ein Zwischenstand gespeichert werden.
 
 </div>
 
+
+</div>
 
 </details>
 
 
 
+<!-- ========================================= -->
+<!-- PROJEKTKONTROLLE -->
+<!-- ========================================= -->
 
 <details>
 
 <summary>
-🔍 Projektkontrolle vor der Bearbeitung
+🔍 Projektkontrolle
 </summary>
-
 
 <div class="article">
 
 
-<h3>Vor dem Arbeiten prüfen</h3>
-
-
-<p>
-
-Bevor Daten bearbeitet oder Berechnungen
-durchgeführt werden, sollte das Projekt
-kontrolliert werden.
-
-</p>
-
-
-
-
-
-<summary>
-🔍 Projektkontrolle vor der Bearbeitung
-</summary>
-
-
-<div class="article">
-
-
-<h3>Vor dem Arbeiten prüfen</h3>
-
+<h3>Vor der weiteren Bearbeitung prüfen</h3>
 
 <p>
-
-Bevor Daten bearbeitet oder Berechnungen
-durchgeführt werden, sollte das Projekt
-kontrolliert werden.
-
+Bevor mit der eigentlichen Bearbeitung begonnen
+wird, sollte kontrolliert werden, ob das richtige
+Projekt und die benötigten Grundlagen vorhanden
+sind.
 </p>
-
-
-<br>
-
-
-<h3>Kontrollpunkte</h3>
 
 
 <p>
 
 ✔ richtiges Projekt geöffnet
-
 <br>
-
-✔ richtige Grundlagen vorhanden
-
+✔ Projektdaten kontrolliert
 <br>
-
-✔ Koordinatensystem stimmt
-
+✔ benötigte Daten vorhanden
 <br>
-
-✔ benötigte Daten geladen
-
+✔ richtige Rissnummer eingetragen
 <br>
-
-✔ Einstellungen passen zur Aufgabe
+✔ benötigte Unterlagen vorhanden
 
 </p>
-
-
-<br>
-
-
-<h3>Ziel der Kontrolle</h3>
-
-
-<p>
-
-Viele Fehler entstehen nicht während der
-Bearbeitung, sondern bereits durch eine
-falsche Projektgrundlage.
-
-Eine kurze Kontrolle am Anfang spart später
-viel Zeit.
-
-</p>
-
-
-</div>
-
-
-</details>
-
-
-
-
-
-
-
-<details>
-
-<summary>
-📤 Projektausgabe und Übergabe
-</summary>
-
-
-<div class="article">
-
-
-<h3>Vor der Ausgabe prüfen</h3>
-
-
-<p>
-
-Bevor Ergebnisse weitergegeben oder exportiert
-werden, sollten die Daten kontrolliert werden.
-
-</p>
-
-
-<br>
-
-
-<h3>Prüfen</h3>
-
-
-<p>
-
-✔ Sind alle benötigten Daten vorhanden?
-
-<br>
-
-✔ Sind Berechnungen abgeschlossen?
-
-<br>
-
-✔ Sind Ergebnisse plausibel?
-
-<br>
-
-✔ Sind Dateinamen eindeutig?
-
-</p>
-
-
-</div>
-
-
-</details>
-
-
-
-
-
-
-
-<details>
-
-<summary>
-⚠ Typische Fehler in der Projektverwaltung
-</summary>
-
-
-<div class="article">
-
-
-<table>
-
-
-<tr>
-
-<th>Problem</th>
-
-<th>Mögliche Ursache</th>
-
-</tr>
-
-
-<tr>
-
-<td>
-Daten fehlen
-</td>
-
-<td>
-
-✔ falsches Projekt geöffnet
-
-<br>
-
-✔ Daten nicht geladen
-
-<br>
-
-✔ falscher Speicherort
-
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-Punkte liegen falsch
-</td>
-
-<td>
-
-✔ falsches Koordinatensystem
-
-<br>
-
-✔ falsche Projekteinstellungen
-
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-Berechnungen führen zu falschen Ergebnissen
-</td>
-
-<td>
-
-✔ falsche Grundlagen
-
-<br>
-
-✔ fehlerhafte Ausgangsdaten
-
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-Projekt lässt sich nicht richtig bearbeiten
-</td>
-
-<td>
-
-✔ unvollständige Daten
-
-<br>
-
-✔ falsche Einstellungen
-
-</td>
-
-</tr>
-
-
-</table>
-
-
-</div>
-
-
-</details>
-
-
-
 
 
 <div class="tipp">
 
+<strong>💡 Tipp:</strong>
 
-<h3>💡 Praxistipp</h3>
+<br><br>
 
-
-<p>
-
-Ein gut vorbereitetes Projekt ist die Grundlage
-für eine fehlerfreie Bearbeitung.
-
-Vor dem eigentlichen Arbeiten lohnt sich eine
-kurze Kontrolle der Einstellungen und Daten.
-
-</p>
-
+Eine kurze Kontrolle am Anfang kann spätere
+Fehler vermeiden.
 
 </div>
 
 
+</div>
+
+</details>
+
+
+
+<!-- ========================================= -->
+<!-- KVZ ERSTELLEN -->
+<!-- ========================================= -->
+
+<details>
+
+<summary>
+📋 KVZ erstellen
+</summary>
+
+<div class="article">
+
+
+<h3>Koordinatenverzeichnis erstellen</h3>
+
+<p>
+Das KVZ wird in VermCAD über das
+Koordinatenverzeichnis und anschließend über
+die Punktliste erstellt.
+</p>
+
+
+<h3>Vorgehensweise</h3>
+
+<p>
+
+1. <strong>Daten</strong> öffnen
+<br>
+2. <strong>Koordinaten</strong> auswählen
+<br>
+3. <strong>Verzeichnis</strong> öffnen
+<br>
+4. anschließend das <strong>Makro</strong> öffnen
+<br>
+5. <strong>Punktliste</strong> auswählen
+<br>
+6. benötigte Punkte auswählen bzw. kontrollieren
+
+</p>
+
+
+<div class="screenshot">
+
+<img
+src="bilder/kvz_erstellen.png"
+alt="KVZ in VermCAD erstellen"
+>
+
+<p>
+Erstellung des KVZ über die Punktliste.
+</p>
+
+</div>
+
+
+<h3>Kontrolle</h3>
+
+<p>
+Vor dem weiteren Bearbeiten muss sichergestellt
+werden, dass alle benötigten Punkte im KVZ
+enthalten sind.
+</p>
+
+
+<div class="warnung">
+
+<strong>⚠ Wichtig:</strong>
+
+<br><br>
+
+Kontrolliere die Punktliste vor dem Drucken
+vollständig.
+
+</div>
+
+
+</div>
+
+</details>
+
+
+
+<!-- ========================================= -->
+<!-- KVZ DRUCK -->
+<!-- ========================================= -->
+
+<details>
+
+<summary>
+🖨️ KVZ für den Druck vorbereiten
+</summary>
+
+<div class="article">
+
+
+<h3>NAS-Validierung einstellen</h3>
+
+<p>
+Vor dem Drucken muss die entsprechende
+Validierung eingestellt werden.
+</p>
+
+
+<p>
+
+1. <strong>NAS-Validierung_KM</strong> einstellen
+<br>
+2. auf <strong>„Prüfen“</strong> gehen
+<br>
+3. kontrollieren, dass die Prüfung
+   <strong>grün</strong> ist
+<br>
+4. anschließend auf <strong>„Drucken“</strong>
+   gehen
+
+</p>
+
+
+<div class="screenshot">
+
+<img
+src="bilder/kvz_validierung.png"
+alt="NAS Validierung des KVZ"
+>
+
+<p>
+NAS-Validierung vor dem Drucken.
+</p>
+
+</div>
+
+
+<h3>Seitenzahl beachten</h3>
+
+<p>
+Bei der Druckvorbereitung muss außerdem die
+Angabe unter der anzugebenden Seitenzahl
+kontrolliert werden.
+</p>
+
+
+<h3>Reihenfolge der Vermessungsdokumentation</h3>
+
+<p>
+Das KVZ ist in einer Vermessungsdokumentation
+immer das letzte Dokument.
+</p>
+
+<p>
+Davor können beispielsweise Dokumente einer
+Grenzverhandlung oder andere Unterlagen
+vorhanden sein.
+</p>
+
+<p>
+Am Anfang steht der <strong>Darstellende Teil
+(DT)</strong>.
+</p>
+
+
+<h3>Kopf des KVZ</h3>
+
+<p>
+Im Kopf des KVZ muss der
+<strong>Fortführungsriss</strong> eingetragen
+werden.
+</p>
+
+
+<h3>Einseitiger Druck</h3>
+
+<p>
+Ein KVZ wird immer <strong>einseitig</strong>
+gedruckt, also nicht auf Vorder- und Rückseite.
+</p>
+
+
+<div class="warnung">
+
+<strong>⚠ Wichtig:</strong>
+
+<br><br>
+
+Die Druckeigenschaften müssen gegebenenfalls
+noch auf einseitigen Druck umgestellt werden.
+
+<br><br>
+
+Anschließend unbedingt kontrollieren, dass
+das KVZ tatsächlich einseitig gedruckt wird.
+
+</div>
+
+
+</div>
+
+</details>
+
+
+
+<!-- ========================================= -->
+<!-- ABSCHLUSSKONTROLLE -->
+<!-- ========================================= -->
+
+<details>
+
+<summary>
+✅ Abschlusskontrolle
+</summary>
+
+<div class="article">
+
+
+<h3>Vor dem Abschluss kontrollieren</h3>
+
+<p>
+
+✔ richtige Rissnummer
+<br>
+✔ benötigte Daten vorhanden
+<br>
+✔ benötigte Risse eingetragen
+<br>
+✔ alle benötigten Punkte im KVZ
+<br>
+✔ NAS-Validierung durchgeführt
+<br>
+✔ Prüfung ist grün
+<br>
+✔ Fortführungsriss im Kopf eingetragen
+<br>
+✔ Seitenzahl kontrolliert
+<br>
+✔ einseitiger Druck eingestellt
+<br>
+✔ Druckeinstellungen kontrolliert
+
+</p>
+
+
+<div class="tipp">
+
+<strong>💡 Merke:</strong>
+
+<br><br>
+
+Gerade beim KVZ lohnt sich eine kurze
+Kontrolle vor dem endgültigen Druck.
+
+</div>
+
+
+</div>
+
+</details>
+
+
+
+<!-- ========================================= -->
+<!-- NAVIGATION -->
+<!-- ========================================= -->
+
+<div class="chapter-nav">
+
+<a href="vermcad_oberflaeche.html">
+← Oberfläche
+</a>
+
+<a href="vermcad_daten.html">
+Weiter zu Daten →
+</a>
+
+</div>
+
+
+
+</main>
+
+</div>
 
 
 
 <footer>
 
 <p>
-© 2026 VermKompass
-<br>
-Version 1.0
+VermKompass – Dein Begleiter in der Ausbildung
 </p>
 
 </footer>
 
 
-</section>
-
-
-</div>
-
 
 <script src="suchindex.js"></script>
+
 <script src="script.js"></script>
 
 
