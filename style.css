@@ -1,1164 +1,362 @@
-/* =========================================================
-   VERMKOMPASS – MODERN GEODÄSIE DESIGN
-   Komplett neue, aufgeräumte style.css
-   Bestehende HTML-Struktur bleibt kompatibel.
-========================================================= */
-
-/* ---------- GRUNDLAGEN ---------- */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --navy: #0b1f33;
-    --navy-2: #102b44;
-    --blue: #1677b8;
-    --blue-dark: #0d5e93;
-    --cyan: #1fb6c9;
-    --green: #22a06b;
-
-    --bg: #eef3f7;
-    --surface: #ffffff;
-    --surface-2: #f7fafc;
-    --surface-3: #eaf1f6;
-
-    --text: #172433;
-    --text-soft: #617181;
-    --text-light: #8b9aaa;
-
-    --border: #d9e3ea;
-    --border-strong: #c6d4df;
-
-    --shadow-sm: 0 3px 12px rgba(11, 31, 51, .06);
-    --shadow: 0 10px 30px rgba(11, 31, 51, .09);
-    --shadow-lg: 0 18px 45px rgba(11, 31, 51, .14);
-
-    --radius: 14px;
-    --radius-sm: 9px;
-    --sidebar-width: 260px;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    font-family: "Inter", Arial, sans-serif;
-    color: var(--text);
-    background:
-        linear-gradient(rgba(255,255,255,.68), rgba(255,255,255,.68)),
-        repeating-linear-gradient(
-            0deg,
-            transparent 0,
-            transparent 39px,
-            rgba(22,119,184,.045) 40px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            transparent 0,
-            transparent 39px,
-            rgba(22,119,184,.045) 40px
-        ),
-        var(--bg);
-    line-height: 1.65;
-}
-
-body,
-button,
-input,
-textarea,
-select {
-    font-family: "Inter", Arial, sans-serif;
-}
-
-a {
-    color: var(--blue);
-    text-decoration: none;
-    transition: .2s ease;
-}
-
-a:hover {
-    color: var(--blue-dark);
-}
-
-button {
-    border: 0;
-    cursor: pointer;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-::selection {
-    background: rgba(31,182,201,.25);
-}
-
-
-/* =========================================================
-   SIDEBAR
-========================================================= */
-
-#sidebar {
-    flex: 0 0 var(--sidebar-width);
-}
-
-.sidebar {
-    position: fixed;
-    inset: 0 auto 0 0;
-    width: var(--sidebar-width);
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 1000;
-
-    padding: 24px 16px;
-
-    color: #e9f3f8;
-    background:
-        linear-gradient(180deg, rgba(255,255,255,.025), transparent 30%),
-        var(--navy);
-
-    border-right: 1px solid rgba(255,255,255,.08);
-    box-shadow: 8px 0 30px rgba(4,18,31,.12);
-}
-
-.sidebar::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    opacity: .14;
-    background:
-        linear-gradient(135deg, transparent 48%, var(--cyan) 49%, transparent 50%) 0 0/80px 80px,
-        linear-gradient(45deg, transparent 48%, var(--blue) 49%, transparent 50%) 0 0/80px 80px;
-}
-
-.sidebar > * {
-    position: relative;
-    z-index: 1;
-}
-
-.logo {
-    padding: 8px 10px 26px;
-    border-bottom: 1px solid rgba(255,255,255,.09);
-    margin-bottom: 18px;
-}
-
-.logo h2 {
-    color: #fff;
-    font-size: 1.35rem;
-    letter-spacing: -.02em;
-    line-height: 1.2;
-}
-
-.logo h2::first-letter {
-    color: var(--cyan);
-}
-
-.logo p {
-    margin-top: 5px;
-    color: #8fa9ba;
-    font-size: .74rem;
-    letter-spacing: .13em;
-    text-transform: uppercase;
-}
-
-.sidebar ul {
-    list-style: none;
-}
-
-.sidebar li {
-    margin: 4px 0;
-}
-
-.sidebar a {
-    display: flex;
-    align-items: center;
-    min-height: 45px;
-    padding: 10px 13px;
-
-    color: #b8cad6;
-    border: 1px solid transparent;
-    border-radius: 10px;
-
-    font-size: .9rem;
-    font-weight: 600;
-
-    transition:
-        background .2s ease,
-        color .2s ease,
-        transform .2s ease,
-        border-color .2s ease;
-}
-
-.sidebar a:hover {
-    color: #fff;
-    background: rgba(31,182,201,.10);
-    border-color: rgba(31,182,201,.18);
-    transform: translateX(3px);
-}
-
-.sidebar a.active,
-.sidebar a[aria-current="page"] {
-    color: #fff;
-    background: linear-gradient(90deg, rgba(22,119,184,.30), rgba(31,182,201,.12));
-    border-color: rgba(31,182,201,.28);
-    box-shadow: inset 3px 0 0 var(--cyan);
-}
-
-
-/* =========================================================
-   HAUPTBEREICH
-========================================================= */
-
-.main {
-    flex: 1;
-    min-width: 0;
-    margin-left: var(--sidebar-width);
-    padding: 0 42px 50px;
-}
-
-
-/* ---------- HEADER ---------- */
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-
-    min-height: 92px;
-    margin: 0 -42px 38px;
-    padding: 18px 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-
-    background: rgba(255,255,255,.88);
-    border-bottom: 1px solid rgba(217,227,234,.9);
-    box-shadow: 0 5px 25px rgba(11,31,51,.05);
-    backdrop-filter: blur(16px);
-}
-
-header h1 {
-    color: var(--navy);
-    font-size: clamp(1.45rem, 2.5vw, 2.15rem);
-    line-height: 1.15;
-    letter-spacing: -.035em;
-}
-
-header h1::before {
-    content: "⌁ ";
-    color: var(--cyan);
-    font-weight: 400;
-}
-
-header p {
-    margin-top: 5px;
-    color: var(--text-soft);
-    font-size: .88rem;
-}
-
-.topbar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#searchInput {
-    width: min(330px, 34vw);
-    height: 44px;
-    padding: 0 15px;
-
-    color: var(--text);
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 11px;
-    outline: none;
-
-    box-shadow: var(--shadow-sm);
-    transition: .2s ease;
-}
-
-#searchInput::placeholder {
-    color: #91a0ad;
-}
-
-#searchInput:focus {
-    border-color: rgba(22,119,184,.55);
-    box-shadow: 0 0 0 4px rgba(22,119,184,.10);
-}
-
-#darkMode {
-    width: 44px;
-    height: 44px;
-    display: grid;
-    place-items: center;
-
-    color: var(--navy);
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 11px;
-    box-shadow: var(--shadow-sm);
-
-    font-size: 1.05rem;
-    transition: .2s ease;
-}
-
-#darkMode:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow);
-}
-
-
-/* =========================================================
-   ALLGEMEINE CONTENT-BEREICHE
-========================================================= */
-
-section {
-    width: min(1250px, 100%);
-    margin: 0 auto;
-    position: relative;
-}
-
-section > h2,
-section > h3 {
-    color: var(--navy);
-}
-
-section > h2 {
-    margin: 35px 0 18px;
-    font-size: 1.55rem;
-    letter-spacing: -.025em;
-}
-
-section > h3 {
-    margin: 28px 0 12px;
-    font-size: 1.15rem;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-ul,
-ol {
-    padding-left: 1.3rem;
-}
-
-li {
-    margin-bottom: 6px;
-}
-
-
-/* =========================================================
-   MODERNE KARTEN / DASHBOARD
-========================================================= */
-
-.dashboard,
-.start-grid,
-.card-grid,
-.cards,
-.quick-links {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-}
-
-.card,
-.dashboard-card,
-.start-card,
-.quick-card,
-.article,
-.info,
-.tipp,
-.warnung,
-.fehler {
-    border-radius: var(--radius);
-}
-
-.card,
-.dashboard-card,
-.start-card,
-.quick-card {
-    position: relative;
-    overflow: hidden;
-
-    padding: 23px;
-
-    background: var(--surface);
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-sm);
-
-    transition:
-        transform .22s ease,
-        box-shadow .22s ease,
-        border-color .22s ease;
-}
-
-.card::before,
-.dashboard-card::before,
-.start-card::before,
-.quick-card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, var(--blue), var(--cyan));
-    opacity: .85;
-}
-
-.card:hover,
-.dashboard-card:hover,
-.start-card:hover,
-.quick-card:hover {
-    transform: translateY(-5px);
-    border-color: #bfd3df;
-    box-shadow: var(--shadow);
-}
-
-.card h3,
-.dashboard-card h3,
-.start-card h3,
-.quick-card h3 {
-    color: var(--navy);
-    margin-bottom: 7px;
-    font-size: 1.05rem;
-}
-
-.card p,
-.dashboard-card p,
-.start-card p,
-.quick-card p {
-    color: var(--text-soft);
-    font-size: .9rem;
-}
-
-.card-icon,
-.start-card .icon,
-.dashboard-card .icon {
-    display: inline-grid;
-    place-items: center;
-    width: 44px;
-    height: 44px;
-    margin-bottom: 15px;
-
-    color: var(--blue);
-    background: #eaf5fb;
-    border: 1px solid #d6eaf5;
-    border-radius: 12px;
-
-    font-size: 1.2rem;
-}
-
-
-/* =========================================================
-   ARTIKEL / TEXTBEREICHE
-========================================================= */
-
-.article {
-    padding: 28px;
-    margin: 20px 0;
-
-    background: rgba(255,255,255,.92);
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-sm);
-}
-
-.article h2,
-.article h3,
-.article h4 {
-    color: var(--navy);
-}
-
-.article h2 {
-    margin-bottom: 14px;
-    font-size: 1.45rem;
-}
-
-.article h3 {
-    margin: 25px 0 10px;
-    font-size: 1.12rem;
-}
-
-.article h4 {
-    margin: 18px 0 7px;
-    font-size: 1rem;
-}
-
-.article p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   INFO / TIPP / WARNUNG / FEHLER
-========================================================= */
-
-.info,
-.tipp,
-.warnung,
-.fehler {
-    position: relative;
-    margin: 18px 0;
-    padding: 17px 19px 17px 50px;
-
-    background: var(--surface);
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-sm);
-}
-
-.info::before,
-.tipp::before,
-.warnung::before,
-.fehler::before {
-    position: absolute;
-    left: 17px;
-    top: 16px;
-    font-size: 1.05rem;
-}
-
-.info {
-    border-left: 4px solid var(--blue);
-    background: #f3f9fd;
-}
-
-.info::before {
-    content: "ℹ";
-    color: var(--blue);
-}
-
-.tipp {
-    border-left: 4px solid var(--green);
-    background: #f1faf6;
-}
-
-.tipp::before {
-    content: "✓";
-    color: var(--green);
-}
-
-.warnung {
-    border-left: 4px solid #e49a24;
-    background: #fff9ed;
-}
-
-.warnung::before {
-    content: "⚠";
-    color: #c27a00;
-}
-
-.fehler {
-    border-left: 4px solid #d65a5a;
-    background: #fff4f4;
-}
-
-.fehler::before {
-    content: "!";
-    color: #c33c3c;
-}
-
-
-/* =========================================================
-   DETAILS / KAPITEL
-========================================================= */
-
-details {
-    margin: 15px 0;
-
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-
-    overflow: hidden;
-}
-
-details + details {
-    margin-top: 12px;
-}
-
-summary {
-    position: relative;
-    list-style: none;
-    cursor: pointer;
-
-    padding: 17px 48px 17px 20px;
-
-    color: var(--navy);
-    background: linear-gradient(90deg, #fff, #f8fbfd);
-
-    font-weight: 700;
-    transition: .2s ease;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
-summary::after {
-    content: "＋";
-    position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    color: var(--blue);
-    font-size: 1.15rem;
-    font-weight: 400;
-}
-
-details[open] > summary {
-    color: var(--blue-dark);
-    border-bottom: 1px solid var(--border);
-    background: #f3f8fb;
-}
-
-details[open] > summary::after {
-    content: "−";
-}
-
-details > *:not(summary) {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-details > p:first-of-type {
-    margin-top: 18px;
-}
-
-details > p:last-child,
-details > ul:last-child,
-details > ol:last-child,
-details > table:last-child {
-    margin-bottom: 20px;
-}
-
-
-/* =========================================================
-   CHAPTER-NAV
-   Wird später ggf. in die Sidebar verschoben.
-========================================================= */
-
-.chapter-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-
-    margin: 0 0 25px;
-    padding: 9px;
-
-    background: rgba(255,255,255,.9);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    box-shadow: var(--shadow-sm);
-}
-
-.chapter-nav a,
-.chapter-nav button {
-    padding: 8px 12px;
-
-    color: var(--text-soft);
-    background: transparent;
-    border: 1px solid transparent;
-    border-radius: 8px;
-
-    font-size: .82rem;
-    font-weight: 600;
-}
-
-.chapter-nav a:hover,
-.chapter-nav button:hover,
-.chapter-nav .active {
-    color: var(--blue-dark);
-    background: #edf7fb;
-    border-color: #d3eaf2;
-}
-
-
-/* =========================================================
-   TABELLEN
-========================================================= */
-
-.table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    margin: 20px 0;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    box-shadow: var(--shadow-sm);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--surface);
-    font-size: .9rem;
-}
-
-th {
-    padding: 13px 14px;
-    text-align: left;
-
-    color: #fff;
-    background: var(--navy);
-
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-td {
-    padding: 12px 14px;
-    border-top: 1px solid var(--border);
-    vertical-align: top;
-}
-
-tbody tr:nth-child(even) {
-    background: #f8fafc;
-}
-
-tbody tr:hover {
-    background: #eef7fb;
-}
-
-
-/* =========================================================
-   SCREENSHOTS / BILDER
-========================================================= */
-
-.screenshot {
-    margin: 22px auto;
-    padding: 10px;
-
-    max-width: 100%;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    box-shadow: var(--shadow);
-
-    text-align: center;
-}
-
-.screenshot img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-
-.screenshot figcaption {
-    padding: 10px 6px 2px;
-    color: var(--text-soft);
-    font-size: .78rem;
-}
-
-
-/* =========================================================
-   CODE / TECHNISCHE ELEMENTE
-========================================================= */
-
-code {
-    padding: 2px 6px;
-    color: #075c78;
-    background: #e9f5f8;
-    border-radius: 5px;
-    font-family: "Consolas", "Courier New", monospace;
-    font-size: .9em;
-}
-
-pre {
-    overflow-x: auto;
-    margin: 18px 0;
-    padding: 18px;
-
-    color: #dceaf2;
-    background: #0a1b2b;
-    border: 1px solid #173b55;
-    border-radius: 12px;
-
-    line-height: 1.55;
-}
-
-
-/* =========================================================
-   LINKS / BUTTONS
-========================================================= */
-
-.btn,
-button:not(#darkMode) {
-    transition: .2s ease;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-
-    min-height: 40px;
-    padding: 9px 15px;
-
-    color: #fff;
-    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
-    border-radius: 9px;
-    box-shadow: 0 5px 15px rgba(22,119,184,.18);
-
-    font-weight: 700;
-}
-
-.btn:hover {
-    color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(22,119,184,.25);
-}
-
-
-/* =========================================================
-   FAVORITEN / SUCHERGEBNISSE
-========================================================= */
-
-.favorite,
-.search-result {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 11px;
-    padding: 15px 17px;
-    margin: 10px 0;
-    box-shadow: var(--shadow-sm);
-}
-
-.favorite:hover,
-.search-result:hover {
-    border-color: #bfd4df;
-    box-shadow: var(--shadow);
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    margin: 55px auto 0;
-    padding: 25px 0 5px;
-
-    color: var(--text-light);
-    border-top: 1px solid var(--border);
-
-    text-align: center;
-    font-size: .78rem;
-}
-
-
-/* =========================================================
-   SCROLLBAR
-========================================================= */
-
-::-webkit-scrollbar {
-    width: 9px;
-    height: 9px;
-}
-
-::-webkit-scrollbar-track {
-    background: #e8eef2;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #b7c7d1;
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #8fa8b7;
-}
-
-
-/* =========================================================
-   DARK MODE
-========================================================= */
-
-body.dark-mode {
-    --bg: #071521;
-    --surface: #0d202f;
-    --surface-2: #102638;
-    --surface-3: #142d40;
-
-    --text: #e6eef3;
-    --text-soft: #a8bbc8;
-    --text-light: #78909f;
-
-    --border: #203c4f;
-    --border-strong: #2c4b5f;
-
-    background:
-        linear-gradient(rgba(7,21,33,.88), rgba(7,21,33,.88)),
-        repeating-linear-gradient(
-            0deg,
-            transparent 0,
-            transparent 39px,
-            rgba(31,182,201,.05) 40px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            transparent 0,
-            transparent 39px,
-            rgba(31,182,201,.05) 40px
-        ),
-        var(--bg);
-}
-
-body.dark-mode header {
-    background: rgba(9,28,43,.88);
-    border-color: rgba(255,255,255,.08);
-}
-
-body.dark-mode header h1,
-body.dark-mode section > h2,
-body.dark-mode section > h3,
-body.dark-mode .article h2,
-body.dark-mode .article h3,
-body.dark-mode .article h4,
-body.dark-mode .card h3,
-body.dark-mode .dashboard-card h3,
-body.dark-mode .start-card h3,
-body.dark-mode .quick-card h3,
-body.dark-mode summary {
-    color: #edf7fb;
-}
-
-body.dark-mode #searchInput,
-body.dark-mode #darkMode,
-body.dark-mode .card,
-body.dark-mode .dashboard-card,
-body.dark-mode .start-card,
-body.dark-mode .quick-card,
-body.dark-mode .article,
-body.dark-mode details,
-body.dark-mode .chapter-nav,
-body.dark-mode .favorite,
-body.dark-mode .search-result,
-body.dark-mode .screenshot {
-    color: var(--text);
-    background: var(--surface);
-    border-color: var(--border);
-}
-
-body.dark-mode summary {
-    background: #102638;
-}
-
-body.dark-mode details[open] > summary {
-    background: #132d40;
-    border-color: var(--border);
-}
-
-body.dark-mode .info {
-    background: #0d2838;
-}
-
-body.dark-mode .tipp {
-    background: #0d2b23;
-}
-
-body.dark-mode .warnung {
-    background: #302713;
-}
-
-body.dark-mode .fehler {
-    background: #321d20;
-}
-
-body.dark-mode table {
-    background: var(--surface);
-    color: var(--text);
-}
-
-body.dark-mode tbody tr:nth-child(even) {
-    background: #102536;
-}
-
-body.dark-mode tbody tr:hover {
-    background: #143246;
-}
-
-body.dark-mode td {
-    border-color: var(--border);
-}
-
-body.dark-mode .chapter-nav a:hover,
-body.dark-mode .chapter-nav button:hover,
-body.dark-mode .chapter-nav .active {
-    background: #123244;
-    border-color: #24576b;
-}
-
-body.dark-mode code {
-    color: #9de2ed;
-    background: #102f3d;
-}
-
-
-/* =========================================================
-   ANIMATIONEN
-========================================================= */
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.main > section {
-    animation: fadeUp .35s ease both;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 1000px) {
-    :root {
-        --sidebar-width: 220px;
-    }
-
-    .main {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    header {
-        margin-left: -25px;
-        margin-right: -25px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .dashboard,
-    .start-grid,
-    .card-grid,
-    .cards,
-    .quick-links {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 760px) {
-    body {
-        display: block;
-    }
-
-    #sidebar {
-        width: 100%;
-    }
-
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        max-height: none;
-        padding: 13px;
-    }
-
-    .logo {
-        padding: 5px 8px 13px;
-        margin-bottom: 8px;
-    }
-
-    .logo h2 {
-        font-size: 1.1rem;
-    }
-
-    .sidebar ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-
-    .sidebar li {
-        margin: 0;
-    }
-
-    .sidebar a {
-        min-height: 38px;
-        padding: 7px 10px;
-        font-size: .78rem;
-    }
-
-    .main {
-        margin-left: 0;
-        padding: 0 15px 35px;
-    }
-
-    header {
-        position: relative;
-        margin: 0 -15px 25px;
-        padding: 18px 15px;
-        min-height: auto;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .topbar {
-        width: 100%;
-    }
-
-    #searchInput {
-        width: 100%;
-        flex: 1;
-    }
-
-    .article {
-        padding: 20px;
-    }
-
-    .chapter-nav {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-    }
-
-    .chapter-nav a,
-    .chapter-nav button {
-        white-space: nowrap;
-    }
-
-    th,
-    td {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 460px) {
-    header h1 {
-        font-size: 1.35rem;
-    }
-
-    .info,
-    .tipp,
-    .warnung,
-    .fehler {
-        padding-left: 43px;
-    }
-
-    .card,
-    .dashboard-card,
-    .start-card,
-    .quick-card {
-        padding: 19px;
-    }
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VermKompass | VermCAD Projektverwaltung</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="project-page">
+
+<div id="sidebar"></div>
+
+<div class="main">
+
+<header>
+    <div>
+        <h1>📂 VermCAD Projektverwaltung</h1>
+        <p>Projektanlage, Datenübernahme und praktische Arbeitsabläufe</p>
+    </div>
+
+    <div class="topbar">
+        <input type="text" id="searchInput" placeholder="🔍 Suche nach Begriffen...">
+        <button id="darkMode">🌙</button>
+    </div>
+</header>
+
+<section>
+
+<div class="project-hero">
+    <div class="project-hero-content">
+
+        <div class="project-breadcrumb">
+            <span>VermCAD</span>
+            <b>›</b>
+            <span>Projektverwaltung</span>
+        </div>
+
+        <div class="project-hero-copy">
+            <span class="project-kicker">VERMKOMPASS · VERMESSUNG</span>
+            <h2>Projektverwaltung</h2>
+            <p>Projektanlage, Datenübernahme und praktische Arbeitsabläufe.</p>
+        </div>
+
+        <div class="project-coordinates">
+            <span>E 456 238.421</span>
+            <span>N 5 689 421.337</span>
+            <span>H 123.456</span>
+        </div>
+    </div>
+</div>
+
+<div class="workflow-heading">
+    <span class="section-kicker">ARBEITSABLAUF</span>
+    <h2>Was möchtest du tun?</h2>
+    <p>Die wichtigsten Schritte der Projektverwaltung auf einen Blick.</p>
+</div>
+
+<div class="workflow-grid">
+
+<a href="#projekt-erstellen" class="workflow-card">
+    <span class="workflow-number">01</span>
+    <span class="workflow-icon">📂</span>
+    <strong>Projekt erstellen</strong>
+    <small>Neues Projekt anlegen und Rissnummer ermitteln.</small>
+    <span class="workflow-arrow">→</span>
+</a>
+
+<a href="#daten-importieren" class="workflow-card">
+    <span class="workflow-number">02</span>
+    <span class="workflow-icon">↓</span>
+    <strong>Daten importieren</strong>
+    <small>Daten aus den benötigten Quellen übernehmen.</small>
+    <span class="workflow-arrow">→</span>
+</a>
+
+<a href="#risse-dms" class="workflow-card">
+    <span class="workflow-number">03</span>
+    <span class="workflow-icon">📄</span>
+    <strong>Risse aus DMS</strong>
+    <small>Benötigte Risse suchen und einbinden.</small>
+    <span class="workflow-arrow">→</span>
+</a>
+
+<a href="#kvz-erstellen" class="workflow-card">
+    <span class="workflow-number">04</span>
+    <span class="workflow-icon">☷</span>
+    <strong>KVZ erstellen</strong>
+    <small>Koordinatenverzeichnis erstellen und prüfen.</small>
+    <span class="workflow-arrow">→</span>
+</a>
+
+<a href="#kvz-druck" class="workflow-card">
+    <span class="workflow-number">05</span>
+    <span class="workflow-icon">▣</span>
+    <strong>KVZ drucken</strong>
+    <small>Validierung, Seitenzahl und Druck vorbereiten.</small>
+    <span class="workflow-arrow">→</span>
+</a>
+
+<a href="#abschluss" class="workflow-card">
+    <span class="workflow-number">06</span>
+    <span class="workflow-icon">✓</span>
+    <strong>Abschlusskontrolle</strong>
+    <small>Alle wichtigen Punkte vor dem Abschluss prüfen.</small>
+    <span class="workflow-arrow">→</span>
+</a>
+
+</div>
+
+<div class="project-info-grid">
+
+<div class="project-info-panel">
+    <div class="panel-title">
+        <span>✓</span>
+        <div>
+            <span class="section-kicker">WICHTIG</span>
+            <h3>Wichtige Hinweise</h3>
+        </div>
+    </div>
+
+    <ul>
+        <li>Richtige Rissnummer verwenden</li>
+        <li>Daten vollständig importieren</li>
+        <li>Zwischenstände speichern</li>
+        <li>Druckeinstellungen kontrollieren</li>
+    </ul>
+</div>
+
+<div class="project-info-panel">
+    <div class="panel-title">
+        <span>⌁</span>
+        <div>
+            <span class="section-kicker">SCHNELLZUGRIFF</span>
+            <h3>Häufig gebraucht</h3>
+        </div>
+    </div>
+
+    <div class="quick-action-grid">
+        <a href="#projekt-erstellen">Rissnummer ermitteln</a>
+        <a href="#kvz-druck">NAS-Validierung</a>
+        <a href="#kvz-druck">Einseitiger Druck</a>
+        <a href="#risse-dms">Fortführungsriss</a>
+    </div>
+</div>
+
+</div>
+
+<div class="chapter-nav">
+<a href="vermcad.html">📌 Übersicht</a>
+<a href="vermcad_grundlagen.html">📚 Grundlagen</a>
+<a href="vermcad_oberflaeche.html">🖥 Oberfläche</a>
+<a href="vermcad_projektverwaltung.html" class="active">📂 Projekte</a>
+<a href="vermcad_daten.html">📥 Daten</a>
+<a href="vermcad_punkte.html">📍 Punkte</a>
+<a href="vermcad_transformation.html">🔄 Transformationen</a>
+<a href="vermcad_berechnung.html">🧮 Rechnen</a>
+<a href="vermcad_export.html">📤 Export</a>
+<a href="vermcad_alkis.html">🗺 ALKIS</a>
+<a href="vermcad_optionen.html">⚙ Optionen</a>
+<a href="vermcad_fehler.html">⚠ Fehler</a>
+</div>
+
+<details open id="projekt-erstellen">
+<summary>📂 Projekt erstellen</summary>
+<div class="article">
+
+<h3>Projekt anlegen</h3>
+<p>Zu Beginn wird das benötigte Projekt in VermCAD erstellt.</p>
+<p>Anschließend werden die erforderlichen Projektdaten eingetragen.</p>
+
+<h3>Rissnummer ermitteln</h3>
+<p>Die Rissnummer findet man in Carlo.</p>
+
+<h3>Vorgehensweise</h3>
+<p>
+1️⃣ Carlo öffnen<br><br>
+2️⃣ „Anträge“ auswählen<br><br>
+3️⃣ das entsprechende Projekt suchen<br><br>
+4️⃣ „Anhänge“ öffnen<br><br>
+5️⃣ unter „Interne Leistung“ die Datei <strong>ReservierungFR.pdf</strong> öffnen<br><br>
+6️⃣ dort die Rissnummer entnehmen
+</p>
+
+<div class="tipp">
+<h3>💡 Tipp</h3>
+<p>Die Rissnummer sollte direkt beim Erstellen des Projektes kontrolliert und richtig übernommen werden.</p>
+</div>
+
+</div>
+</details>
+
+<details id="daten-importieren">
+<summary>📥 Daten importieren</summary>
+<div class="article">
+<h3>Import der Daten</h3>
+<p>Nach dem Erstellen des Projektes werden die benötigten Daten importiert.</p>
+<h3>Danach</h3>
+<p>Nach dem Import kann mit der weiteren Bearbeitung begonnen werden.</p>
+<div class="screenshot">📷 Screenshot wird später ergänzt</div>
+</div>
+</details>
+
+<details id="risse-dms">
+<summary>📄 Risse aus dem DMS heraussuchen</summary>
+<div class="article">
+<h3>Risse aus dem DMS</h3>
+<p>Nach dem Import der Daten können die benötigten Risse aus dem DMS herausgesucht und eingegeben werden.</p>
+<h3>Kontrolle</h3>
+<p>Vor der weiteren Bearbeitung sollte kontrolliert werden, ob der richtige Riss verwendet wurde.</p>
+<div class="screenshot">📷 Screenshot wird später ergänzt</div>
+</div>
+</details>
+
+<details>
+<summary>💾 Projektstand sichern</summary>
+<div class="article">
+<h3>Zwischenstand speichern</h3>
+<p>Vor wichtigen oder schwer rückgängig zu machenden Arbeitsschritten sollte ein Zwischenstand des Projektes gespeichert werden.</p>
+<h3>Besonders wichtig bei Verschmelzungen</h3>
+<p>Bei Verschmelzungen ist ein vorheriger Zwischenstand besonders sinnvoll, da diese nur schwer und aufwendig rückgängig gemacht werden können.</p>
+
+<div class="tipp">
+<h3>💡 Tipp</h3>
+<p>
+Vor größeren Änderungen:<br><br>
+✔ Zwischenstand speichern<br>
+✔ Bearbeitung durchführen<br>
+✔ Ergebnis kontrollieren
+</p>
+</div>
+</div>
+</details>
+
+<details>
+<summary>🔍 Projektkontrolle</summary>
+<div class="article">
+<h3>Vor der Bearbeitung prüfen</h3>
+<p>Bevor mit der eigentlichen Bearbeitung begonnen wird, sollte das Projekt kontrolliert werden.</p>
+
+<h3>Kontrollpunkte</h3>
+<p>
+✔ richtiges Projekt geöffnet<br>
+✔ richtige Rissnummer eingetragen<br>
+✔ benötigte Daten vorhanden<br>
+✔ benötigte Unterlagen vorhanden<br>
+✔ Daten vollständig importiert
+</p>
+
+<h3>Ziel der Kontrolle</h3>
+<p>Eine kurze Kontrolle am Anfang kann verhindern, dass Fehler erst bei späteren Arbeitsschritten auffallen.</p>
+</div>
+</details>
+
+<details id="kvz-erstellen">
+<summary>📋 KVZ erstellen</summary>
+<div class="article">
+
+<h3>Koordinatenverzeichnis erstellen</h3>
+<p>Das KVZ wird über die Koordinaten- und Punktlistenfunktionen erstellt.</p>
+
+<h3>Vorgehensweise</h3>
+<p>
+1️⃣ <strong>Daten</strong> öffnen<br><br>
+2️⃣ <strong>Koordinaten</strong> auswählen<br><br>
+3️⃣ <strong>Verzeichnis</strong> auswählen<br><br>
+4️⃣ anschließend das <strong>Makro</strong> öffnen<br><br>
+5️⃣ <strong>Punktliste</strong> auswählen<br><br>
+6️⃣ kontrollieren, dass alle benötigten Punkte enthalten sind
+</p>
+
+<h3>Kontrolle</h3>
+<p>Vor dem Drucken muss sichergestellt werden, dass alle benötigten Punkte im KVZ enthalten sind.</p>
+
+<div class="screenshot">📷 Screenshot wird später ergänzt</div>
+
+</div>
+</details>
+
+<details id="kvz-druck">
+<summary>🖨 KVZ für den Druck vorbereiten</summary>
+<div class="article">
+
+<h3>NAS-Validierung</h3>
+<p>Vor dem Drucken muss die entsprechende Validierung eingestellt und durchgeführt werden.</p>
+
+<h3>Vorgehensweise</h3>
+<p>
+1️⃣ <strong>NAS-Validierung_KM</strong> einstellen<br><br>
+2️⃣ auf <strong>„Prüfen“</strong> gehen<br><br>
+3️⃣ kontrollieren, dass die Prüfung <strong>grün</strong> ist<br><br>
+4️⃣ anschließend auf <strong>„Drucken“</strong> gehen
+</p>
+
+<h3>Seitenzahl beachten</h3>
+<p>Bei der Druckvorbereitung muss die Angabe unter der anzugebenden Seitenzahl kontrolliert werden.</p>
+
+<h3>Reihenfolge der Vermessungsdokumentation</h3>
+<p>Das KVZ ist in einer Vermessungsdokumentation immer das letzte Dokument.</p>
+<p>Davor können beispielsweise Dokumente einer möglichen Grenzverhandlung oder andere Unterlagen kommen.</p>
+<p>Am Anfang steht der <strong>Darstellende Teil (DT)</strong>.</p>
+
+<h3>Fortführungsriss</h3>
+<p>Im Kopf des KVZ muss der <strong>Fortführungsriss</strong> eingetragen werden.</p>
+
+<h3>Einseitiger Druck</h3>
+<p>Ein KVZ wird immer <strong>einseitig</strong> gedruckt. Das bedeutet: nicht Vorder- und Rückseite bedrucken.</p>
+
+<div class="warnung">
+<h3>⚠ Wichtig</h3>
+<p>
+Je nach Druckeinstellung muss der einseitige Druck noch manuell eingestellt werden.
+Anschließend unbedingt kontrollieren, dass das KVZ tatsächlich einseitig gedruckt wird.
+</p>
+</div>
+
+<div class="screenshot">📷 Screenshot wird später ergänzt</div>
+
+</div>
+</details>
+
+<details id="abschluss">
+<summary>✅ Abschlusskontrolle</summary>
+<div class="article">
+
+<h3>Vor dem Abschluss kontrollieren</h3>
+<p>
+☑ richtige Rissnummer<br>
+☑ benötigte Daten vorhanden<br>
+☑ benötigte Risse eingetragen<br>
+☑ alle benötigten Punkte im KVZ<br>
+☑ NAS-Validierung durchgeführt<br>
+☑ Prüfung ist grün<br>
+☑ Fortführungsriss im Kopf eingetragen<br>
+☑ Seitenzahl kontrolliert<br>
+☑ einseitiger Druck eingestellt<br>
+☑ Druck kontrolliert
+</p>
+
+</div>
+</details>
+
+<div class="tipp">
+<h3>💡 Praxistipp</h3>
+<p>
+Bei der Projektverwaltung lohnt es sich, wichtige Zwischenstände zu speichern
+und vor der Ausgabe noch einmal alle Angaben zu kontrollieren.
+</p>
+</div>
+
+<footer>
+<p>© 2026 VermKompass<br>Version 1.0</p>
+</footer>
+
+</section>
+</div>
+
+<script src="suchindex.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
