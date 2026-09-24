@@ -4,11 +4,11 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<title>VermKompass | VermCAD Projektverwaltung</title>
 
-<title>VermCAD Projektverwaltung – VermKompass</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -18,689 +18,919 @@ content="width=device-width, initial-scale=1.0">
 <body>
 
 
+<div id="sidebar"></div>
+
+<div class="main">
+
+
 <header>
+
+
+<div>
 
 <h1>📂 VermCAD Projektverwaltung</h1>
 
 <p>
-Praktische Arbeitsschritte zur Projektverwaltung in VermCAD
+Projektanlage, Datenübernahme und praktische Arbeitsabläufe
 </p>
+
+</div>
+
+
+<div class="topbar">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Suche nach Begriffen..."
+>
+
+
+<button id="darkMode">
+🌙
+</button>
+
+
+</div>
+
 
 </header>
 
 
 
-<div class="layout">
 
 
-<nav class="sidebar">
 
-<h2>VermCAD</h2>
 
-<a href="vermcad.html">🏠 Übersicht</a>
+
+
+<section>
+
+
+
+<div class="chapter-nav">
+
+
+<a href="vermcad.html">
+📌 Übersicht
+</a>
+
 
 <a href="vermcad_grundlagen.html">
-📘 Grundlagen
+📚 Grundlagen
 </a>
+
 
 <a href="vermcad_oberflaeche.html">
-🖥️ Oberfläche
+🖥 Oberfläche
 </a>
 
-<a href="vermcad_projektverwaltung.html"
-class="active">
-📂 Projektverwaltung
+
+<a href="vermcad_projektverwaltung.html" class="active">
+📂 Projekte
 </a>
+
 
 <a href="vermcad_daten.html">
 📥 Daten
 </a>
 
+
 <a href="vermcad_punkte.html">
 📍 Punkte
 </a>
 
+
 <a href="vermcad_transformation.html">
-🔄 Transformation
+🔄 Transformationen
 </a>
 
+
 <a href="vermcad_berechnung.html">
-🧮 Berechnung
+🧮 Rechnen
 </a>
+
 
 <a href="vermcad_export.html">
 📤 Export
 </a>
 
+
 <a href="vermcad_alkis.html">
-🗺️ ALKIS
+🗺 ALKIS
 </a>
+
 
 <a href="vermcad_optionen.html">
-⚙️ Optionen
+⚙ Optionen
 </a>
+
 
 <a href="vermcad_fehler.html">
-⚠️ Fehler
+⚠ Fehler
 </a>
 
-</nav>
-
-
-
-<main class="main">
-
-
-<div class="chapter-nav">
-
-<a href="vermcad_oberflaeche.html">
-← Oberfläche
-</a>
-
-<a href="vermcad_daten.html">
-Daten →
-</a>
 
 </div>
+
+
+
+
+
+
+
+
+<h2>📂 VermCAD Projektverwaltung</h2>
+
+
+
+
 
 
 
 <div class="info">
 
-<h2>📂 VermCAD Projektverwaltung</h2>
+
+<h3>Projektverwaltung in der Praxis</h3>
+
 
 <p>
-Hier werden die wichtigsten praktischen Arbeitsschritte
-rund um die Erstellung und Vorbereitung eines
-VermCAD-Projektes beschrieben.
+
+Hier werden die Arbeitsschritte beschrieben,
+die bei der Vorbereitung und Bearbeitung eines
+Vermessungsprojektes in VermCAD benötigt werden.
+
+Die Inhalte orientieren sich an den tatsächlichen
+Arbeitsabläufen aus der Ausbildung.
+
 </p>
 
-<p>
-Die Inhalte orientieren sich an den Arbeitsschritten
-aus der Ausbildung und sollen als praktische
-Nachschlagehilfe dienen.
-</p>
 
 </div>
 
 
 
-<!-- ========================================= -->
-<!-- PROJEKT ERSTELLEN -->
-<!-- ========================================= -->
+
+
+
+
+
 
 <details open>
+
 
 <summary>
 📂 Projekt erstellen
 </summary>
+
 
 <div class="article">
 
 
 <h3>Projekt anlegen</h3>
 
+
 <p>
-Zu Beginn wird ein neues Projekt in VermCAD erstellt.
-Anschließend werden die benötigten Projektdaten
-eingetragen.
+
+Zu Beginn wird das benötigte Projekt in VermCAD
+erstellt.
+
+Anschließend werden die erforderlichen
+Projektdaten eingetragen.
+
 </p>
 
 
-<h3>Rissnummer finden</h3>
+<br>
+
+
+<h3>Rissnummer ermitteln</h3>
+
 
 <p>
-Die benötigte Rissnummer kann über Carlo ermittelt
-werden.
+
+Die Rissnummer findet man in Carlo.
+
 </p>
 
+
+<br>
+
+
+<h3>Vorgehensweise</h3>
+
+
 <p>
 
-<strong>Vorgehensweise:</strong>
+1️⃣ Carlo öffnen
 
 <br><br>
 
-1. Carlo öffnen
-<br>
-2. „Anträge“ auswählen
-<br>
-3. das entsprechende Projekt suchen
-<br>
-4. „Anhänge“ öffnen
-<br>
-5. unter „Interne Leistung“ die Datei
-   <strong>ReservierungFR.pdf</strong> öffnen
-<br>
-6. dort die Rissnummer entnehmen
+2️⃣ „Anträge“ auswählen
+
+<br><br>
+
+3️⃣ das entsprechende Projekt suchen
+
+<br><br>
+
+4️⃣ „Anhänge“ öffnen
+
+<br><br>
+
+5️⃣ unter „Interne Leistung“
+die Datei <strong>ReservierungFR.pdf</strong>
+öffnen
+
+<br><br>
+
+6️⃣ dort die Rissnummer entnehmen
 
 </p>
 
 
 <div class="tipp">
 
-<strong>💡 Tipp:</strong>
 
-<br><br>
+<h3>💡 Tipp</h3>
 
-Die Rissnummer sollte direkt beim Anlegen
+
+<p>
+
+Die Rissnummer sollte direkt beim Erstellen
 des Projektes kontrolliert und richtig
 übernommen werden.
 
+</p>
+
+
 </div>
 
 
 </div>
+
 
 </details>
 
 
 
-<!-- ========================================= -->
-<!-- DATEN IMPORTIEREN -->
-<!-- ========================================= -->
+
+
+
+
+
 
 <details>
+
 
 <summary>
 📥 Daten importieren
 </summary>
+
 
 <div class="article">
 
 
 <h3>Import der Daten</h3>
 
+
 <p>
-Nach der Erstellung des Projektes werden die
+
+Nach dem Erstellen des Projektes werden die
 benötigten Daten importiert.
+
+</p>
+
+
+<br>
+
+
+<h3>Danach</h3>
+
+
+<p>
+
+Nach dem Import kann mit der weiteren
+Bearbeitung begonnen werden.
+
 </p>
 
 
 <div class="screenshot">
 
-<img
-src="bilder/projekt_import.png"
-alt="Datenimport in VermCAD"
->
-
-<p>
-Datenimport in VermCAD.
-</p>
-
-</div>
-
-
-<div class="info">
-
-<strong>Hinweis:</strong>
-
-<br><br>
-
-Die konkreten Importwege und Einstellungen
-werden in der entsprechenden Anleitung
-zum Datenimport beschrieben.
+📷 Screenshot wird später ergänzt
 
 </div>
 
 
 </div>
+
 
 </details>
 
 
 
-<!-- ========================================= -->
-<!-- RISSE AUS DEM DMS -->
-<!-- ========================================= -->
+
+
+
+
+
 
 <details>
 
+
 <summary>
-📄 Risse aus dem DMS übernehmen
+📄 Risse aus dem DMS heraussuchen
 </summary>
+
 
 <div class="article">
 
 
-<h3>Benötigte Risse heraussuchen</h3>
+<h3>Risse aus dem DMS</h3>
+
 
 <p>
-Nach dem Import der Daten kann damit begonnen
-werden, die benötigten Risse aus dem DMS
-herauszusuchen und einzugeben.
+
+Nach dem Import der Daten können die benötigten
+Risse aus dem DMS herausgesucht und eingegeben
+werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrolle</h3>
+
+
+<p>
+
+Vor der weiteren Bearbeitung sollte kontrolliert
+werden, ob der richtige Riss verwendet wurde.
+
 </p>
 
 
 <div class="screenshot">
 
-<img
-src="bilder/dms_riss.png"
-alt="Riss aus dem DMS"
->
-
-<p>
-Benötigten Riss im DMS heraussuchen.
-</p>
-
-</div>
-
-
-<div class="tipp">
-
-<strong>💡 Tipp:</strong>
-
-<br><br>
-
-Vor der weiteren Bearbeitung sollte kontrolliert
-werden, ob der richtige Riss verwendet wurde.
+📷 Screenshot wird später ergänzt
 
 </div>
 
 
 </div>
+
 
 </details>
 
 
 
-<!-- ========================================= -->
-<!-- PROJEKTSTAND SICHERN -->
-<!-- ========================================= -->
+
+
+
+
+
 
 <details>
+
 
 <summary>
 💾 Projektstand sichern
 </summary>
+
 
 <div class="article">
 
 
 <h3>Zwischenstand speichern</h3>
 
-<p>
-Vor wichtigen Bearbeitungsschritten sollte ein
-aktueller Projektstand gespeichert werden.
-</p>
-
 
 <p>
 
-✔ aktuellen Bearbeitungsstand prüfen
-<br>
-✔ Projektstand speichern
-<br>
-✔ wichtige Zwischenstände sichern
-<br>
-✔ gespeicherten Stand kontrollieren
+Vor wichtigen oder schwer rückgängig zu
+machenden Arbeitsschritten sollte ein
+Zwischenstand des Projektes gespeichert werden.
 
 </p>
 
 
-<div class="warnung">
-
-<strong>⚠ Wichtig:</strong>
-
-<br><br>
-
-Bei Arbeitsschritten, die nur schwer rückgängig
-gemacht werden können, sollte vorher unbedingt
-ein Zwischenstand gespeichert werden.
-
-</div>
+<br>
 
 
-</div>
-
-</details>
-
-
-
-<!-- ========================================= -->
-<!-- PROJEKTKONTROLLE -->
-<!-- ========================================= -->
-
-<details>
-
-<summary>
-🔍 Projektkontrolle
-</summary>
-
-<div class="article">
-
-
-<h3>Vor der weiteren Bearbeitung prüfen</h3>
-
-<p>
-Bevor mit der eigentlichen Bearbeitung begonnen
-wird, sollte kontrolliert werden, ob das richtige
-Projekt und die benötigten Grundlagen vorhanden
-sind.
-</p>
+<h3>Besonders wichtig bei Verschmelzungen</h3>
 
 
 <p>
 
-✔ richtiges Projekt geöffnet
-<br>
-✔ Projektdaten kontrolliert
-<br>
-✔ benötigte Daten vorhanden
-<br>
-✔ richtige Rissnummer eingetragen
-<br>
-✔ benötigte Unterlagen vorhanden
+Bei Verschmelzungen ist ein vorheriger
+Zwischenstand besonders sinnvoll, da diese
+nur schwer und aufwendig rückgängig gemacht
+werden können.
 
 </p>
 
 
 <div class="tipp">
 
-<strong>💡 Tipp:</strong>
+
+<h3>💡 Tipp</h3>
+
+
+<p>
+
+Vor größeren Änderungen:
 
 <br><br>
 
-Eine kurze Kontrolle am Anfang kann spätere
-Fehler vermeiden.
+✔ Zwischenstand speichern
+
+<br>
+
+✔ Bearbeitung durchführen
+
+<br>
+
+✔ Ergebnis kontrollieren
+
+</p>
+
 
 </div>
 
 
 </div>
+
 
 </details>
 
 
 
-<!-- ========================================= -->
-<!-- KVZ ERSTELLEN -->
-<!-- ========================================= -->
+
+
+
+
+
 
 <details>
+
+
+<summary>
+🔍 Projektkontrolle
+</summary>
+
+
+<div class="article">
+
+
+<h3>Vor der Bearbeitung prüfen</h3>
+
+
+<p>
+
+Bevor mit der eigentlichen Bearbeitung
+begonnen wird, sollte das Projekt kontrolliert
+werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Kontrollpunkte</h3>
+
+
+<p>
+
+✔ richtiges Projekt geöffnet
+
+<br>
+
+✔ richtige Rissnummer eingetragen
+
+<br>
+
+✔ benötigte Daten vorhanden
+
+<br>
+
+✔ benötigte Unterlagen vorhanden
+
+<br>
+
+✔ Daten vollständig importiert
+
+</p>
+
+
+<br>
+
+
+<h3>Ziel der Kontrolle</h3>
+
+
+<p>
+
+Eine kurze Kontrolle am Anfang kann verhindern,
+dass Fehler erst bei späteren Arbeitsschritten
+auffallen.
+
+</p>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
 
 <summary>
 📋 KVZ erstellen
 </summary>
+
 
 <div class="article">
 
 
 <h3>Koordinatenverzeichnis erstellen</h3>
 
+
 <p>
-Das KVZ wird in VermCAD über das
-Koordinatenverzeichnis und anschließend über
-die Punktliste erstellt.
+
+Das KVZ wird über die Koordinaten- und
+Punktlistenfunktionen erstellt.
+
 </p>
+
+
+<br>
 
 
 <h3>Vorgehensweise</h3>
 
+
 <p>
 
-1. <strong>Daten</strong> öffnen
-<br>
-2. <strong>Koordinaten</strong> auswählen
-<br>
-3. <strong>Verzeichnis</strong> öffnen
-<br>
-4. anschließend das <strong>Makro</strong> öffnen
-<br>
-5. <strong>Punktliste</strong> auswählen
-<br>
-6. benötigte Punkte auswählen bzw. kontrollieren
+1️⃣ <strong>Daten</strong> öffnen
+
+<br><br>
+
+2️⃣ <strong>Koordinaten</strong> auswählen
+
+<br><br>
+
+3️⃣ <strong>Verzeichnis</strong> auswählen
+
+<br><br>
+
+4️⃣ anschließend das
+<strong>Makro</strong> öffnen
+
+<br><br>
+
+5️⃣ <strong>Punktliste</strong> auswählen
+
+<br><br>
+
+6️⃣ kontrollieren, dass alle benötigten
+Punkte enthalten sind
 
 </p>
 
 
-<div class="screenshot">
-
-<img
-src="bilder/kvz_erstellen.png"
-alt="KVZ in VermCAD erstellen"
->
-
-<p>
-Erstellung des KVZ über die Punktliste.
-</p>
-
-</div>
+<br>
 
 
 <h3>Kontrolle</h3>
 
-<p>
-Vor dem weiteren Bearbeiten muss sichergestellt
-werden, dass alle benötigten Punkte im KVZ
-enthalten sind.
-</p>
-
-
-<div class="warnung">
-
-<strong>⚠ Wichtig:</strong>
-
-<br><br>
-
-Kontrolliere die Punktliste vor dem Drucken
-vollständig.
-
-</div>
-
-
-</div>
-
-</details>
-
-
-
-<!-- ========================================= -->
-<!-- KVZ DRUCK -->
-<!-- ========================================= -->
-
-<details>
-
-<summary>
-🖨️ KVZ für den Druck vorbereiten
-</summary>
-
-<div class="article">
-
-
-<h3>NAS-Validierung einstellen</h3>
-
-<p>
-Vor dem Drucken muss die entsprechende
-Validierung eingestellt werden.
-</p>
-
 
 <p>
 
-1. <strong>NAS-Validierung_KM</strong> einstellen
-<br>
-2. auf <strong>„Prüfen“</strong> gehen
-<br>
-3. kontrollieren, dass die Prüfung
-   <strong>grün</strong> ist
-<br>
-4. anschließend auf <strong>„Drucken“</strong>
-   gehen
+Vor dem Drucken muss sichergestellt werden,
+dass alle benötigten Punkte im KVZ enthalten
+sind.
 
 </p>
 
 
 <div class="screenshot">
 
-<img
-src="bilder/kvz_validierung.png"
-alt="NAS Validierung des KVZ"
->
-
-<p>
-NAS-Validierung vor dem Drucken.
-</p>
-
-</div>
-
-
-<h3>Seitenzahl beachten</h3>
-
-<p>
-Bei der Druckvorbereitung muss außerdem die
-Angabe unter der anzugebenden Seitenzahl
-kontrolliert werden.
-</p>
-
-
-<h3>Reihenfolge der Vermessungsdokumentation</h3>
-
-<p>
-Das KVZ ist in einer Vermessungsdokumentation
-immer das letzte Dokument.
-</p>
-
-<p>
-Davor können beispielsweise Dokumente einer
-Grenzverhandlung oder andere Unterlagen
-vorhanden sein.
-</p>
-
-<p>
-Am Anfang steht der <strong>Darstellende Teil
-(DT)</strong>.
-</p>
-
-
-<h3>Kopf des KVZ</h3>
-
-<p>
-Im Kopf des KVZ muss der
-<strong>Fortführungsriss</strong> eingetragen
-werden.
-</p>
-
-
-<h3>Einseitiger Druck</h3>
-
-<p>
-Ein KVZ wird immer <strong>einseitig</strong>
-gedruckt, also nicht auf Vorder- und Rückseite.
-</p>
-
-
-<div class="warnung">
-
-<strong>⚠ Wichtig:</strong>
-
-<br><br>
-
-Die Druckeigenschaften müssen gegebenenfalls
-noch auf einseitigen Druck umgestellt werden.
-
-<br><br>
-
-Anschließend unbedingt kontrollieren, dass
-das KVZ tatsächlich einseitig gedruckt wird.
+📷 Screenshot wird später ergänzt
 
 </div>
 
 
 </div>
+
 
 </details>
 
 
 
-<!-- ========================================= -->
-<!-- ABSCHLUSSKONTROLLE -->
-<!-- ========================================= -->
+
+
+
+
+
 
 <details>
+
+
+<summary>
+🖨 KVZ für den Druck vorbereiten
+</summary>
+
+
+<div class="article">
+
+
+<h3>NAS-Validierung</h3>
+
+
+<p>
+
+Vor dem Drucken muss die entsprechende
+Validierung eingestellt und durchgeführt
+werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Vorgehensweise</h3>
+
+
+<p>
+
+1️⃣ <strong>NAS-Validierung_KM</strong>
+einstellen
+
+<br><br>
+
+2️⃣ auf <strong>„Prüfen“</strong> gehen
+
+<br><br>
+
+3️⃣ kontrollieren, dass die Prüfung
+<strong>grün</strong> ist
+
+<br><br>
+
+4️⃣ anschließend auf
+<strong>„Drucken“</strong> gehen
+
+</p>
+
+
+<br>
+
+
+<h3>Seitenzahl beachten</h3>
+
+
+<p>
+
+Bei der Druckvorbereitung muss die Angabe
+unter der anzugebenden Seitenzahl
+kontrolliert werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Reihenfolge der Vermessungsdokumentation</h3>
+
+
+<p>
+
+Das KVZ ist in einer Vermessungsdokumentation
+immer das letzte Dokument.
+
+</p>
+
+
+<p>
+
+Davor können beispielsweise Dokumente einer
+möglichen Grenzverhandlung oder andere
+Unterlagen kommen.
+
+</p>
+
+
+<p>
+
+Am Anfang steht der
+<strong>Darstellende Teil (DT)</strong>.
+
+</p>
+
+
+<br>
+
+
+<h3>Fortführungsriss</h3>
+
+
+<p>
+
+Im Kopf des KVZ muss der
+<strong>Fortführungsriss</strong>
+eingetragen werden.
+
+</p>
+
+
+<br>
+
+
+<h3>Einseitiger Druck</h3>
+
+
+<p>
+
+Ein KVZ wird immer <strong>einseitig</strong>
+gedruckt.
+
+Das bedeutet: nicht Vorder- und Rückseite
+bedrucken.
+
+</p>
+
+
+<div class="warnung">
+
+
+<h3>⚠ Wichtig</h3>
+
+
+<p>
+
+Je nach Druckeinstellung muss der
+einseitige Druck noch manuell eingestellt
+werden.
+
+Anschließend unbedingt kontrollieren,
+dass das KVZ tatsächlich einseitig
+gedruckt wird.
+
+</p>
+
+
+</div>
+
+
+<div class="screenshot">
+
+📷 Screenshot wird später ergänzt
+
+</div>
+
+
+</div>
+
+
+</details>
+
+
+
+
+
+
+
+
+
+<details>
+
 
 <summary>
 ✅ Abschlusskontrolle
 </summary>
+
 
 <div class="article">
 
 
 <h3>Vor dem Abschluss kontrollieren</h3>
 
+
 <p>
 
-✔ richtige Rissnummer
+☑ richtige Rissnummer
+
 <br>
-✔ benötigte Daten vorhanden
+
+☑ benötigte Daten vorhanden
+
 <br>
-✔ benötigte Risse eingetragen
+
+☑ benötigte Risse eingetragen
+
 <br>
-✔ alle benötigten Punkte im KVZ
+
+☑ alle benötigten Punkte im KVZ
+
 <br>
-✔ NAS-Validierung durchgeführt
+
+☑ NAS-Validierung durchgeführt
+
 <br>
-✔ Prüfung ist grün
+
+☑ Prüfung ist grün
+
 <br>
-✔ Fortführungsriss im Kopf eingetragen
+
+☑ Fortführungsriss im Kopf eingetragen
+
 <br>
-✔ Seitenzahl kontrolliert
+
+☑ Seitenzahl kontrolliert
+
 <br>
-✔ einseitiger Druck eingestellt
+
+☑ einseitiger Druck eingestellt
+
 <br>
-✔ Druckeinstellungen kontrolliert
+
+☑ Druck kontrolliert
 
 </p>
 
 
-<div class="tipp">
-
-<strong>💡 Merke:</strong>
-
-<br><br>
-
-Gerade beim KVZ lohnt sich eine kurze
-Kontrolle vor dem endgültigen Druck.
-
 </div>
 
-
-</div>
 
 </details>
 
 
 
-<!-- ========================================= -->
-<!-- NAVIGATION -->
-<!-- ========================================= -->
 
-<div class="chapter-nav">
 
-<a href="vermcad_oberflaeche.html">
-← Oberfläche
-</a>
 
-<a href="vermcad_daten.html">
-Weiter zu Daten →
-</a>
+
+
+
+<div class="tipp">
+
+
+<h3>💡 Praxistipp</h3>
+
+
+<p>
+
+Bei der Projektverwaltung lohnt es sich,
+wichtige Zwischenstände zu speichern und
+vor der Ausgabe noch einmal alle Angaben
+zu kontrollieren.
+
+</p>
+
 
 </div>
 
 
 
-</main>
 
-</div>
+
 
 
 
 <footer>
 
 <p>
-VermKompass – Dein Begleiter in der Ausbildung
+
+© 2026 VermKompass
+
+<br>
+
+Version 1.0
+
 </p>
 
+
 </footer>
+
+
+</section>
+
+
+</div>
 
 
 
